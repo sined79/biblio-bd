@@ -21,7 +21,10 @@
         "serie": "Metronom'",
         "tome": "4",
         "auteurs": "Corbeyran",
-        "editeur": "Glénat"
+        "editeur": "Glénat",
+        "cover": "images/metronom__4.jpg",
+        "scenariste": "Corbeyran, Éric",
+        "dessinateur": "Grun"
     },
     {
         "serie": "Un putain de salopard",
