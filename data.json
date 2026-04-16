@@ -48,7 +48,10 @@
         "serie": "Voyageur - Présent",
         "tome": "4",
         "auteurs": "Boisserie, Stalner, Bourgne, Guarnido",
-        "editeur": "Glénat"
+        "editeur": "Glénat",
+        "cover": "images/voyageur___pr_sent_4.jpg",
+        "scenariste": "Boisserie, Pierre",
+        "dessinateur": "Bourgne, Marc"
     },
     {
         "serie": "L'Anneau des 7 Mondes",
