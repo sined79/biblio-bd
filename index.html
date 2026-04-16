@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Bédéthèque</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e74c3c;
+            --bg: #ecf0f1;
+            --text: #34495e;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        h1 { margin: 0 0 10px; font-size: 2.5em; letter-spacing: 1px; }
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 20px auto 0;
+        }
+        input, select {
+            padding: 12px 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+            flex: 1;
+            min-width: 200px;
+        }
+        input:focus, select:focus {
+            box-shadow: 0 0 0 2px var(--accent);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .stats {
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-left: 5px solid var(--accent);
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            margin: 0 0 10px;
+            font-size: 1.4em;
+            color: var(--primary);
+        }
+        .card .tome {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            align-self: flex-start;
+        }
+        .card p {
+            margin: 5px 0;
+            line-height: 1.4;
+        }
+        .card .label {
+            font-weight: 600;
+            color: #95a5a6;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            font-size: 1.2em;
+            color: #7f8c8d;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📚 Ma Bédéthèque</h1>
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="🔍 Rechercher par série, auteur..." onkeyup="filterBooks()">
+            <select id="publisherFilter" onchange="filterBooks()">
+                <option value="">Tous les éditeurs</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="stats" id="stats">Chargement de la bibliothèque...</div>
+        <div class="grid" id="bookGrid"></div>
+    </div>
+
+    <script>
+        let allBooks = [];
+
+        // Charger les données
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                allBooks = data;
+                populatePublishers();
+                renderBooks(allBooks);
+            })
+            .catch(error => console.error("Erreur lors du chargement:", error));
+
+        // Remplir le menu déroulant des éditeurs
+        function populatePublishers() {
+            const select = document.getElementById('publisherFilter');
+            const publishers = new Set();
+            
+            allBooks.forEach(book => {
+                const ed = book.editeur ? book.editeur.trim() : "Non spécifié";
+                if (ed) publishers.add(ed);
+            });
+
+            Array.from(publishers).sort().forEach(pub => {
+                const option = document.createElement('option');
+                option.value = pub;
+                option.textContent = pub;
+                select.appendChild(option);
+            });
+        }
+
+        // Afficher les livres
+        function renderBooks(books) {
+            const grid = document.getElementById('bookGrid');
+            const stats = document.getElementById('stats');
+            grid.innerHTML = '';
+
+            stats.textContent = `${books.length} album${books.length > 1 ? 's' : ''} trouvé${books.length > 1 ? 's' : ''}`;
+
+            if (books.length === 0) {
+                grid.innerHTML = '<div class="no-results">Aucun album ne correspond à votre recherche. 🕵️‍♂️</div>';
+                return;
+            }
+
+            books.forEach(book => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                
+                const serie = book.serie || "Série inconnue";
+                const tome = book.tome ? `Tome ${book.tome}` : "One shot";
+                const auteurs = book.auteurs || "Inconnu";
+                const editeur = book.editeur || "Non spécifié";
+
+                card.innerHTML = `
+                    <h2>${serie}</h2>
+                    <span class="tome">${tome}</span>
+                    <p><span class="label">Auteurs :</span><br> ${auteurs}</p>
+                    <p><span class="label">Éditeur :</span><br> ${editeur}</p>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Filtrer les livres
+        function filterBooks() {
+            const searchText = document.getElementById('searchInput').value.toLowerCase();
+            const selectedPublisher = document.getElementById('publisherFilter').value;
+
+            const filtered = allBooks.filter(book => {
+                const serie = (book.serie || "").toLowerCase();
+                const auteurs = (book.auteurs || "").toLowerCase();
+                const editeur = book.editeur ? book.editeur.trim() : "Non spécifié";
+                
+                const matchesSearch = serie.includes(searchText) || auteurs.includes(searchText);
+                const matchesPublisher = selectedPublisher === "" || editeur === selectedPublisher;
+
+                return matchesSearch && matchesPublisher;
+            });
+
+            // Trier par Série, puis par Tome
+            filtered.sort((a, b) => {
+                if (a.serie < b.serie) return -1;
+                if (a.serie > b.serie) return 1;
+                // Si même série, tri par tome (basique)
+                const tA = parseFloat(a.tome) || 0;
+                const tB = parseFloat(b.tome) || 0;
+                return tA - tB;
+            });
+
+            renderBooks(filtered);
+        }
+    </script>
+</body>
+</html>
