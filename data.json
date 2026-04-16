@@ -39,7 +39,10 @@
         "serie": "Un putain de salopard",
         "tome": "2 - O Maneta",
         "auteurs": "Loisel & Pont",
-        "editeur": ""
+        "editeur": "",
+        "cover": "images/un_putain_de_salopard_2___o_maneta.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Pont, Olivier"
     },
     {
         "serie": "Voyageur - Présent",
