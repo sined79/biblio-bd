@@ -85,13 +85,15 @@
         .card-img {
             width: 100%;
             height: 350px;
-            object-fit: cover;
-            background: #eee;
+            object-fit: contain;
+            background: #f8f9fa;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #999;
             font-size: 0.9em;
+            padding: 10px 0;
+            box-sizing: border-box;
         }
         .card-content {
             padding: 20px;
@@ -154,9 +156,15 @@
     <header>
         <h1>📚 Ma Bédéthèque</h1>
         <div class="controls">
-            <input type="text" id="searchInput" placeholder="🔍 Rechercher par série, auteur..." onkeyup="filterBooks()">
+            <input type="text" id="searchInput" placeholder="🔍 Rechercher (Série, Titre, Auteur, ISBN...)" onkeyup="filterBooks()">
             <select id="publisherFilter" onchange="filterBooks()">
                 <option value="">Tous les éditeurs</option>
+            </select>
+            <select id="authorFilter" onchange="filterBooks()">
+                <option value="">Tous les scénaristes</option>
+            </select>
+            <select id="illustratorFilter" onchange="filterBooks()">
+                <option value="">Tous les dessinateurs</option>
             </select>
         </div>
     </header>
@@ -174,26 +182,42 @@
             .then(response => response.json())
             .then(data => {
                 allBooks = data;
-                populatePublishers();
+                populateFilters();
                 renderBooks(allBooks);
             })
             .catch(error => console.error("Erreur lors du chargement:", error));
 
         // Remplir le menu déroulant des éditeurs
-        function populatePublishers() {
-            const select = document.getElementById('publisherFilter');
+        function populateFilters() {
+            const selectPub = document.getElementById('publisherFilter');
+            const selectAuth = document.getElementById('authorFilter');
+            const selectIllu = document.getElementById('illustratorFilter');
+            
             const publishers = new Set();
+            const authors = new Set();
+            const illustrators = new Set();
             
             allBooks.forEach(book => {
-                const ed = book.editeur ? book.editeur.trim() : "Non spécifié";
-                if (ed) publishers.add(ed);
+                if (book.editeur && book.editeur.trim()) publishers.add(book.editeur.trim());
+                
+                const scen = book.scenariste || book.auteurs || "";
+                if (scen.trim()) authors.add(scen.trim());
+                
+                const dess = book.dessinateur || book.auteurs || "";
+                if (dess.trim()) illustrators.add(dess.trim());
             });
 
             Array.from(publishers).sort().forEach(pub => {
-                const option = document.createElement('option');
-                option.value = pub;
-                option.textContent = pub;
-                select.appendChild(option);
+                const option = document.createElement('option'); option.value = pub; option.textContent = pub;
+                selectPub.appendChild(option);
+            });
+            Array.from(authors).sort().forEach(auth => {
+                const option = document.createElement('option'); option.value = auth; option.textContent = auth;
+                selectAuth.appendChild(option);
+            });
+            Array.from(illustrators).sort().forEach(illu => {
+                const option = document.createElement('option'); option.value = illu; option.textContent = illu;
+                selectIllu.appendChild(option);
             });
         }
 
@@ -245,16 +269,25 @@
         function filterBooks() {
             const searchText = document.getElementById('searchInput').value.toLowerCase();
             const selectedPublisher = document.getElementById('publisherFilter').value;
+            const selectedAuthor = document.getElementById('authorFilter').value;
+            const selectedIllustrator = document.getElementById('illustratorFilter').value;
 
             const filtered = allBooks.filter(book => {
                 const serie = (book.serie || "").toLowerCase();
+                const tome = (book.tome || "").toLowerCase();
+                const isbn = (book.isbn || "").toLowerCase();
                 const auteurs = (book.auteurs || "").toLowerCase();
-                const editeur = book.editeur ? book.editeur.trim() : "Non spécifié";
+                const editeur = book.editeur ? book.editeur.trim() : "";
+                const scen = book.scenariste ? book.scenariste.trim() : (book.auteurs || "").trim();
+                const dess = book.dessinateur ? book.dessinateur.trim() : (book.auteurs || "").trim();
                 
-                const matchesSearch = serie.includes(searchText) || auteurs.includes(searchText);
+                const matchesSearch = serie.includes(searchText) || tome.includes(searchText) || isbn.includes(searchText) || auteurs.includes(searchText) || scen.toLowerCase().includes(searchText) || dess.toLowerCase().includes(searchText);
+                
                 const matchesPublisher = selectedPublisher === "" || editeur === selectedPublisher;
+                const matchesAuthor = selectedAuthor === "" || scen === selectedAuthor;
+                const matchesIllustrator = selectedIllustrator === "" || dess === selectedIllustrator;
 
-                return matchesSearch && matchesPublisher;
+                return matchesSearch && matchesPublisher && matchesAuthor && matchesIllustrator;
             });
 
             // Trier par Série, puis par Tome
