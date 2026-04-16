@@ -65,13 +65,13 @@
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 25px;
         }
         .card {
             background: var(--card-bg);
             border-radius: 12px;
-            padding: 20px;
+            overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             transition: transform 0.2s, box-shadow 0.2s;
             border-left: 5px solid var(--accent);
@@ -82,9 +82,26 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
+        .card-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9em;
+        }
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
         .card h2 {
             margin: 0 0 10px;
-            font-size: 1.4em;
+            font-size: 1.3em;
             color: var(--primary);
         }
         .card .tome {
@@ -101,13 +118,27 @@
         .card p {
             margin: 5px 0;
             line-height: 1.4;
+            font-size: 0.95em;
         }
         .card .label {
             font-weight: 600;
             color: #95a5a6;
-            font-size: 0.9em;
+            font-size: 0.85em;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+        }
+        .synopsis {
+            margin-top: 15px !important;
+            font-size: 0.85em !important;
+            color: #555;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 6px;
+            font-style: italic;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
         .no-results {
             grid-column: 1 / -1;
@@ -187,12 +218,24 @@
                 const tome = book.tome ? `Tome ${book.tome}` : "One shot";
                 const auteurs = book.auteurs || "Inconnu";
                 const editeur = book.editeur || "Non spécifié";
+                const isbn = book.isbn ? `<p><span class="label">ISBN :</span> ${book.isbn}</p>` : "";
+                const scenariste = book.scenariste ? book.scenariste : auteurs;
+                const dessinateur = book.dessinateur ? book.dessinateur : auteurs;
+                const synopsis = book.synopsis ? `<p class="synopsis">"${book.synopsis}"</p>` : "";
+                
+                const coverUrl = book.cover ? book.cover : 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400"><rect width="100%" height="100%" fill="%23ecf0f1"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="20" fill="%2395a5a6">Image non disponible</text></svg>';
 
                 card.innerHTML = `
-                    <h2>${serie}</h2>
-                    <span class="tome">${tome}</span>
-                    <p><span class="label">Auteurs :</span><br> ${auteurs}</p>
-                    <p><span class="label">Éditeur :</span><br> ${editeur}</p>
+                    <img class="card-img" src="${coverUrl}" alt="Couverture de ${serie}" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'300\\' height=\\'400\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23ecf0f1\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' font-size=\\'20\\' fill=\\'%2395a5a6\\'>Image non trouvée</text></svg>'">
+                    <div class="card-content">
+                        <h2>${serie}</h2>
+                        <span class="tome">${tome}</span>
+                        <p><span class="label">Scénario :</span><br> ${scenariste}</p>
+                        <p><span class="label">Dessin :</span><br> ${dessinateur}</p>
+                        <p><span class="label">Éditeur :</span><br> ${editeur}</p>
+                        ${isbn}
+                        ${synopsis}
+                    </div>
                 `;
                 grid.appendChild(card);
             });

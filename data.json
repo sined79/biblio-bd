@@ -1,158 +1,161 @@
 [
-  {
-    "serie": "Uchronie(s) - New Byzance",
-    "tome": "1",
-    "auteurs": "Corbeyran, Chabbert",
-    "editeur": "Glénat"
-  },
-  {
-    "serie": "Uchronie(s) - New Byzance",
-    "tome": "2",
-    "auteurs": "Corbeyran",
-    "editeur": "Glénat"
-  },
-  {
-    "serie": "Metronom'",
-    "tome": "4",
-    "auteurs": "Corbeyran",
-    "editeur": "Glénat"
-  },
-  {
-    "serie": "Un putain de salopard",
-    "tome": "1 - Isabel",
-    "auteurs": "Loisel & Pont",
-    "editeur": ""
-  },
-  {
-    "serie": "Un putain de salopard",
-    "tome": "2 - O Maneta",
-    "auteurs": "Loisel & Pont",
-    "editeur": ""
-  },
-  {
-    "serie": "Voyageur - Présent",
-    "tome": "4",
-    "auteurs": "Boisserie, Stalner, Bourgne, Guarnido",
-    "editeur": "Glénat"
-  },
-  {
-    "serie": "L'Anneau des 7 Mondes",
-    "tome": "4",
-    "auteurs": "Gualdoni, ...",
-    "editeur": ""
-  },
-  {
-    "serie": "Horacio d'Alba",
-    "tome": "1",
-    "auteurs": "Le Gris, Siner",
-    "editeur": "Glénat"
-  },
-  {
-    "serie": "Lady Elza",
-    "tome": "1",
-    "auteurs": "",
-    "editeur": "Glénat"
-  },
-  {
-    "serie": "Le Grand Mort",
-    "tome": "1",
-    "auteurs": "Loisel, JB Djian, Mallié",
-    "editeur": ""
-  },
-  {
-    "serie": "Le Grand Mort",
-    "tome": "2",
-    "auteurs": "Loisel, JB Djian, Mallié",
-    "editeur": ""
-  },
-  {
-    "serie": "Le Grand Mort",
-    "tome": "3",
-    "auteurs": "Loisel, JB Djian, Mallié",
-    "editeur": ""
-  },
-  {
-    "serie": "Le Grand Mort",
-    "tome": "4",
-    "auteurs": "Loisel, JB Djian, Mallié",
-    "editeur": ""
-  },
-  {
-    "serie": "Le Grand Mort",
-    "tome": "5",
-    "auteurs": "Loisel, JB Djian, Mallié",
-    "editeur": ""
-  },
-  {
-    "serie": "China Li",
-    "tome": "1",
-    "auteurs": "Maryse & J-F Charles",
-    "editeur": "Casterman"
-  },
-  {
-    "serie": "China Li",
-    "tome": "2",
-    "auteurs": "Maryse & J-F Charles",
-    "editeur": "Casterman"
-  },
-  {
-    "serie": "China Li",
-    "tome": "3",
-    "auteurs": "Maryse & J-F Charles",
-    "editeur": "Casterman"
-  },
-  {
-    "serie": "China Li",
-    "tome": "4",
-    "auteurs": "Maryse & J-F Charles",
-    "editeur": "Casterman"
-  },
-  {
-    "serie": "Secrets - La Corde",
-    "tome": "1/2",
-    "auteurs": "Duvivier, Giroud",
-    "editeur": "Dupuis"
-  },
-  {
-    "serie": "Secrets - La Corde",
-    "tome": "2/2",
-    "auteurs": "Duvivier, Giroud",
-    "editeur": "Dupuis"
-  },
-  {
-    "serie": "Secrets - L'Écorché",
-    "tome": "1/2",
-    "auteurs": "Pellejero, Germaine, Giroud",
-    "editeur": "Dupuis"
-  },
-  {
-    "serie": "Secrets - L'Écorché",
-    "tome": "2/2",
-    "auteurs": "Pellejero, Germaine, Giroud",
-    "editeur": "Dupuis"
-  },
-  {
-    "serie": "Secrets - Pâques avant les Rameaux",
-    "tome": "One shot",
-    "auteurs": "Duvivier, Giroud",
-    "editeur": "Dupuis"
-  },
-  {
-    "serie": "Tintin",
-    "tome": "Le Lotus Bleu",
-    "auteurs": "Hergé",
-    "editeur": "Casterman"
-  },
-  {
-    "serie": "Tintin",
-    "tome": "L'Oreille Cassée",
-    "auteurs": "Hergé",
-    "editeur": "Casterman"
-  },
-  {
-    "serie": "Tintin",
-    "tome": "Objectif Lune",
-    "auteurs": "Hergé",
-    "editeur": "Casterman"
-  }
+    {
+        "serie": "Uchronie(s) - New Byzance",
+        "tome": "1",
+        "auteurs": "Corbeyran, Chabbert",
+        "editeur": "Glénat",
+        "cover": "images/uchronie_s____new_byzance_1.jpg",
+        "scenariste": "Corbeyran, Éric",
+        "dessinateur": "Chabbert, Éric"
+    },
+    {
+        "serie": "Uchronie(s) - New Byzance",
+        "tome": "2",
+        "auteurs": "Corbeyran",
+        "editeur": "Glénat"
+    },
+    {
+        "serie": "Metronom'",
+        "tome": "4",
+        "auteurs": "Corbeyran",
+        "editeur": "Glénat"
+    },
+    {
+        "serie": "Un putain de salopard",
+        "tome": "1 - Isabel",
+        "auteurs": "Loisel & Pont",
+        "editeur": ""
+    },
+    {
+        "serie": "Un putain de salopard",
+        "tome": "2 - O Maneta",
+        "auteurs": "Loisel & Pont",
+        "editeur": ""
+    },
+    {
+        "serie": "Voyageur - Présent",
+        "tome": "4",
+        "auteurs": "Boisserie, Stalner, Bourgne, Guarnido",
+        "editeur": "Glénat"
+    },
+    {
+        "serie": "L'Anneau des 7 Mondes",
+        "tome": "4",
+        "auteurs": "Gualdoni, ...",
+        "editeur": ""
+    },
+    {
+        "serie": "Horacio d'Alba",
+        "tome": "1",
+        "auteurs": "Le Gris, Siner",
+        "editeur": "Glénat"
+    },
+    {
+        "serie": "Lady Elza",
+        "tome": "1",
+        "auteurs": "",
+        "editeur": "Glénat"
+    },
+    {
+        "serie": "Le Grand Mort",
+        "tome": "1",
+        "auteurs": "Loisel, JB Djian, Mallié",
+        "editeur": ""
+    },
+    {
+        "serie": "Le Grand Mort",
+        "tome": "2",
+        "auteurs": "Loisel, JB Djian, Mallié",
+        "editeur": ""
+    },
+    {
+        "serie": "Le Grand Mort",
+        "tome": "3",
+        "auteurs": "Loisel, JB Djian, Mallié",
+        "editeur": ""
+    },
+    {
+        "serie": "Le Grand Mort",
+        "tome": "4",
+        "auteurs": "Loisel, JB Djian, Mallié",
+        "editeur": ""
+    },
+    {
+        "serie": "Le Grand Mort",
+        "tome": "5",
+        "auteurs": "Loisel, JB Djian, Mallié",
+        "editeur": ""
+    },
+    {
+        "serie": "China Li",
+        "tome": "1",
+        "auteurs": "Maryse & J-F Charles",
+        "editeur": "Casterman"
+    },
+    {
+        "serie": "China Li",
+        "tome": "2",
+        "auteurs": "Maryse & J-F Charles",
+        "editeur": "Casterman"
+    },
+    {
+        "serie": "China Li",
+        "tome": "3",
+        "auteurs": "Maryse & J-F Charles",
+        "editeur": "Casterman"
+    },
+    {
+        "serie": "China Li",
+        "tome": "4",
+        "auteurs": "Maryse & J-F Charles",
+        "editeur": "Casterman"
+    },
+    {
+        "serie": "Secrets - La Corde",
+        "tome": "1/2",
+        "auteurs": "Duvivier, Giroud",
+        "editeur": "Dupuis"
+    },
+    {
+        "serie": "Secrets - La Corde",
+        "tome": "2/2",
+        "auteurs": "Duvivier, Giroud",
+        "editeur": "Dupuis"
+    },
+    {
+        "serie": "Secrets - L'Écorché",
+        "tome": "1/2",
+        "auteurs": "Pellejero, Germaine, Giroud",
+        "editeur": "Dupuis"
+    },
+    {
+        "serie": "Secrets - L'Écorché",
+        "tome": "2/2",
+        "auteurs": "Pellejero, Germaine, Giroud",
+        "editeur": "Dupuis"
+    },
+    {
+        "serie": "Secrets - Pâques avant les Rameaux",
+        "tome": "One shot",
+        "auteurs": "Duvivier, Giroud",
+        "editeur": "Dupuis"
+    },
+    {
+        "serie": "Tintin",
+        "tome": "Le Lotus Bleu",
+        "auteurs": "Hergé",
+        "editeur": "Casterman"
+    },
+    {
+        "serie": "Tintin",
+        "tome": "L'Oreille Cassée",
+        "auteurs": "Hergé",
+        "editeur": "Casterman"
+    },
+    {
+        "serie": "Tintin",
+        "tome": "Objectif Lune",
+        "auteurs": "Hergé",
+        "editeur": "Casterman"
+    }
 ]
