@@ -57,7 +57,10 @@
         "serie": "L'Anneau des 7 Mondes",
         "tome": "4",
         "auteurs": "Gualdoni, ...",
-        "editeur": ""
+        "editeur": "",
+        "cover": "images/l_anneau_des_7_mondes_4.jpg",
+        "scenariste": "Gualdoni, Giovanni",
+        "dessinateur": "Piana, Matteo"
     },
     {
         "serie": "Horacio d'Alba",
