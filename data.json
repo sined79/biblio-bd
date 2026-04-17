@@ -156,7 +156,10 @@
         "serie": "China Li",
         "tome": "4",
         "auteurs": "Maryse & J-F Charles",
-        "editeur": "Casterman"
+        "editeur": "Casterman",
+        "cover": "images/china_li_4.jpg",
+        "scenariste": "Charles, Maryse",
+        "dessinateur": "Charles, Jean-François"
     },
     {
         "serie": "Secrets - La Corde",
