@@ -6,7 +6,15 @@
         "editeur": "Glénat",
         "cover": "images/uchronie_s____new_byzance_1.jpg",
         "scenariste": "Corbeyran, Éric",
-        "dessinateur": "Chabbert, Éric"
+        "dessinateur": "Chabbert, Éric",
+        "scenaristes": [
+            "Corbeyran",
+            "Éric"
+        ],
+        "dessinateurs": [
+            "Chabbert",
+            "Éric"
+        ]
     },
     {
         "serie": "Uchronie(s) - New Byzance",
@@ -15,7 +23,15 @@
         "editeur": "Glénat",
         "cover": "images/uchronie_s____new_byzance_2.jpg",
         "scenariste": "Corbeyran, Éric",
-        "dessinateur": "Chabbert, Éric"
+        "dessinateur": "Chabbert, Éric",
+        "scenaristes": [
+            "Corbeyran",
+            "Éric"
+        ],
+        "dessinateurs": [
+            "Chabbert",
+            "Éric"
+        ]
     },
     {
         "serie": "Metronom'",
@@ -24,25 +40,50 @@
         "editeur": "Glénat",
         "cover": "images/metronom__4.jpg",
         "scenariste": "Corbeyran, Éric",
-        "dessinateur": "Grun"
+        "dessinateur": "Grun",
+        "scenaristes": [
+            "Corbeyran",
+            "Éric"
+        ],
+        "dessinateurs": [
+            "Grun"
+        ]
     },
     {
         "serie": "Un putain de salopard",
-        "tome": "1 - Isabel",
+        "tome": "1",
         "auteurs": "Loisel & Pont",
         "editeur": "",
         "cover": "images/un_putain_de_salopard_1___isabel.jpg",
         "scenariste": "Loisel, Régis",
-        "dessinateur": "Pont, Olivier"
+        "dessinateur": "Pont, Olivier",
+        "titre": "Isabel",
+        "scenaristes": [
+            "Loisel",
+            "Régis"
+        ],
+        "dessinateurs": [
+            "Pont",
+            "Olivier"
+        ]
     },
     {
         "serie": "Un putain de salopard",
-        "tome": "2 - O Maneta",
+        "tome": "2",
         "auteurs": "Loisel & Pont",
         "editeur": "",
         "cover": "images/un_putain_de_salopard_2___o_maneta.jpg",
         "scenariste": "Loisel, Régis",
-        "dessinateur": "Pont, Olivier"
+        "dessinateur": "Pont, Olivier",
+        "titre": "O Maneta",
+        "scenaristes": [
+            "Loisel",
+            "Régis"
+        ],
+        "dessinateurs": [
+            "Pont",
+            "Olivier"
+        ]
     },
     {
         "serie": "Voyageur - Présent",
@@ -51,7 +92,15 @@
         "editeur": "Glénat",
         "cover": "images/voyageur___pr_sent_4.jpg",
         "scenariste": "Boisserie, Pierre",
-        "dessinateur": "Bourgne, Marc"
+        "dessinateur": "Bourgne, Marc",
+        "scenaristes": [
+            "Boisserie",
+            "Pierre"
+        ],
+        "dessinateurs": [
+            "Bourgne",
+            "Marc"
+        ]
     },
     {
         "serie": "L'Anneau des 7 Mondes",
@@ -60,7 +109,15 @@
         "editeur": "",
         "cover": "images/l_anneau_des_7_mondes_4.jpg",
         "scenariste": "Gualdoni, Giovanni",
-        "dessinateur": "Piana, Matteo"
+        "dessinateur": "Piana, Matteo",
+        "scenaristes": [
+            "Gualdoni",
+            "Giovanni"
+        ],
+        "dessinateurs": [
+            "Piana",
+            "Matteo"
+        ]
     },
     {
         "serie": "Horacio d'Alba",
@@ -69,7 +126,15 @@
         "editeur": "Glénat",
         "cover": "images/horacio_d_alba_1.jpg",
         "scenariste": "Le Gris, Jérôme",
-        "dessinateur": "Siner, Nicolas"
+        "dessinateur": "Siner, Nicolas",
+        "scenaristes": [
+            "Le Gris",
+            "Jérôme"
+        ],
+        "dessinateurs": [
+            "Siner",
+            "Nicolas"
+        ]
     },
     {
         "serie": "Lady Elza",
@@ -78,7 +143,15 @@
         "editeur": "Glénat",
         "cover": "images/lady_elza_1.jpg",
         "scenariste": "Dufaux, Jean",
-        "dessinateur": "Wurm, Philippe"
+        "dessinateur": "Wurm, Philippe",
+        "scenaristes": [
+            "Dufaux",
+            "Jean"
+        ],
+        "dessinateurs": [
+            "Wurm",
+            "Philippe"
+        ]
     },
     {
         "serie": "Le Grand Mort",
@@ -87,7 +160,15 @@
         "editeur": "",
         "cover": "images/le_grand_mort_1.jpg",
         "scenariste": "Loisel, Régis",
-        "dessinateur": "Mallié, Vincent"
+        "dessinateur": "Mallié, Vincent",
+        "scenaristes": [
+            "Loisel",
+            "Régis"
+        ],
+        "dessinateurs": [
+            "Mallié",
+            "Vincent"
+        ]
     },
     {
         "serie": "Le Grand Mort",
@@ -96,7 +177,15 @@
         "editeur": "",
         "cover": "images/le_grand_mort_2.jpg",
         "scenariste": "Loisel, Régis",
-        "dessinateur": "Mallié, Vincent"
+        "dessinateur": "Mallié, Vincent",
+        "scenaristes": [
+            "Loisel",
+            "Régis"
+        ],
+        "dessinateurs": [
+            "Mallié",
+            "Vincent"
+        ]
     },
     {
         "serie": "Le Grand Mort",
@@ -105,7 +194,15 @@
         "editeur": "",
         "cover": "images/le_grand_mort_3.jpg",
         "scenariste": "Loisel, Régis",
-        "dessinateur": "Mallié, Vincent"
+        "dessinateur": "Mallié, Vincent",
+        "scenaristes": [
+            "Loisel",
+            "Régis"
+        ],
+        "dessinateurs": [
+            "Mallié",
+            "Vincent"
+        ]
     },
     {
         "serie": "Le Grand Mort",
@@ -114,7 +211,15 @@
         "editeur": "",
         "cover": "images/le_grand_mort_4.jpg",
         "scenariste": "Loisel, Régis",
-        "dessinateur": "Mallié, Vincent"
+        "dessinateur": "Mallié, Vincent",
+        "scenaristes": [
+            "Loisel",
+            "Régis"
+        ],
+        "dessinateurs": [
+            "Mallié",
+            "Vincent"
+        ]
     },
     {
         "serie": "Le Grand Mort",
@@ -123,7 +228,15 @@
         "editeur": "",
         "cover": "images/le_grand_mort_5.jpg",
         "scenariste": "Loisel, Régis",
-        "dessinateur": "Mallié, Vincent"
+        "dessinateur": "Mallié, Vincent",
+        "scenaristes": [
+            "Loisel",
+            "Régis"
+        ],
+        "dessinateurs": [
+            "Mallié",
+            "Vincent"
+        ]
     },
     {
         "serie": "China Li",
@@ -132,7 +245,15 @@
         "editeur": "Casterman",
         "cover": "images/china_li_1.jpg",
         "scenariste": "Charles, Maryse",
-        "dessinateur": "Charles, Jean-François"
+        "dessinateur": "Charles, Jean-François",
+        "scenaristes": [
+            "Charles",
+            "Maryse"
+        ],
+        "dessinateurs": [
+            "Charles",
+            "Jean-François"
+        ]
     },
     {
         "serie": "China Li",
@@ -141,7 +262,15 @@
         "editeur": "Casterman",
         "cover": "images/china_li_2.jpg",
         "scenariste": "Charles, Maryse",
-        "dessinateur": "Charles, Jean-François"
+        "dessinateur": "Charles, Jean-François",
+        "scenaristes": [
+            "Charles",
+            "Maryse"
+        ],
+        "dessinateurs": [
+            "Charles",
+            "Jean-François"
+        ]
     },
     {
         "serie": "China Li",
@@ -150,7 +279,15 @@
         "editeur": "Casterman",
         "cover": "images/china_li_3.jpg",
         "scenariste": "Charles, Maryse",
-        "dessinateur": "Charles, Jean-François"
+        "dessinateur": "Charles, Jean-François",
+        "scenaristes": [
+            "Charles",
+            "Maryse"
+        ],
+        "dessinateurs": [
+            "Charles",
+            "Jean-François"
+        ]
     },
     {
         "serie": "China Li",
@@ -159,78 +296,148 @@
         "editeur": "Casterman",
         "cover": "images/china_li_4.jpg",
         "scenariste": "Charles, Maryse",
-        "dessinateur": "Charles, Jean-François"
+        "dessinateur": "Charles, Jean-François",
+        "scenaristes": [
+            "Charles",
+            "Maryse"
+        ],
+        "dessinateurs": [
+            "Charles",
+            "Jean-François"
+        ]
     },
     {
         "serie": "Secrets - La Corde",
-        "tome": "1/2",
+        "tome": "1",
         "auteurs": "Duvivier, Giroud",
         "editeur": "Dupuis",
         "cover": "images/secrets___la_corde_1_2.jpg",
         "scenariste": "Giroud, Frank",
-        "dessinateur": "Duvivier, Marianne"
+        "dessinateur": "Duvivier, Marianne",
+        "scenaristes": [
+            "Giroud",
+            "Frank"
+        ],
+        "dessinateurs": [
+            "Duvivier",
+            "Marianne"
+        ]
     },
     {
         "serie": "Secrets - La Corde",
-        "tome": "2/2",
+        "tome": "2",
         "auteurs": "Duvivier, Giroud",
         "editeur": "Dupuis",
         "cover": "images/secrets___la_corde_2_2.jpg",
         "scenariste": "Giroud, Frank",
-        "dessinateur": "Duvivier, Marianne"
+        "dessinateur": "Duvivier, Marianne",
+        "scenaristes": [
+            "Giroud",
+            "Frank"
+        ],
+        "dessinateurs": [
+            "Duvivier",
+            "Marianne"
+        ]
     },
     {
         "serie": "Secrets - L'Écorché",
-        "tome": "1/2",
+        "tome": "1",
         "auteurs": "Pellejero, Germaine, Giroud",
         "editeur": "Dupuis",
         "cover": "images/secrets___l__corch__1_2.jpg",
         "scenariste": "Germaine, Florent",
-        "dessinateur": "Pellejero, Rubén"
+        "dessinateur": "Pellejero, Rubén",
+        "scenaristes": [
+            "Germaine",
+            "Florent"
+        ],
+        "dessinateurs": [
+            "Pellejero",
+            "Rubén"
+        ]
     },
     {
         "serie": "Secrets - L'Écorché",
-        "tome": "2/2",
+        "tome": "2",
         "auteurs": "Pellejero, Germaine, Giroud",
         "editeur": "Dupuis",
         "cover": "images/secrets___l__corch__2_2.jpg",
         "scenariste": "Giroud, Frank",
-        "dessinateur": "Pellejero, Rubén"
+        "dessinateur": "Pellejero, Rubén",
+        "scenaristes": [
+            "Giroud",
+            "Frank"
+        ],
+        "dessinateurs": [
+            "Pellejero",
+            "Rubén"
+        ]
     },
     {
         "serie": "Secrets - Pâques avant les Rameaux",
-        "tome": "One shot",
+        "tome": "1",
         "auteurs": "Duvivier, Giroud",
         "editeur": "Dupuis",
         "cover": "images/secrets___p_ques_avant_les_rameaux_one_shot.jpg",
         "scenariste": "Giroud, Frank",
-        "dessinateur": "Duvivier, Marianne"
+        "dessinateur": "Duvivier, Marianne",
+        "titre": "One shot",
+        "scenaristes": [
+            "Giroud",
+            "Frank"
+        ],
+        "dessinateurs": [
+            "Duvivier",
+            "Marianne"
+        ]
     },
     {
         "serie": "Tintin",
-        "tome": "Le Lotus Bleu",
+        "tome": "5",
         "auteurs": "Hergé",
         "editeur": "Casterman",
         "cover": "images/tintin_le_lotus_bleu.jpg",
         "scenariste": "Hergé",
-        "dessinateur": "Hergé"
+        "dessinateur": "Hergé",
+        "titre": "Le Lotus Bleu",
+        "scenaristes": [
+            "Hergé"
+        ],
+        "dessinateurs": [
+            "Hergé"
+        ]
     },
     {
         "serie": "Tintin",
-        "tome": "L'Oreille Cassée",
+        "tome": "6",
         "auteurs": "Hergé",
         "editeur": "Casterman",
         "cover": "images/tintin_l_oreille_cass_e.jpg",
         "scenariste": "Hergé",
-        "dessinateur": "Hergé"
+        "dessinateur": "Hergé",
+        "titre": "L'Oreille Cassée",
+        "scenaristes": [
+            "Hergé"
+        ],
+        "dessinateurs": [
+            "Hergé"
+        ]
     },
     {
         "serie": "Tintin",
-        "tome": "Objectif Lune",
+        "tome": "16",
         "auteurs": "Hergé",
         "editeur": "Casterman",
         "cover": "images/tintin_objectif_lune.jpg",
         "scenariste": "Hergé",
-        "dessinateur": "Hergé"
+        "dessinateur": "Hergé",
+        "titre": "Objectif Lune",
+        "scenaristes": [
+            "Hergé"
+        ],
+        "dessinateurs": [
+            "Hergé"
+        ]
     }
 ]

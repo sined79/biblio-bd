@@ -11,6 +11,7 @@
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/html5-qrcode"></script>
   <style>
     :root {
       --bg-color: #f7f6f2;
@@ -61,8 +62,8 @@
     .header-actions { display: flex; align-items: center; gap: 15px; }
     .btn-icon { background: none; border: none; color: var(--text-main); cursor: pointer; padding: 8px; border-radius: 50%; display: flex; align-items: center; transition: 0.2s; }
     .btn-icon:hover { background-color: rgba(0,0,0,0.05); color: var(--accent-color); }
-    .btn-store { background: var(--surface-color); border: 1px solid var(--divider); color: var(--text-main); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-family: 'Satoshi', sans-serif; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: 0.2s; }
-    .btn-store:hover { border-color: var(--accent-color); color: var(--accent-color); }
+    .btn, .btn-store { background: var(--surface-color); border: 1px solid var(--divider); color: var(--text-main); padding: 0 16px; height: 40px; border-radius: 6px; cursor: pointer; font-family: 'Satoshi', sans-serif; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: 0.2s; box-sizing: border-box; }
+    .btn:hover, .btn-store:hover { border-color: var(--accent-color); color: var(--accent-color); }
     .btn-mobile-menu { display: none; background: none; border: none; color: var(--text-main); font-size: 1.5rem; cursor: pointer; }
 
     /* LAYOUT */
@@ -377,17 +378,19 @@
   <!-- STORE MODE OVERLAY -->
   <div class="store-mode" id="storeMode">
     <div class="store-header">
-      <button class="btn" id="btnCloseStore"><i data-lucide="arrow-left"></i> Retour</button>
+      <button class="btn btn-store" id="btnCloseStore"><i data-lucide="arrow-left"></i> Retour</button>
     </div>
     <div class="store-content">
       <div class="store-input-wrap">
         <i data-lucide="search"></i>
         <input type="text" class="store-input" id="storeInput" placeholder="Que cherchez-vous en rayon ?" autocomplete="off">
+        <button class="btn-icon" id="btnStartScan" style="position: absolute; right: 15px;" aria-label="Scanner un code-barres"><i data-lucide="scan"></i></button>
       </div>
+      <div id="reader" style="width: 100%; max-width: 500px; margin: 20px auto; display: none; border-radius: 12px; overflow: hidden; border: 2px solid var(--accent-color);"></div>
       <div id="storeResults" class="store-results">
         <div style="text-align:center; color: var(--text-muted); font-size:1.2rem; margin-top:40px;">
           <i data-lucide="scan-line" style="width:48px;height:48px; margin-bottom:10px; opacity:0.5;"></i><br>
-          Scannez un code-barres ou tapez un titre...
+          Tapez un titre ou utilisez l'icône de scan...
         </div>
       </div>
     </div>
@@ -907,7 +910,48 @@
 
       // Store
       document.getElementById('btnStore').addEventListener('click', openStore);
-      document.getElementById('btnCloseStore').addEventListener('click', closeStore);
+      document.getElementById('btnCloseStore').addEventListener('click', () => {
+        closeStore();
+        if (window.html5QrCodeScanner) {
+          window.html5QrCodeScanner.stop().catch(e => console.log(e));
+          document.getElementById('reader').style.display = 'none';
+        }
+      });
+
+      // Scanner
+      document.getElementById('btnStartScan').addEventListener('click', () => {
+        const reader = document.getElementById('reader');
+        reader.style.display = 'block';
+        if (!window.html5QrCodeScanner) {
+          window.html5QrCodeScanner = new Html5Qrcode("reader");
+        }
+        window.html5QrCodeScanner.start({ facingMode: "environment" }, { fps: 10, qrbox: { width: 250, height: 150 } },
+          (decodedText, decodedResult) => {
+            window.html5QrCodeScanner.stop().catch(e => console.log(e));
+            reader.style.display = 'none';
+            
+            // Try fetching from Google Books to find the title
+            document.getElementById('storeInput').value = "Recherche ISBN: " + decodedText + "...";
+            fetch(`https://www.googleapis.com/books/v1/volumes?q=isbn:${decodedText}`)
+              .then(res => res.json())
+              .then(data => {
+                if (data.items && data.items.length > 0) {
+                  const title = data.items[0].volumeInfo.title;
+                  document.getElementById('storeInput').value = title;
+                  document.getElementById('storeInput').dispatchEvent(new Event('input'));
+                } else {
+                  document.getElementById('storeInput').value = decodedText;
+                  document.getElementById('storeInput').dispatchEvent(new Event('input'));
+                }
+              })
+              .catch(() => {
+                document.getElementById('storeInput').value = decodedText;
+                document.getElementById('storeInput').dispatchEvent(new Event('input'));
+              });
+          },
+          (errorMessage) => { /* ignore */ }
+        ).catch(err => alert("Erreur caméra: " + err));
+      });
 
       // Drawer
       document.getElementById('btnCloseDrawer').addEventListener('click', closeDrawer);
