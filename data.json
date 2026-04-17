@@ -75,7 +75,10 @@
         "serie": "Lady Elza",
         "tome": "1",
         "auteurs": "",
-        "editeur": "Glénat"
+        "editeur": "Glénat",
+        "cover": "images/lady_elza_1.jpg",
+        "scenariste": "Dufaux, Jean",
+        "dessinateur": "Wurm, Philippe"
     },
     {
         "serie": "Le Grand Mort",
