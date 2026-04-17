@@ -192,7 +192,10 @@
         "serie": "Secrets - L'Écorché",
         "tome": "2/2",
         "auteurs": "Pellejero, Germaine, Giroud",
-        "editeur": "Dupuis"
+        "editeur": "Dupuis",
+        "cover": "images/secrets___l__corch__2_2.jpg",
+        "scenariste": "Giroud, Frank",
+        "dessinateur": "Pellejero, Rubén"
     },
     {
         "serie": "Secrets - Pâques avant les Rameaux",
