@@ -120,7 +120,10 @@
         "serie": "Le Grand Mort",
         "tome": "5",
         "auteurs": "Loisel, JB Djian, Mallié",
-        "editeur": ""
+        "editeur": "",
+        "cover": "images/le_grand_mort_5.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Mallié, Vincent"
     },
     {
         "serie": "China Li",
