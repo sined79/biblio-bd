@@ -219,7 +219,10 @@
         "serie": "Tintin",
         "tome": "L'Oreille Cassée",
         "auteurs": "Hergé",
-        "editeur": "Casterman"
+        "editeur": "Casterman",
+        "cover": "images/tintin_l_oreille_cass_e.jpg",
+        "scenariste": "Hergé",
+        "dessinateur": "Hergé"
     },
     {
         "serie": "Tintin",
