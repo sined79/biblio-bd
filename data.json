@@ -138,7 +138,10 @@
         "serie": "China Li",
         "tome": "2",
         "auteurs": "Maryse & J-F Charles",
-        "editeur": "Casterman"
+        "editeur": "Casterman",
+        "cover": "images/china_li_2.jpg",
+        "scenariste": "Charles, Maryse",
+        "dessinateur": "Charles, Jean-François"
     },
     {
         "serie": "China Li",
