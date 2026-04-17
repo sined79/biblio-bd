@@ -102,7 +102,10 @@
         "serie": "Le Grand Mort",
         "tome": "3",
         "auteurs": "Loisel, JB Djian, Mallié",
-        "editeur": ""
+        "editeur": "",
+        "cover": "images/le_grand_mort_3.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Mallié, Vincent"
     },
     {
         "serie": "Le Grand Mort",
