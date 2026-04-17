@@ -171,9 +171,9 @@
     .store-header { padding: 20px 40px; display: flex; align-items: center; border-bottom: 1px solid var(--divider); }
     .store-content { flex: 1; max-width: 800px; margin: 0 auto; width: 100%; padding: 40px 20px; }
     
-    .store-input-wrap { position: relative; margin-bottom: 40px; }
-    .store-input-wrap i { position: absolute; left: 0; top: 50%; transform: translateY(-50%); color: var(--text-muted); width: 32px; height: 32px; }
-    .store-input { width: 100%; font-size: 2.5rem; padding: 15px 0 15px 50px; border: none; border-bottom: 3px solid var(--divider); background: transparent; color: var(--text-main); outline: none; font-family: 'Satoshi', sans-serif; font-weight: 700; transition: border-color 0.3s; }
+    .store-input-wrap { position: relative; margin-bottom: 40px; display: flex; align-items: center; }
+    .store-input-wrap i { color: var(--text-muted); width: 32px; height: 32px; flex-shrink: 0; margin-right: 15px; }
+    .store-input { flex-grow: 1; font-size: 2.5rem; padding: 15px 0; border: none; border-bottom: 3px solid var(--divider); background: transparent; color: var(--text-main); outline: none; font-family: 'Satoshi', sans-serif; font-weight: 700; transition: border-color 0.3s; min-width: 0; }
     .store-input:focus { border-bottom-color: var(--accent-color); }
     .store-input::placeholder { color: var(--divider); }
     
@@ -220,7 +220,7 @@
     @media (max-width: 768px) {
       h1 { font-size: 1.4rem; }
       .btn-mobile-menu { display: block; }
-      .sidebar { position: fixed; top: 0; left: -100%; height: 100vh; width: 85%; max-width: 320px; z-index: 1000; box-shadow: 5px 0 20px rgba(0,0,0,0.1); padding-top: 60px; }
+      .sidebar { position: fixed; top: 0; left: -100%; height: 100vh; width: 85%; max-width: 320px; z-index: 1000; box-shadow: 5px 0 20px rgba(0,0,0,0.1); padding-top: 20px; }
       .sidebar.active { left: 0; }
       .close-sidebar { display: flex; align-items: center; justify-content: flex-end; padding-bottom: 20px; background: none; border: none; color: var(--text-main); font-size: 1.2rem; cursor: pointer; width: 100%; }
       .main-layout { flex-direction: column; }
@@ -262,7 +262,7 @@
       <aside class="sidebar" id="sidebar">
         <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 20px;">
           <button class="btn-icon" id="btnTheme" aria-label="Thème"><i data-lucide="moon"></i></button>
-          <button class="close-sidebar" id="btnCloseMenu" style="padding-bottom: 0;"><i data-lucide="x"></i> Fermer</button>
+          <button class="close-sidebar" id="btnCloseMenu" style="padding-bottom: 0;" aria-label="Fermer"><i data-lucide="x"></i></button>
         </div>
         
         <div class="filter-group">
@@ -384,13 +384,12 @@
       <div class="store-input-wrap">
         <i data-lucide="search"></i>
         <input type="text" class="store-input" id="storeInput" placeholder="Que cherchez-vous en rayon ?" autocomplete="off">
-        <button class="btn-icon" id="btnStartScan" style="position: absolute; right: 15px;" aria-label="Scanner un code-barres"><i data-lucide="scan"></i></button>
       </div>
       <div id="reader" style="width: 100%; max-width: 500px; margin: 20px auto; display: none; border-radius: 12px; overflow: hidden; border: 2px solid var(--accent-color);"></div>
       <div id="storeResults" class="store-results">
-        <div style="text-align:center; color: var(--text-muted); font-size:1.2rem; margin-top:40px;">
-          <i data-lucide="scan-line" style="width:48px;height:48px; margin-bottom:10px; opacity:0.5;"></i><br>
-          Tapez un titre ou utilisez l'icône de scan...
+        <div id="btnStartScan" style="text-align:center; color: var(--text-muted); font-size:1.2rem; margin-top:40px; cursor:pointer; transition:0.2s;" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-muted)'">
+          <i data-lucide="scan-line" style="width:64px;height:64px; margin-bottom:10px; opacity:0.7;"></i><br>
+          Scannez un code-barres ou tapez un titre...
         </div>
       </div>
     </div>
@@ -588,16 +587,18 @@
         if(ownedTomesNum.length === 0) return; // Skip if only wishlist
         seriesCount++;
 
-        const maxTome = Math.max(...ownedTomesNum);
+        const maxTome = Math.max(...ownedTomesNum) + 3; // On affiche un peu de marge future
         
         let nodesHtml = '';
         if (maxTome > 0 && maxTome < 100) {
           for(let i=1; i<=maxTome; i++) {
             const isOwned = ownedTomesNum.includes(i);
             if(isOwned) {
-              nodesHtml += `<div class="tome-node owned" title="Tome ${i} possédé">${i}</div>`;
+              // Find specific book object to stringify or pass ID to openDrawer
+              // Let's pass the series and tome to a helper
+              nodesHtml += `<div class="tome-node owned" style="cursor:pointer;" title="Tome ${i} possédé (voir détails)" onclick="openDrawerFromSeries('${sName.replace(/'/g, "\\'")}', ${i})">${i}</div>`;
             } else {
-              nodesHtml += `<div class="tome-node missing" title="Tome ${i} manquant - Ajouter à la wishlist" onclick="addToWishlist('${sName}', ${i})">${i}</div>`;
+              nodesHtml += `<div class="tome-node missing" title="Tome ${i} manquant - Ajouter à la wishlist" onclick="addToWishlist('${sName.replace(/'/g, "\\'")}', ${i})">${i}</div>`;
             }
           }
         } else {
@@ -756,6 +757,11 @@
       document.getElementById('drawerOverlay').classList.remove('active');
       document.getElementById('detailDrawer').classList.remove('active');
     }
+
+    window.openDrawerFromSeries = function(serie, tome) {
+      const b = db.find(x => x.serie === serie && parseFloat(x.tome) === tome);
+      if(b) openDrawer(b);
+    };
 
     window.setRating = function(id, note, e) {
       e.stopPropagation();
