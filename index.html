@@ -588,7 +588,7 @@
         if(ownedTomesNum.length === 0) return; // Skip if only wishlist
         seriesCount++;
 
-        const maxTome = Math.max(...ownedTomesNum) + 3; // On affiche un peu de marge future
+        const maxTome = Math.max(...ownedTomesNum);
         
         let nodesHtml = '';
         if (maxTome > 0 && maxTome < 100) {
@@ -610,7 +610,12 @@
         div.className = 'series-item';
         div.innerHTML = `
           <div class="series-header">
-            <h3>${sName}</h3>
+            <h3 style="display:flex; align-items:center; gap:8px;">
+              ${sName}
+              <a href="https://www.google.com/search?q=bande+dessin%C3%A9e+${encodeURIComponent(sName)}" target="_blank" style="color:var(--text-muted); display:inline-flex; align-items:center;" title="Rechercher sur le web" onclick="event.stopPropagation();">
+                <i data-lucide="external-link" style="width:16px;height:16px;"></i>
+              </a>
+            </h3>
             <span class="series-stats">${ownedTomesNum.length} tome(s) possédé(s)</span>
           </div>
           <div class="tomes-track">
@@ -715,7 +720,7 @@
 
       content.innerHTML = `
         <img src="${coverSrc}" class="detail-cover" alt="Cover">
-        <h2 class="detail-serie">${b.serie} <a href="https://www.bedetheque.com/search/albums?RechSerie=${encodeURIComponent(b.serie)}" target="_blank" style="color:var(--accent-color); vertical-align:middle; display:inline-block;" title="Chercher sur Bedetheque"><i data-lucide="external-link" style="width:20px;height:20px;"></i></a></h2>
+        <h2 class="detail-serie">${b.serie}</h2>
         ${b.tome ? `<div class="detail-tome">Tome ${b.tome}</div>` : ''}
         
         ${tagsHtml ? `<div class="detail-tags">${tagsHtml}</div>` : ''}
