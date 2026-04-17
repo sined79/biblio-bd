@@ -217,6 +217,7 @@
       .sidebar { width: 240px; }
     }
     @media (max-width: 768px) {
+      h1 { font-size: 1.4rem; }
       .btn-mobile-menu { display: block; }
       .sidebar { position: fixed; top: 0; left: -100%; height: 100vh; width: 85%; max-width: 320px; z-index: 1000; box-shadow: 5px 0 20px rgba(0,0,0,0.1); padding-top: 60px; }
       .sidebar.active { left: 0; }
@@ -246,11 +247,10 @@
     <div class="logo-container">
       <button class="btn-mobile-menu" id="btnMenu" aria-label="Menu filtres"><i data-lucide="menu"></i></button>
       <svg viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M6.5 2L6.5 22"/></svg>
-      <h1>Ma Bédéthèque</h1>
+      <h1>Bédéthèque</h1>
     </div>
     <div class="header-actions">
       <button class="btn btn-store" id="btnStore"><i data-lucide="shopping-bag"></i> <span class="hide-mobile">En magasin</span></button>
-      <button class="btn-icon" id="btnTheme" aria-label="Thème"><i data-lucide="moon"></i></button>
     </div>
   </header>
 
@@ -259,7 +259,10 @@
       
       <!-- SIDEBAR FILTRES -->
       <aside class="sidebar" id="sidebar">
-        <button class="close-sidebar" id="btnCloseMenu"><i data-lucide="x"></i> Fermer</button>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 20px;">
+          <button class="btn-icon" id="btnTheme" aria-label="Thème"><i data-lucide="moon"></i></button>
+          <button class="close-sidebar" id="btnCloseMenu" style="padding-bottom: 0;"><i data-lucide="x"></i> Fermer</button>
+        </div>
         
         <div class="filter-group">
           <label>Recherche</label>
@@ -912,8 +915,14 @@
 
       // Mobile Menu
       const sidebar = document.getElementById('sidebar');
-      document.getElementById('btnMenu').addEventListener('click', () => sidebar.classList.add('active'));
-      document.getElementById('btnCloseMenu').addEventListener('click', () => sidebar.classList.remove('active'));
+      document.getElementById('btnMenu').addEventListener('click', () => {
+        sidebar.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+      document.getElementById('btnCloseMenu').addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        document.body.style.overflow = '';
+      });
     }
 
     function initTheme() {
