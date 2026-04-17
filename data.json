@@ -228,6 +228,9 @@
         "serie": "Tintin",
         "tome": "Objectif Lune",
         "auteurs": "Hergé",
-        "editeur": "Casterman"
+        "editeur": "Casterman",
+        "cover": "images/tintin_objectif_lune.jpg",
+        "scenariste": "Hergé",
+        "dessinateur": "Hergé"
     }
 ]
