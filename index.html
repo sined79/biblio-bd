@@ -1,307 +1,939 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Bédéthèque</title>
-    <style>
-        :root {
-            --primary: #2c3e50;
-            --accent: #e74c3c;
-            --bg: #ecf0f1;
-            --text: #34495e;
-            --card-bg: #ffffff;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: var(--primary);
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        h1 { margin: 0 0 10px; font-size: 2.5em; letter-spacing: 1px; }
-        .controls {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            max-width: 800px;
-            margin: 20px auto 0;
-        }
-        input, select {
-            padding: 12px 15px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            outline: none;
-            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
-            flex: 1;
-            min-width: 200px;
-        }
-        input:focus, select:focus {
-            box-shadow: 0 0 0 2px var(--accent);
-        }
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .stats {
-            text-align: center;
-            font-size: 1.1em;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #7f8c8d;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
-        }
-        .card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.2s, box-shadow 0.2s;
-            border-left: 5px solid var(--accent);
-            display: flex;
-            flex-direction: column;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        .card-img {
-            width: 100%;
-            height: 350px;
-            object-fit: contain;
-            background: #f8f9fa;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 0.9em;
-            padding: 10px 0;
-            box-sizing: border-box;
-        }
-        .card-content {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-        .card h2 {
-            margin: 0 0 10px;
-            font-size: 1.3em;
-            color: var(--primary);
-        }
-        .card .tome {
-            display: inline-block;
-            background: var(--accent);
-            color: white;
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            font-weight: bold;
-            margin-bottom: 15px;
-            align-self: flex-start;
-        }
-        .card p {
-            margin: 5px 0;
-            line-height: 1.4;
-            font-size: 0.95em;
-        }
-        .card .label {
-            font-weight: 600;
-            color: #95a5a6;
-            font-size: 0.85em;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .synopsis {
-            margin-top: 15px !important;
-            font-size: 0.85em !important;
-            color: #555;
-            background: #f9f9f9;
-            padding: 10px;
-            border-radius: 6px;
-            font-style: italic;
-            display: -webkit-box;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-        .no-results {
-            grid-column: 1 / -1;
-            text-align: center;
-            font-size: 1.2em;
-            color: #7f8c8d;
-            padding: 40px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma Bédéthèque</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    :root {
+      --bg-color: #f7f6f2;
+      --surface-color: #ffffff;
+      --accent-color: #8b1a1a;
+      --text-main: #28251d;
+      --text-muted: #7a7974;
+      --divider: #dcd9d5;
+      --gold: #d4af37;
+      --orange: #e67e22;
+      --green: #27ae60;
+    }
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --surface-color: #1e1e1e;
+      --accent-color: #a32a2a;
+      --text-main: #e8e6e3;
+      --text-muted: #a09f9c;
+      --divider: #3a3936;
+      --gold: #f1c40f;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Satoshi', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* HEADER */
+    header {
+      background-color: var(--surface-color);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo-container { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+    .logo-container svg { width: 32px; height: 32px; stroke: var(--accent-color); fill: none; stroke-width: 2; }
+    h1 { font-family: 'Playfair Display', serif; margin: 0; font-size: 1.8rem; color: var(--text-main); }
+    .header-actions { display: flex; align-items: center; gap: 15px; }
+    .btn-icon { background: none; border: none; color: var(--text-main); cursor: pointer; padding: 8px; border-radius: 50%; display: flex; align-items: center; transition: 0.2s; }
+    .btn-icon:hover { background-color: rgba(0,0,0,0.05); color: var(--accent-color); }
+    .btn-store { background: var(--surface-color); border: 1px solid var(--divider); color: var(--text-main); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-family: 'Satoshi', sans-serif; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: 0.2s; }
+    .btn-store:hover { border-color: var(--accent-color); color: var(--accent-color); }
+    .btn-mobile-menu { display: none; background: none; border: none; color: var(--text-main); font-size: 1.5rem; cursor: pointer; }
+
+    /* LAYOUT */
+    .main-layout { display: flex; min-height: calc(100vh - 66px); }
+
+    /* SIDEBAR */
+    .sidebar { width: 280px; background: var(--surface-color); border-right: 1px solid var(--divider); padding: 20px; overflow-y: auto; height: calc(100vh - 66px); position: sticky; top: 66px; flex-shrink: 0; transition: transform 0.3s; z-index: 90; }
+    .filter-group { margin-bottom: 20px; }
+    .filter-group label { display: block; font-weight: 600; margin-bottom: 8px; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    .filter-input { width: 100%; padding: 10px; border: 1px solid var(--divider); border-radius: 6px; background: var(--bg-color); color: var(--text-main); font-family: inherit; font-size: 0.95rem; }
+    .filter-input:focus { outline: none; border-color: var(--accent-color); box-shadow: 0 0 0 2px rgba(139,26,26,0.1); }
+    
+    .radio-group { display: flex; flex-direction: column; gap: 8px; }
+    .radio-label { display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 0.95rem; }
+    .radio-label input { accent-color: var(--accent-color); }
+
+    .btn-reset { width: 100%; background: transparent; border: 1px solid var(--divider); padding: 10px; border-radius: 6px; cursor: pointer; font-family: inherit; font-weight: 500; color: var(--text-main); transition: 0.2s; margin-top: 10px; }
+    .btn-reset:hover { background: rgba(0,0,0,0.03); color: var(--accent-color); border-color: var(--accent-color); }
+
+    .close-sidebar { display: none; }
+
+    /* MAIN CONTENT */
+    .content { flex: 1; padding: 30px 40px; overflow-y: auto; }
+    
+    /* TABS */
+    .tabs { display: flex; gap: 25px; margin-bottom: 25px; border-bottom: 1px solid var(--divider); }
+    .tab { padding: 10px 0; cursor: pointer; color: var(--text-muted); font-weight: 500; font-size: 1.1rem; border-bottom: 2px solid transparent; transition: 0.2s; }
+    .tab.active { color: var(--accent-color); border-bottom-color: var(--accent-color); }
+    
+    .view-panel { display: none; }
+    .view-panel.active { display: block; }
+    
+    .top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+    .results-count { font-weight: 500; color: var(--text-muted); font-size: 0.95rem; }
+
+    /* GRID & CARDS */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 30px; }
+    .card { background: var(--surface-color); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.3s, box-shadow 0.3s; position: relative; display: flex; flex-direction: column; cursor: pointer; border: 1px solid var(--divider); }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 25px rgba(0,0,0,0.08); }
+    
+    .card-cover { position: relative; width: 100%; aspect-ratio: 2/3; background: var(--bg-color); }
+    .card-cover img { width: 100%; height: 100%; object-fit: cover; }
+    .card-cover .overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; backdrop-filter: blur(2px); }
+    .card:hover .overlay { opacity: 1; }
+    .btn-detail { background: var(--surface-color); color: var(--text-main); border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: 0.2s; }
+    .btn-detail:hover { color: var(--accent-color); transform: scale(1.05); }
+
+    .status-badge { position: absolute; top: 10px; right: 10px; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 2px 6px rgba(0,0,0,0.2); z-index: 2; }
+    .status-badge.wishlist { background: var(--gold); }
+    .status-badge.prete { background: var(--orange); }
+    
+    .card-info { padding: 15px; display: flex; flex-direction: column; flex: 1; }
+    .tome-badge { display: inline-block; background: var(--accent-color); color: white; padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; margin-bottom: 10px; align-self: flex-start; letter-spacing: 0.5px; }
+    .serie-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; margin: 0 0 12px 0; color: var(--text-main); line-height: 1.2; }
+    
+    .author-line { display: flex; align-items: flex-start; gap: 8px; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px; line-height: 1.4; }
+    .author-line i[data-lucide] { width: 14px; height: 14px; flex-shrink: 0; margin-top: 2px; color: var(--text-muted); }
+    .publisher-line { margin-top: auto; padding-top: 12px; font-size: 0.8rem; color: var(--text-muted); font-weight: 500; display: flex; justify-content: space-between; }
+
+    /* DRAWER (Vue Détail) */
+    .drawer-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 200; opacity: 0; pointer-events: none; transition: opacity 0.3s; backdrop-filter: blur(3px); }
+    .drawer-overlay.active { opacity: 1; pointer-events: auto; }
+    .drawer { position: fixed; top: 0; right: -100%; width: 450px; max-width: 100%; height: 100vh; background: var(--surface-color); z-index: 201; box-shadow: -5px 0 30px rgba(0,0,0,0.15); transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1); display: flex; flex-direction: column; }
+    .drawer.active { right: 0; }
+    .drawer-header { padding: 20px; border-bottom: 1px solid var(--divider); display: flex; justify-content: space-between; align-items: center; }
+    .drawer-header h2 { margin: 0; font-size: 1.2rem; font-weight: 600; }
+    .drawer-content { padding: 30px; overflow-y: auto; flex: 1; }
+    
+    .detail-cover { width: 100%; max-width: 240px; margin: 0 auto 25px; display: block; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+    .detail-serie { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin: 0 0 5px 0; line-height: 1.2; }
+    .detail-tome { font-size: 1.1rem; color: var(--accent-color); font-weight: 600; margin: 0 0 20px 0; }
+    
+    .detail-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 25px; }
+    .tag { background: var(--bg-color); border: 1px solid var(--divider); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; font-weight: 500; color: var(--text-main); }
+    
+    .detail-synopsis { font-size: 0.95rem; line-height: 1.6; margin-bottom: 30px; color: var(--text-muted); font-style: italic; border-left: 3px solid var(--divider); padding-left: 15px; }
+    
+    .detail-meta { background: var(--bg-color); padding: 20px; border-radius: 12px; margin-bottom: 30px; }
+    .meta-row { display: flex; margin-bottom: 12px; font-size: 0.9rem; align-items: baseline; }
+    .meta-row:last-child { margin-bottom: 0; }
+    .meta-label { width: 110px; color: var(--text-muted); font-weight: 500; flex-shrink: 0; }
+    .meta-val { flex: 1; font-weight: 600; color: var(--text-main); }
+    
+    .detail-actions { border-top: 1px solid var(--divider); padding-top: 25px; display: flex; flex-direction: column; gap: 20px; }
+    .action-row { display: flex; justify-content: space-between; align-items: center; }
+    
+    /* Stars */
+    .stars { display: flex; gap: 4px; cursor: pointer; }
+    .star { color: var(--divider); transition: color 0.2s; }
+    .star i[data-lucide] { width: 22px; height: 22px; fill: transparent; }
+    .star.filled { color: var(--gold); }
+    .star.filled i[data-lucide] { fill: var(--gold); }
+
+    /* Toggle Switch */
+    .switch { position: relative; display: inline-block; width: 44px; height: 24px; }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider { position: absolute; cursor: pointer; inset: 0; background-color: var(--divider); transition: .3s; border-radius: 24px; }
+    .slider:before { position: absolute; content: ""; height: 18px; width: 18px; left: 3px; bottom: 3px; background-color: white; transition: .3s; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+    input:checked + .slider { background-color: var(--green); }
+    input:checked + .slider:before { transform: translateX(20px); }
+
+    /* STORE MODE */
+    .store-mode { position: fixed; inset: 0; background: var(--surface-color); z-index: 300; display: none; flex-direction: column; overflow-y: auto; }
+    .store-mode.active { display: flex; }
+    .store-header { padding: 20px 40px; display: flex; align-items: center; border-bottom: 1px solid var(--divider); }
+    .store-content { flex: 1; max-width: 800px; margin: 0 auto; width: 100%; padding: 40px 20px; }
+    
+    .store-input-wrap { position: relative; margin-bottom: 40px; }
+    .store-input-wrap i { position: absolute; left: 0; top: 50%; transform: translateY(-50%); color: var(--text-muted); width: 32px; height: 32px; }
+    .store-input { width: 100%; font-size: 2.5rem; padding: 15px 0 15px 50px; border: none; border-bottom: 3px solid var(--divider); background: transparent; color: var(--text-main); outline: none; font-family: 'Satoshi', sans-serif; font-weight: 700; transition: border-color 0.3s; }
+    .store-input:focus { border-bottom-color: var(--accent-color); }
+    .store-input::placeholder { color: var(--divider); }
+    
+    .store-results { display: flex; flex-direction: column; gap: 15px; }
+    .store-result-card { background: var(--bg-color); padding: 20px; border-radius: 12px; border: 1px solid var(--divider); display: flex; justify-content: space-between; align-items: center; }
+    .store-result-info h3 { margin: 0 0 5px; font-family: 'Playfair Display', serif; font-size: 1.3rem; }
+    .store-result-info p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
+    
+    .store-status { font-weight: 700; padding: 10px 20px; border-radius: 30px; display: flex; align-items: center; gap: 8px; font-size: 1rem; }
+    .status-owned { background: rgba(39, 174, 96, 0.1); color: var(--green); border: 1px solid rgba(39,174,96,0.3); }
+    .status-missing { background: rgba(230, 126, 34, 0.1); color: var(--orange); border: 1px solid rgba(230,126,34,0.3); }
+    
+    .series-missing-alert { margin-top: 15px; font-size: 0.95rem; color: var(--accent-color); font-weight: 500; display: flex; align-items: center; gap: 8px; background: rgba(139,26,26,0.05); padding: 10px 15px; border-radius: 8px; }
+
+    /* SERIES VIEW */
+    .series-list { display: flex; flex-direction: column; gap: 20px; }
+    .series-item { background: var(--surface-color); padding: 25px; border-radius: 12px; border: 1px solid var(--divider); }
+    .series-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+    .series-header h3 { margin: 0; font-family: 'Playfair Display', serif; font-size: 1.5rem; }
+    .series-stats { font-size: 0.9rem; color: var(--text-muted); font-weight: 500; }
+    
+    .tomes-track { display: flex; gap: 10px; flex-wrap: wrap; }
+    .tome-node { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700; transition: 0.2s; }
+    .tome-node.owned { background: var(--accent-color); color: white; box-shadow: 0 2px 5px rgba(139,26,26,0.3); }
+    .tome-node.missing { border: 2px dashed var(--divider); color: var(--text-muted); cursor: pointer; background: var(--bg-color); }
+    .tome-node.missing:hover { border-color: var(--accent-color); color: var(--accent-color); background: rgba(139,26,26,0.05); }
+
+    /* STATS VIEW */
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-bottom: 30px; }
+    .stat-card { background: var(--surface-color); padding: 25px; border-radius: 12px; border: 1px solid var(--divider); text-align: center; }
+    .stat-val { font-size: 3rem; font-weight: 700; color: var(--accent-color); margin: 0 0 5px 0; font-family: 'Playfair Display', serif; }
+    .stat-label { color: var(--text-muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+    
+    .charts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 25px; }
+    .chart-card { background: var(--surface-color); padding: 25px; border-radius: 12px; border: 1px solid var(--divider); }
+    .chart-card h3 { margin: 0 0 20px 0; font-size: 1.1rem; text-align: center; }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .content { padding: 20px; }
+      .grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+      .sidebar { width: 240px; }
+    }
+    @media (max-width: 768px) {
+      .btn-mobile-menu { display: block; }
+      .sidebar { position: fixed; top: 0; left: -100%; height: 100vh; width: 85%; max-width: 320px; z-index: 1000; box-shadow: 5px 0 20px rgba(0,0,0,0.1); padding-top: 60px; }
+      .sidebar.active { left: 0; }
+      .close-sidebar { display: flex; align-items: center; justify-content: flex-end; padding-bottom: 20px; background: none; border: none; color: var(--text-main); font-size: 1.2rem; cursor: pointer; width: 100%; }
+      .main-layout { flex-direction: column; }
+      .content { padding: 15px; }
+      .grid { grid-template-columns: 1fr; } /* 1 column on mobile */
+      .card { flex-direction: row; height: 140px; }
+      .card-cover { width: 90px; aspect-ratio: auto; height: 100%; flex-shrink: 0; }
+      .card-info { padding: 10px 15px; }
+      .serie-title { font-size: 1.1rem; }
+      .author-line { font-size: 0.8rem; }
+      .btn-detail { display: none; } /* Handle click on entire card */
+      
+      .drawer { width: 100%; right: -100%; }
+      .charts-grid { grid-template-columns: 1fr; }
+      .store-header { padding: 15px; }
+      .store-content { padding: 20px 15px; }
+      .store-input { font-size: 1.8rem; }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>📚 Ma Bédéthèque</h1>
-        <div class="controls">
-            <input type="text" id="searchInput" placeholder="🔍 Rechercher (Série, Titre, Auteur, ISBN...)" onkeyup="filterBooks()">
-            <select id="publisherFilter" onchange="filterBooks()">
-                <option value="">Tous les éditeurs</option>
-            </select>
-            <select id="authorFilter" onchange="filterBooks()">
-                <option value="">Tous les scénaristes</option>
-            </select>
-            <select id="illustratorFilter" onchange="filterBooks()">
-                <option value="">Tous les dessinateurs</option>
-            </select>
-        </div>
-    </header>
-
-    <div class="container">
-        <div class="stats" id="stats">Chargement de la bibliothèque...</div>
-        <div class="grid" id="bookGrid"></div>
+  <!-- HEADER -->
+  <header>
+    <div class="logo-container">
+      <button class="btn-mobile-menu" id="btnMenu" aria-label="Menu filtres"><i data-lucide="menu"></i></button>
+      <svg viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M6.5 2L6.5 22"/></svg>
+      <h1>Ma Bédéthèque</h1>
     </div>
+    <div class="header-actions">
+      <button class="btn btn-store" id="btnStore"><i data-lucide="shopping-bag"></i> <span class="hide-mobile">En magasin</span></button>
+      <button class="btn-icon" id="btnTheme" aria-label="Thème"><i data-lucide="moon"></i></button>
+    </div>
+  </header>
 
-    <script>
-        let allBooks = [];
+  <div class="app-container">
+    <div class="main-layout">
+      
+      <!-- SIDEBAR FILTRES -->
+      <aside class="sidebar" id="sidebar">
+        <button class="close-sidebar" id="btnCloseMenu"><i data-lucide="x"></i> Fermer</button>
+        
+        <div class="filter-group">
+          <label>Recherche</label>
+          <input type="text" id="searchInput" class="filter-input" placeholder="Série, Titre, Auteur, ISBN...">
+        </div>
 
-        // Charger les données
-        fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
-                allBooks = data;
-                populateFilters();
-                renderBooks(allBooks);
-            })
-            .catch(error => console.error("Erreur lors du chargement:", error));
+        <div class="filter-group">
+          <label>Éditeur</label>
+          <select id="filterEditeur" class="filter-input"><option value="">Tous les éditeurs</option></select>
+        </div>
 
-        // Remplir le menu déroulant des éditeurs
-        function populateFilters() {
-            const selectPub = document.getElementById('publisherFilter');
-            const selectAuth = document.getElementById('authorFilter');
-            const selectIllu = document.getElementById('illustratorFilter');
-            
-            const publishers = new Set();
-            const authors = new Set();
-            const illustrators = new Set();
-            
-            allBooks.forEach(book => {
-                if (book.editeur && book.editeur.trim()) publishers.add(book.editeur.trim());
-                
-                const scen = book.scenariste || book.auteurs || "";
-                if (scen.trim()) authors.add(scen.trim());
-                
-                const dess = book.dessinateur || book.auteurs || "";
-                if (dess.trim()) illustrators.add(dess.trim());
-            });
+        <div class="filter-group">
+          <label>Scénariste</label>
+          <select id="filterScenariste" class="filter-input"><option value="">Tous</option></select>
+        </div>
 
-            Array.from(publishers).sort().forEach(pub => {
-                const option = document.createElement('option'); option.value = pub; option.textContent = pub;
-                selectPub.appendChild(option);
-            });
-            Array.from(authors).sort().forEach(auth => {
-                const option = document.createElement('option'); option.value = auth; option.textContent = auth;
-                selectAuth.appendChild(option);
-            });
-            Array.from(illustrators).sort().forEach(illu => {
-                const option = document.createElement('option'); option.value = illu; option.textContent = illu;
-                selectIllu.appendChild(option);
-            });
+        <div class="filter-group">
+          <label>Dessinateur</label>
+          <select id="filterDessinateur" class="filter-input"><option value="">Tous</option></select>
+        </div>
+
+        <div class="filter-group">
+          <label>Statut</label>
+          <div class="radio-group">
+            <label class="radio-label"><input type="radio" name="statut" value="" checked> Tous</label>
+            <label class="radio-label"><input type="radio" name="statut" value="possede"> 📚 Possédés</label>
+            <label class="radio-label"><input type="radio" name="statut" value="wishlist"> ❤️ Wishlist</label>
+            <label class="radio-label"><input type="radio" name="statut" value="prete"> 🔄 Prêtés</label>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label class="radio-label" style="font-weight: 600; color: var(--text-muted); text-transform: uppercase;">
+            <input type="checkbox" id="filterLu" style="accent-color: var(--accent-color); width:16px; height:16px;">
+            Uniquement les lus
+          </label>
+        </div>
+
+        <button class="btn-reset" id="btnResetFilters"><i data-lucide="refresh-ccw" style="width:16px; margin-right:6px; vertical-align:middle;"></i>Réinitialiser</button>
+      </aside>
+
+      <!-- CONTENT AREA -->
+      <main class="content">
+        
+        <div class="tabs">
+          <div class="tab active" data-target="view-library">Bibliothèque</div>
+          <div class="tab" data-target="view-series">Séries</div>
+          <div class="tab" data-target="view-stats">Statistiques</div>
+        </div>
+
+        <!-- VIEW LIBRARY -->
+        <div id="view-library" class="view-panel active">
+          <div class="top-bar">
+            <div class="results-count" id="resultsCount">Chargement...</div>
+          </div>
+          <div class="grid" id="gridLibrary"></div>
+        </div>
+
+        <!-- VIEW SERIES -->
+        <div id="view-series" class="view-panel">
+          <div class="top-bar">
+            <div class="results-count" id="seriesCount"></div>
+          </div>
+          <div class="series-list" id="listSeries"></div>
+        </div>
+
+        <!-- VIEW STATS -->
+        <div id="view-stats" class="view-panel">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-val" id="statTotal">0</div>
+              <div class="stat-label">Albums</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-val" id="statSeries">0</div>
+              <div class="stat-label">Séries</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-val" id="statAuthors">0</div>
+              <div class="stat-label">Auteurs distincts</div>
+            </div>
+          </div>
+          
+          <div class="charts-grid">
+            <div class="chart-card">
+              <h3>Répartition par Éditeur</h3>
+              <canvas id="chartPublishers"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>Lus vs Non Lus (Possédés)</h3>
+              <canvas id="chartRead"></canvas>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- DRAWER DETAILS -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="drawer" id="detailDrawer">
+    <div class="drawer-header">
+      <h2>Détail de l'album</h2>
+      <button class="btn-icon" id="btnCloseDrawer"><i data-lucide="x"></i></button>
+    </div>
+    <div class="drawer-content" id="drawerContent">
+      <!-- Content injected by JS -->
+    </div>
+  </div>
+
+  <!-- STORE MODE OVERLAY -->
+  <div class="store-mode" id="storeMode">
+    <div class="store-header">
+      <button class="btn" id="btnCloseStore"><i data-lucide="arrow-left"></i> Retour</button>
+    </div>
+    <div class="store-content">
+      <div class="store-input-wrap">
+        <i data-lucide="search"></i>
+        <input type="text" class="store-input" id="storeInput" placeholder="Que cherchez-vous en rayon ?" autocomplete="off">
+      </div>
+      <div id="storeResults" class="store-results">
+        <div style="text-align:center; color: var(--text-muted); font-size:1.2rem; margin-top:40px;">
+          <i data-lucide="scan-line" style="width:48px;height:48px; margin-bottom:10px; opacity:0.5;"></i><br>
+          Scannez un code-barres ou tapez un titre...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // --- STATE ---
+    let db = [];
+    let filteredDb = [];
+    let seriesMap = new Map();
+
+    // Chart instances
+    let pubChart = null;
+    let readChart = null;
+
+    // Elements
+    const gridLibrary = document.getElementById('gridLibrary');
+    const listSeries = document.getElementById('listSeries');
+    const searchInput = document.getElementById('searchInput');
+    const filterEditeur = document.getElementById('filterEditeur');
+    const filterScenariste = document.getElementById('filterScenariste');
+    const filterDessinateur = document.getElementById('filterDessinateur');
+    const filterLu = document.getElementById('filterLu');
+    const statusRadios = document.querySelectorAll('input[name="statut"]');
+    
+    // --- INIT ---
+    async function init() {
+      lucide.createIcons();
+      initTheme();
+      initEvents();
+      await loadData();
+      populateFilters();
+      applyFilters();
+      renderStats();
+    }
+
+    // --- DATA NORMALIZATION ---
+    function normalizeData(rawData) {
+      return rawData.map((b, index) => {
+        const scen = b.scenaristes || (b.scenariste ? [b.scenariste] : (b.auteurs ? [b.auteurs] : []));
+        const dess = b.dessinateurs || (b.dessinateur ? [b.dessinateur] : (b.auteurs ? [b.auteurs] : []));
+        
+        return {
+          _id: index, // internal id
+          serie: b.serie || "Série inconnue",
+          tome: b.tome || "",
+          scenaristes: scen.map(s => s.trim()),
+          dessinateurs: dess.map(d => d.trim()),
+          coloristes: b.coloristes || (b.coloriste ? [b.coloriste] : []),
+          editeur: b.editeur ? b.editeur.trim() : "Non spécifié",
+          cover: b.cover || null,
+          genre: b.genre || [],
+          annee: b.annee || "",
+          isbn: b.isbn || "",
+          synopsis: b.synopsis || "",
+          statut: b.statut || "possede", // possede, wishlist, prete
+          lu: b.lu || false,
+          note: b.note || 0,
+          prete_a: b.prete_a || null,
+          date_ajout: b.date_ajout || new Date().toISOString()
+        };
+      });
+    }
+
+    async function loadData() {
+      try {
+        const res = await fetch('./data.json');
+        const raw = await res.json();
+        db = normalizeData(raw);
+        
+        // Build series map
+        seriesMap.clear();
+        db.forEach(b => {
+          if (!seriesMap.has(b.serie)) seriesMap.set(b.serie, []);
+          seriesMap.get(b.serie).push(b);
+        });
+
+      } catch (e) {
+        console.error("Erreur chargement JSON", e);
+        gridLibrary.innerHTML = `<div style="grid-column: 1/-1; text-align:center; padding:40px;">Impossible de charger la base de données.</div>`;
+      }
+    }
+
+    // --- FILTERS ---
+    function populateFilters() {
+      const eds = new Set(), scens = new Set(), desss = new Set();
+      db.forEach(b => {
+        eds.add(b.editeur);
+        b.scenaristes.forEach(s => scens.add(s));
+        b.dessinateurs.forEach(d => desss.add(d));
+      });
+
+      const fill = (select, set) => {
+        Array.from(set).sort().forEach(val => {
+          if(!val) return;
+          const opt = document.createElement('option');
+          opt.value = val; opt.textContent = val;
+          select.appendChild(opt);
+        });
+      };
+      fill(filterEditeur, eds);
+      fill(filterScenariste, scens);
+      fill(filterDessinateur, desss);
+    }
+
+    function applyFilters() {
+      const q = searchInput.value.toLowerCase();
+      const ed = filterEditeur.value;
+      const sc = filterScenariste.value;
+      const de = filterDessinateur.value;
+      const lu = filterLu.checked;
+      const stat = document.querySelector('input[name="statut"]:checked').value;
+
+      filteredDb = db.filter(b => {
+        if(q) {
+          const text = (b.serie + " " + b.tome + " " + b.isbn + " " + b.scenaristes.join(" ") + " " + b.dessinateurs.join(" ")).toLowerCase();
+          if(!text.includes(q)) return false;
         }
+        if(ed && b.editeur !== ed) return false;
+        if(sc && !b.scenaristes.includes(sc)) return false;
+        if(de && !b.dessinateurs.includes(de)) return false;
+        if(lu && !b.lu) return false;
+        if(stat && b.statut !== stat) return false;
+        return true;
+      });
 
-        // Afficher les livres
-        function renderBooks(books) {
-            const grid = document.getElementById('bookGrid');
-            const stats = document.getElementById('stats');
-            grid.innerHTML = '';
+      // Tri
+      filteredDb.sort((a, b) => {
+        if(a.serie !== b.serie) return a.serie.localeCompare(b.serie);
+        const ta = parseFloat(a.tome) || 0;
+        const tb = parseFloat(b.tome) || 0;
+        return ta - tb;
+      });
 
-            stats.textContent = `${books.length} album${books.length > 1 ? 's' : ''} trouvé${books.length > 1 ? 's' : ''}`;
+      document.getElementById('resultsCount').textContent = `${filteredDb.length} album(s)`;
+      renderGrid();
+    }
 
-            if (books.length === 0) {
-                grid.innerHTML = '<div class="no-results">Aucun album ne correspond à votre recherche. 🕵️‍♂️</div>';
-                return;
+    // --- RENDERING ---
+    function renderGrid() {
+      gridLibrary.innerHTML = '';
+      if(filteredDb.length === 0) {
+        gridLibrary.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:40px; color:var(--text-muted);">Aucun album ne correspond à vos critères.</div>`;
+        return;
+      }
+
+      const frag = document.createDocumentFragment();
+      filteredDb.forEach(b => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.onclick = () => openDrawer(b);
+
+        let badgeHtml = '';
+        if(b.statut === 'wishlist') badgeHtml = `<div class="status-badge wishlist" title="Wishlist"><i data-lucide="heart" style="width:14px;height:14px;"></i></div>`;
+        else if(b.statut === 'prete') badgeHtml = `<div class="status-badge prete" title="Prêté à ${b.prete_a}"><i data-lucide="refresh-cw" style="width:14px;height:14px;"></i></div>`;
+
+        const coverSrc = b.cover ? b.cover : 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450"><rect width="100%" height="100%" fill="%23dcd9d5"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="20" fill="%237a7974">No Cover</text></svg>';
+        
+        card.innerHTML = `
+          <div class="card-cover">
+            ${badgeHtml}
+            <img src="${coverSrc}" alt="Cover" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'300\\' height=\\'450\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23dcd9d5\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' font-size=\\'20\\' fill=\\'%237a7974\\'>Error</text></svg>'">
+            <div class="overlay">
+              <span class="overlay-btn">Voir détails</span>
+            </div>
+          </div>
+          <div class="card-info">
+            ${b.tome ? `<span class="tome-badge">${isNaN(b.tome) ? b.tome : 'Tome '+b.tome}</span>` : ''}
+            <h3 class="serie-title">${b.serie}</h3>
+            <div class="author-line"><i data-lucide="pen-line"></i> <span>${b.scenaristes.join(', ') || '?'}</span></div>
+            <div class="author-line"><i data-lucide="brush"></i> <span>${b.dessinateurs.join(', ') || '?'}</span></div>
+            <div class="publisher-line">
+              <span>${b.editeur}</span>
+              ${b.annee ? `<span>${b.annee}</span>` : ''}
+            </div>
+          </div>
+        `;
+        frag.appendChild(card);
+      });
+      gridLibrary.appendChild(frag);
+      lucide.createIcons();
+    }
+
+    function renderSeries() {
+      listSeries.innerHTML = '';
+      let seriesCount = 0;
+      
+      const sortedSeriesNames = Array.from(seriesMap.keys()).sort();
+      
+      sortedSeriesNames.forEach(sName => {
+        const books = seriesMap.get(sName);
+        // Only consider 'possede' or 'prete' as owned
+        const ownedTomesNum = books.filter(b => b.statut !== 'wishlist' && !isNaN(parseFloat(b.tome))).map(b => parseFloat(b.tome));
+        
+        if(ownedTomesNum.length === 0) return; // Skip if only wishlist
+        seriesCount++;
+
+        const maxTome = Math.max(...ownedTomesNum);
+        
+        let nodesHtml = '';
+        if (maxTome > 0 && maxTome < 100) {
+          for(let i=1; i<=maxTome; i++) {
+            const isOwned = ownedTomesNum.includes(i);
+            if(isOwned) {
+              nodesHtml += `<div class="tome-node owned" title="Tome ${i} possédé">${i}</div>`;
+            } else {
+              nodesHtml += `<div class="tome-node missing" title="Tome ${i} manquant - Ajouter à la wishlist" onclick="addToWishlist('${sName}', ${i})">${i}</div>`;
             }
-
-            books.forEach(book => {
-                const card = document.createElement('div');
-                card.className = 'card';
-                
-                const serie = book.serie || "Série inconnue";
-                const tome = book.tome ? `Tome ${book.tome}` : "One shot";
-                const auteurs = book.auteurs || "Inconnu";
-                const editeur = book.editeur || "Non spécifié";
-                const isbn = book.isbn ? `<p><span class="label">ISBN :</span> ${book.isbn}</p>` : "";
-                const scenariste = book.scenariste ? book.scenariste : auteurs;
-                const dessinateur = book.dessinateur ? book.dessinateur : auteurs;
-                const synopsis = book.synopsis ? `<p class="synopsis">"${book.synopsis}"</p>` : "";
-                
-                const coverUrl = book.cover ? book.cover : 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400"><rect width="100%" height="100%" fill="%23ecf0f1"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="20" fill="%2395a5a6">Image non disponible</text></svg>';
-
-                card.innerHTML = `
-                    <img class="card-img" src="${coverUrl}" alt="Couverture de ${serie}" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'300\\' height=\\'400\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23ecf0f1\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' font-size=\\'20\\' fill=\\'%2395a5a6\\'>Image non trouvée</text></svg>'">
-                    <div class="card-content">
-                        <h2>${serie}</h2>
-                        <span class="tome">${tome}</span>
-                        <p><span class="label">Scénario :</span><br> ${scenariste}</p>
-                        <p><span class="label">Dessin :</span><br> ${dessinateur}</p>
-                        <p><span class="label">Éditeur :</span><br> ${editeur}</p>
-                        ${isbn}
-                        ${synopsis}
-                    </div>
-                `;
-                grid.appendChild(card);
-            });
+          }
+        } else {
+           nodesHtml = `<span style="color:var(--text-muted); font-size:0.9rem;">Série non numérotée classiquement</span>`;
         }
 
-        // Filtrer les livres
-        function filterBooks() {
-            const searchText = document.getElementById('searchInput').value.toLowerCase();
-            const selectedPublisher = document.getElementById('publisherFilter').value;
-            const selectedAuthor = document.getElementById('authorFilter').value;
-            const selectedIllustrator = document.getElementById('illustratorFilter').value;
+        const div = document.createElement('div');
+        div.className = 'series-item';
+        div.innerHTML = `
+          <div class="series-header">
+            <h3>${sName}</h3>
+            <span class="series-stats">${ownedTomesNum.length} tome(s) possédé(s)</span>
+          </div>
+          <div class="tomes-track">
+            ${nodesHtml}
+          </div>
+        `;
+        listSeries.appendChild(div);
+      });
+      
+      document.getElementById('seriesCount').textContent = `${seriesCount} séries suivies`;
+    }
 
-            const filtered = allBooks.filter(book => {
-                const serie = (book.serie || "").toLowerCase();
-                const tome = (book.tome || "").toLowerCase();
-                const isbn = (book.isbn || "").toLowerCase();
-                const auteurs = (book.auteurs || "").toLowerCase();
-                const editeur = book.editeur ? book.editeur.trim() : "";
-                const scen = book.scenariste ? book.scenariste.trim() : (book.auteurs || "").trim();
-                const dess = book.dessinateur ? book.dessinateur.trim() : (book.auteurs || "").trim();
-                
-                const matchesSearch = serie.includes(searchText) || tome.includes(searchText) || isbn.includes(searchText) || auteurs.includes(searchText) || scen.toLowerCase().includes(searchText) || dess.toLowerCase().includes(searchText);
-                
-                const matchesPublisher = selectedPublisher === "" || editeur === selectedPublisher;
-                const matchesAuthor = selectedAuthor === "" || scen === selectedAuthor;
-                const matchesIllustrator = selectedIllustrator === "" || dess === selectedIllustrator;
+    function addToWishlist(serie, tome) {
+      alert(`Simulation : Le tome ${tome} de ${serie} a été ajouté à votre Wishlist !`);
+      // In a real app, this would modify db and re-render
+    }
 
-                return matchesSearch && matchesPublisher && matchesAuthor && matchesIllustrator;
-            });
+    function renderStats() {
+      const possedes = db.filter(b => b.statut === 'possede' || b.statut === 'prete');
+      
+      document.getElementById('statTotal').textContent = possedes.length;
+      document.getElementById('statSeries').textContent = Array.from(seriesMap.keys()).filter(k => seriesMap.get(k).some(b => b.statut !== 'wishlist')).length;
+      
+      const auths = new Set();
+      possedes.forEach(b => { b.scenaristes.forEach(a=>auths.add(a)); b.dessinateurs.forEach(a=>auths.add(a)); });
+      document.getElementById('statAuthors').textContent = auths.size;
 
-            // Trier par Série, puis par Tome
-            filtered.sort((a, b) => {
-                if (a.serie < b.serie) return -1;
-                if (a.serie > b.serie) return 1;
-                // Si même série, tri par tome (basique)
-                const tA = parseFloat(a.tome) || 0;
-                const tB = parseFloat(b.tome) || 0;
-                return tA - tB;
-            });
+      // Charts
+      const pubs = {};
+      let readCount = 0;
+      possedes.forEach(b => {
+        pubs[b.editeur] = (pubs[b.editeur] || 0) + 1;
+        if(b.lu) readCount++;
+      });
 
-            renderBooks(filtered);
+      const pubLabels = Object.keys(pubs).sort((a,b) => pubs[b] - pubs[a]).slice(0, 8); // Top 8
+      const pubData = pubLabels.map(l => pubs[l]);
+
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      const textColor = isDark ? '#e8e6e3' : '#28251d';
+      const gridColor = isDark ? '#3a3936' : '#dcd9d5';
+
+      Chart.defaults.color = textColor;
+
+      if(pubChart) pubChart.destroy();
+      const ctxPub = document.getElementById('chartPublishers').getContext('2d');
+      pubChart = new Chart(ctxPub, {
+        type: 'bar',
+        data: {
+          labels: pubLabels,
+          datasets: [{
+            label: 'Albums',
+            data: pubData,
+            backgroundColor: '#8b1a1a',
+            borderRadius: 4
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          plugins: { legend: {display:false} },
+          scales: {
+            x: { grid: {color: gridColor}, ticks: {stepSize: 1} },
+            y: { grid: {display: false} }
+          }
         }
-    </script>
+      });
+
+      if(readChart) readChart.destroy();
+      const ctxRead = document.getElementById('chartRead').getContext('2d');
+      readChart = new Chart(ctxRead, {
+        type: 'doughnut',
+        data: {
+          labels: ['Lus', 'Non lus'],
+          datasets: [{
+            data: [readCount, possedes.length - readCount],
+            backgroundColor: ['#27ae60', '#e67e22'],
+            borderWidth: 0
+          }]
+        },
+        options: {
+          responsive: true,
+          cutout: '70%',
+          plugins: { legend: {position: 'bottom'} }
+        }
+      });
+    }
+
+    // --- DRAWER ---
+    function openDrawer(b) {
+      const content = document.getElementById('drawerContent');
+      const coverSrc = b.cover || 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450"><rect width="100%" height="100%" fill="%23dcd9d5"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="20" fill="%237a7974">No Cover</text></svg>';
+      
+      let tagsHtml = b.genre.map(g => `<span class="tag">${g}</span>`).join('');
+      if(b.statut === 'wishlist') tagsHtml += `<span class="tag" style="color:var(--gold); border-color:var(--gold)">Wishlist</span>`;
+      if(b.statut === 'prete') tagsHtml += `<span class="tag" style="color:var(--orange); border-color:var(--orange)">Prêté à ${b.prete_a}</span>`;
+
+      let starsHtml = '';
+      for(let i=1; i<=5; i++) {
+        starsHtml += `<span class="star ${i<=b.note ? 'filled' : ''}" onclick="setRating(${b._id}, ${i}, event)"><i data-lucide="star"></i></span>`;
+      }
+
+      content.innerHTML = `
+        <img src="${coverSrc}" class="detail-cover" alt="Cover">
+        <h2 class="detail-serie">${b.serie}</h2>
+        ${b.tome ? `<div class="detail-tome">Tome ${b.tome}</div>` : ''}
+        
+        ${tagsHtml ? `<div class="detail-tags">${tagsHtml}</div>` : ''}
+        
+        <div class="detail-synopsis">
+          ${b.synopsis ? `"${b.synopsis}"` : "Aucun synopsis disponible pour cet album."}
+        </div>
+
+        <div class="detail-meta">
+          <div class="meta-row"><div class="meta-label">Scénario</div><div class="meta-val">${b.scenaristes.join(', ') || '-'}</div></div>
+          <div class="meta-row"><div class="meta-label">Dessin</div><div class="meta-val">${b.dessinateurs.join(', ') || '-'}</div></div>
+          ${b.coloristes.length ? `<div class="meta-row"><div class="meta-label">Couleurs</div><div class="meta-val">${b.coloristes.join(', ')}</div></div>` : ''}
+          <div style="height:1px; background:var(--divider); margin:12px 0;"></div>
+          <div class="meta-row"><div class="meta-label">Éditeur</div><div class="meta-val">${b.editeur}</div></div>
+          <div class="meta-row"><div class="meta-label">Année</div><div class="meta-val">${b.annee || '-'}</div></div>
+          <div class="meta-row"><div class="meta-label">ISBN</div><div class="meta-val">${b.isbn || '-'}</div></div>
+        </div>
+
+        <div class="detail-actions">
+          <div class="action-row">
+            <span style="font-weight:600;">Ma Note</span>
+            <div class="stars" id="drawerStars">${starsHtml}</div>
+          </div>
+          <div class="action-row">
+            <span style="font-weight:600;">Marquer comme lu</span>
+            <label class="switch">
+              <input type="checkbox" ${b.lu ? 'checked' : ''} onchange="toggleLu(${b._id}, this.checked)">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      `;
+      
+      document.getElementById('drawerOverlay').classList.add('active');
+      document.getElementById('detailDrawer').classList.add('active');
+      lucide.createIcons();
+    }
+
+    function closeDrawer() {
+      document.getElementById('drawerOverlay').classList.remove('active');
+      document.getElementById('detailDrawer').classList.remove('active');
+    }
+
+    window.setRating = function(id, note, e) {
+      e.stopPropagation();
+      const b = db.find(x => x._id === id);
+      if(b) b.note = note;
+      openDrawer(b); // Re-render drawer
+    };
+
+    window.toggleLu = function(id, state) {
+      const b = db.find(x => x._id === id);
+      if(b) b.lu = state;
+    };
+
+    // --- STORE MODE ---
+    function openStore() {
+      document.getElementById('storeMode').classList.add('active');
+      document.getElementById('storeInput').focus();
+      document.getElementById('storeInput').value = '';
+      document.getElementById('storeResults').innerHTML = `
+        <div style="text-align:center; color: var(--text-muted); font-size:1.2rem; margin-top:40px;">
+          <i data-lucide="scan-line" style="width:48px;height:48px; margin-bottom:10px; opacity:0.5;"></i><br>
+          Scannez un code-barres ou tapez un titre...
+        </div>
+      `;
+      lucide.createIcons();
+    }
+    
+    function closeStore() {
+      document.getElementById('storeMode').classList.remove('active');
+    }
+
+    document.getElementById('storeInput').addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      const resContainer = document.getElementById('storeResults');
+      
+      if(q.length < 3) {
+        resContainer.innerHTML = '';
+        return;
+      }
+
+      // Group by series in store mode
+      const matchedSeries = new Set();
+      const directMatches = db.filter(b => {
+        const text = (b.serie + " " + b.tome + " " + b.isbn).toLowerCase();
+        if(text.includes(q)) {
+          matchedSeries.add(b.serie);
+          return true;
+        }
+        return false;
+      });
+
+      if(matchedSeries.size === 0) {
+        resContainer.innerHTML = `
+          <div class="store-result-card" style="border-color: var(--accent-color);">
+            <div class="store-result-info">
+              <h3>Inconnu au bataillon</h3>
+              <p>Aucune correspondance dans la base.</p>
+            </div>
+            <div class="store-status status-no">❌ PAS ENCORE</div>
+          </div>`;
+        return;
+      }
+
+      let html = '';
+      matchedSeries.forEach(sName => {
+        const sBooks = seriesMap.get(sName);
+        const ownedTomes = sBooks.filter(b => b.statut !== 'wishlist' && !isNaN(parseFloat(b.tome))).map(b => parseFloat(b.tome));
+        
+        let missingHtml = '';
+        if(ownedTomes.length > 0) {
+           const max = Math.max(...ownedTomes);
+           const missing = [];
+           for(let i=1; i<max; i++) {
+             if(!ownedTomes.includes(i)) missing.push(i);
+           }
+           if(missing.length > 0) {
+             missingHtml = `<div class="series-missing-alert"><i data-lucide="alert-triangle" style="width:16px;"></i> Attention, trous détectés : tomes ${missing.join(', ')} manquants !</div>`;
+           }
+        }
+
+        // Find exact matches for this series
+        const exactAlbums = directMatches.filter(b => b.serie === sName);
+        
+        exactAlbums.forEach(b => {
+          const isOwned = b.statut !== 'wishlist';
+          html += `
+            <div class="store-result-card" style="border-color: ${isOwned ? 'var(--green)' : 'var(--accent-color)'}; margin-bottom:15px; display:block;">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <div class="store-result-info">
+                  <h3>${b.serie} ${b.tome ? '- T.'+b.tome : ''}</h3>
+                  <p>${b.isbn ? 'ISBN: '+b.isbn : ''}</p>
+                </div>
+                <div class="store-status ${isOwned ? 'status-owned' : 'status-no'}">
+                  ${isOwned ? '✅ DANS LA COLLECTION' : '❌ WISHLIST / MANQUANT'}
+                </div>
+              </div>
+              ${missingHtml}
+            </div>
+          `;
+          // clear missing html for next albums of same series to avoid duplication
+          missingHtml = ''; 
+        });
+      });
+
+      resContainer.innerHTML = html;
+      lucide.createIcons();
+    });
+
+    // --- EVENTS & UI LOGIC ---
+    function initEvents() {
+      document.getElementById('searchInput').addEventListener('input', applyFilters);
+      document.getElementById('filterEditeur').addEventListener('change', applyFilters);
+      document.getElementById('filterScenariste').addEventListener('change', applyFilters);
+      document.getElementById('filterDessinateur').addEventListener('change', applyFilters);
+      document.getElementById('filterLu').addEventListener('change', applyFilters);
+      statusRadios.forEach(r => r.addEventListener('change', applyFilters));
+
+      document.getElementById('btnResetFilters').addEventListener('click', () => {
+        searchInput.value = '';
+        filterEditeur.value = '';
+        filterScenariste.value = '';
+        filterDessinateur.value = '';
+        filterLu.checked = false;
+        statusRadios[0].checked = true;
+        applyFilters();
+      });
+
+      // Tabs
+      document.querySelectorAll('.tab').forEach(t => {
+        t.addEventListener('click', (e) => {
+          document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+          document.querySelectorAll('.view-panel').forEach(x => x.classList.remove('active'));
+          e.target.classList.add('active');
+          document.getElementById(e.target.getAttribute('data-target')).classList.add('active');
+          
+          if(e.target.getAttribute('data-target') === 'view-series') renderSeries();
+          if(e.target.getAttribute('data-target') === 'view-stats') renderStats();
+        });
+      });
+
+      // Theme toggle
+      document.getElementById('btnTheme').addEventListener('click', () => {
+        const root = document.documentElement;
+        const current = root.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        const icon = next === 'dark' ? 'sun' : 'moon';
+        document.getElementById('btnTheme').innerHTML = `<i data-lucide="${icon}"></i>`;
+        lucide.createIcons();
+        if(document.getElementById('view-stats').classList.contains('active')) renderStats(); // redraw charts with new colors
+      });
+
+      // Store
+      document.getElementById('btnStore').addEventListener('click', openStore);
+      document.getElementById('btnCloseStore').addEventListener('click', closeStore);
+
+      // Drawer
+      document.getElementById('btnCloseDrawer').addEventListener('click', closeDrawer);
+      document.getElementById('drawerOverlay').addEventListener('click', closeDrawer);
+
+      // Mobile Menu
+      const sidebar = document.getElementById('sidebar');
+      document.getElementById('btnMenu').addEventListener('click', () => sidebar.classList.add('active'));
+      document.getElementById('btnCloseMenu').addEventListener('click', () => sidebar.classList.remove('active'));
+    }
+
+    function initTheme() {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.getElementById('btnTheme').innerHTML = `<i data-lucide="sun"></i>`;
+      }
+    }
+
+    // --- SERVICE WORKER ---
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').catch(err => {
+          console.log('SW registration failed: ', err);
+        });
+      });
+    }
+
+    // BOOT
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
 </body>
 </html>
