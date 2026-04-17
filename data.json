@@ -210,7 +210,10 @@
         "serie": "Tintin",
         "tome": "Le Lotus Bleu",
         "auteurs": "Hergé",
-        "editeur": "Casterman"
+        "editeur": "Casterman",
+        "cover": "images/tintin_le_lotus_bleu.jpg",
+        "scenariste": "Hergé",
+        "dessinateur": "Hergé"
     },
     {
         "serie": "Tintin",
