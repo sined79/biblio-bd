@@ -165,15 +165,15 @@
         "scenariste": "Dufaux, Jean",
         "dessinateur": "Wurm, Philippe",
         "scenaristes": [
-            "Dufaux",
-            "Jean"
+            "Dufaux, Jean"
         ],
         "dessinateurs": [
-            "Wurm",
-            "Philippe"
+            "Wurm, Philippe"
         ],
-        "annee": "2025",
-        "isbn": "9783965822337"
+        "annee": "2011",
+        "isbn": "9782723477166",
+        "titre": "Excentric Club",
+        "synopsis": "Automne 1937. Lord Abercrombie et ses amis fondent en plein cœur de Londres l'Excentric Club. Lady Elza, belle, spirituelle et indépendante, est bien décidée à en devenir la première femme membre, malgré son penchant à s'attirer des ennuis."
     },
     {
         "serie": "Le Grand Mort",
