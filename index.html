@@ -728,6 +728,8 @@
         </div>
 
         <div class="detail-meta">
+          ${b.annee ? `<div class="meta-row"><div class="meta-label">Année</div><div class="meta-val">${b.annee}</div></div>` : ''}
+          ${b.isbn ? `<div class="meta-row"><div class="meta-label">ISBN</div><div class="meta-val">${b.isbn}</div></div>` : ''}
           <div class="meta-row"><div class="meta-label">Scénario</div><div class="meta-val">${b.scenaristes.join(', ') || '-'}</div></div>
           <div class="meta-row"><div class="meta-label">Dessin</div><div class="meta-val">${b.dessinateurs.join(', ') || '-'}</div></div>
           ${b.coloristes.length ? `<div class="meta-row"><div class="meta-label">Couleurs</div><div class="meta-val">${b.coloristes.join(', ')}</div></div>` : ''}
