@@ -70,7 +70,7 @@
     .main-layout { display: flex; min-height: calc(100vh - 66px); }
 
     /* SIDEBAR */
-    .sidebar { width: 280px; background: var(--surface-color); border-right: 1px solid var(--divider); padding: 20px; overflow-y: auto; height: calc(100vh - 66px); position: sticky; top: 66px; flex-shrink: 0; transition: transform 0.3s; z-index: 90; }
+    .sidebar { width: 280px; background: var(--surface-color); border-right: 1px solid var(--divider); padding: 20px; overflow-y: auto; height: calc(100vh - 66px); position: sticky; top: 66px; flex-shrink: 0; transition: transform 0.3s; z-index: 90; display: flex; flex-direction: column; }
     .filter-group { margin-bottom: 20px; }
     .filter-group label { display: block; font-weight: 600; margin-bottom: 8px; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
     .filter-input { width: 100%; padding: 10px; border: 1px solid var(--divider); border-radius: 6px; background: var(--bg-color); color: var(--text-main); font-family: inherit; font-size: 0.95rem; }
@@ -220,7 +220,7 @@
     @media (max-width: 768px) {
       h1 { font-size: 1.4rem; }
       .btn-mobile-menu { display: block; }
-      .sidebar { position: fixed; top: 0; left: -100%; height: 100vh; width: 85%; max-width: 320px; z-index: 1000; box-shadow: 5px 0 20px rgba(0,0,0,0.1); padding-top: 20px; }
+      .sidebar { position: fixed; top: 0; left: -100%; height: 100vh; width: 85%; max-width: 320px; z-index: 1000; box-shadow: 5px 0 20px rgba(0,0,0,0.1); padding-top: 20px; display: flex; flex-direction: column; }
       .sidebar.active { left: 0; }
       .close-sidebar { display: flex; align-items: center; justify-content: flex-end; padding-bottom: 20px; background: none; border: none; color: var(--text-main); font-size: 1.2rem; cursor: pointer; width: 100%; }
       .main-layout { flex-direction: column; }
@@ -267,7 +267,12 @@
         
         <div class="filter-group">
           <label>Recherche</label>
-          <input type="text" id="searchInput" class="filter-input" placeholder="Série, Titre, Auteur, ISBN...">
+          <form id="searchForm" action="javascript:void(0);" style="margin:0;">
+            <div style="position: relative;">
+              <input type="search" id="searchInput" class="filter-input" placeholder="Série, Titre, Auteur, ISBN..." enterkeyhint="search" style="padding-right: 40px;">
+              <button type="submit" class="btn-icon" style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); color: var(--accent-color); padding: 5px;"><i data-lucide="search" style="width: 18px; height: 18px;"></i></button>
+            </div>
+          </form>
         </div>
 
         <div class="filter-group">
@@ -303,7 +308,10 @@
         </div>
 
         <button class="btn-reset" id="btnResetFilters"><i data-lucide="refresh-ccw" style="width:16px; margin-right:6px; vertical-align:middle;"></i>Réinitialiser</button>
-        <button class="btn-store" id="btnMobileShowResults" style="display: none; width: 100%; justify-content: center; margin-top: 15px; padding: 12px; background: var(--accent-color); color: white; border: none; box-shadow: 0 4px 10px rgba(139,26,26,0.3);">Afficher les résultats</button>
+        
+        <div id="mobileFooterWrapper" style="display: none; position: sticky; bottom: -20px; background: var(--surface-color); padding: 15px 0 20px 0; margin-top: auto; border-top: 1px solid var(--divider); z-index: 10;">
+          <button class="btn-store" id="btnMobileShowResults" style="width: 100%; justify-content: center; padding: 12px; background: var(--accent-color); color: white; border: none; box-shadow: 0 4px 10px rgba(139,26,26,0.3); font-weight: 700; font-size: 1rem;">Afficher les résultats</button>
+        </div>
       </aside>
 
       <!-- CONTENT AREA -->
@@ -575,10 +583,13 @@
       lucide.createIcons();
       
       const btnMobileResults = document.getElementById('btnMobileShowResults');
+      const mobileFooterWrapper = document.getElementById('mobileFooterWrapper');
       if(window.innerWidth <= 768) {
+        if(mobileFooterWrapper) mobileFooterWrapper.style.display = 'block';
         btnMobileResults.style.display = 'flex';
         btnMobileResults.textContent = `Afficher ${filteredDb.length} résultat(s)`;
       } else {
+        if(mobileFooterWrapper) mobileFooterWrapper.style.display = 'none';
         btnMobileResults.style.display = 'none';
       }
     }
@@ -1013,11 +1024,10 @@
 
       document.getElementById('btnMobileShowResults').addEventListener('click', () => closeMenu(false));
 
-      searchInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-          searchInput.blur();
-          if (window.innerWidth <= 768) closeMenu(false);
-        }
+      document.getElementById('searchForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        searchInput.blur();
+        if (window.innerWidth <= 768) closeMenu(false);
       });
 
       window.addEventListener('popstate', () => {
