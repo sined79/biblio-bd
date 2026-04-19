@@ -303,6 +303,7 @@
         </div>
 
         <button class="btn-reset" id="btnResetFilters"><i data-lucide="refresh-ccw" style="width:16px; margin-right:6px; vertical-align:middle;"></i>Réinitialiser</button>
+        <button class="btn-store" id="btnMobileShowResults" style="display: none; width: 100%; justify-content: center; margin-top: 15px; padding: 12px; background: var(--accent-color); color: white; border: none; box-shadow: 0 4px 10px rgba(139,26,26,0.3);">Afficher les résultats</button>
       </aside>
 
       <!-- CONTENT AREA -->
@@ -572,6 +573,14 @@
       });
       gridLibrary.appendChild(frag);
       lucide.createIcons();
+      
+      const btnMobileResults = document.getElementById('btnMobileShowResults');
+      if(window.innerWidth <= 768) {
+        btnMobileResults.style.display = 'flex';
+        btnMobileResults.textContent = `Afficher ${filteredDb.length} résultat(s)`;
+      } else {
+        btnMobileResults.style.display = 'none';
+      }
     }
 
     function renderSeries() {
@@ -755,11 +764,17 @@
       document.getElementById('drawerOverlay').classList.add('active');
       document.getElementById('detailDrawer').classList.add('active');
       lucide.createIcons();
+      if(window.location.hash !== '#detail') {
+        history.pushState({drawer: true}, '', window.location.pathname + '#detail');
+      }
     }
 
-    function closeDrawer() {
+    function closeDrawer(fromHistory) {
       document.getElementById('drawerOverlay').classList.remove('active');
       document.getElementById('detailDrawer').classList.remove('active');
+      if (fromHistory !== true && window.location.hash === '#detail') {
+        history.back();
+      }
     }
 
     window.openDrawerFromSeries = function(serie, tome) {
@@ -972,18 +987,47 @@
       };
 
       // Drawer
-      document.getElementById('btnCloseDrawer').addEventListener('click', closeDrawer);
-      document.getElementById('drawerOverlay').addEventListener('click', closeDrawer);
+      document.getElementById('btnCloseDrawer').addEventListener('click', () => closeDrawer(false));
+      document.getElementById('drawerOverlay').addEventListener('click', () => closeDrawer(false));
 
       // Mobile Menu
       const sidebar = document.getElementById('sidebar');
+      
+      function closeMenu(fromHistory) {
+        sidebar.classList.remove('active');
+        document.body.style.overflow = '';
+        if (fromHistory !== true && window.location.hash === '#menu') {
+          history.back();
+        }
+      }
+
       document.getElementById('btnMenu').addEventListener('click', () => {
         sidebar.classList.add('active');
         document.body.style.overflow = 'hidden';
+        if (window.location.hash !== '#menu') {
+          history.pushState({menu: true}, '', window.location.pathname + '#menu');
+        }
       });
-      document.getElementById('btnCloseMenu').addEventListener('click', () => {
-        sidebar.classList.remove('active');
-        document.body.style.overflow = '';
+
+      document.getElementById('btnCloseMenu').addEventListener('click', () => closeMenu(false));
+
+      document.getElementById('btnMobileShowResults').addEventListener('click', () => closeMenu(false));
+
+      searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          searchInput.blur();
+          if (window.innerWidth <= 768) closeMenu(false);
+        }
+      });
+
+      window.addEventListener('popstate', () => {
+        const hash = window.location.hash;
+        if (hash !== '#detail' && document.getElementById('detailDrawer').classList.contains('active')) {
+          closeDrawer(true);
+        }
+        if (hash !== '#menu' && sidebar.classList.contains('active')) {
+          closeMenu(true);
+        }
       });
     }
 
