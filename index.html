@@ -123,9 +123,9 @@
     .author-line i[data-lucide] { width: 14px; height: 14px; flex-shrink: 0; margin-top: 2px; color: var(--text-muted); }
     .publisher-line { margin-top: auto; padding-top: 12px; font-size: 0.8rem; color: var(--text-muted); font-weight: 500; display: flex; justify-content: space-between; }
 
-    /* DRAWER (Vue Détail) */
-    .drawer-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 200; opacity: 0; pointer-events: none; transition: opacity 0.3s; backdrop-filter: blur(3px); }
-    .drawer-overlay.active { opacity: 1; pointer-events: auto; }
+    /* OVERLAYS & DRAWERS */
+    .overlay-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 200; opacity: 0; pointer-events: none; transition: opacity 0.3s; backdrop-filter: blur(3px); }
+    .overlay-backdrop.active { opacity: 1; pointer-events: auto; }
     .drawer { position: fixed; top: 0; right: -100%; width: 450px; max-width: 100%; height: 100vh; background: var(--surface-color); z-index: 201; box-shadow: -5px 0 30px rgba(0,0,0,0.15); transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1); display: flex; flex-direction: column; }
     .drawer.active { right: 0; }
     .drawer-header { padding: 20px; border-bottom: 1px solid var(--divider); display: flex; justify-content: space-between; align-items: center; }
@@ -372,8 +372,11 @@
     </div>
   </div>
 
+  <!-- OVERLAYS & DRAWERS -->
+  <div class="overlay-backdrop" id="drawerOverlay" style="z-index: 200;"></div>
+  <div class="overlay-backdrop" id="sidebarOverlay" style="z-index: 999;"></div>
+
   <!-- DRAWER DETAILS -->
-  <div class="drawer-overlay" id="drawerOverlay"></div>
   <div class="drawer" id="detailDrawer">
     <div class="drawer-header">
       <h2>Détail de l'album</h2>
@@ -906,14 +909,23 @@
       lucide.createIcons();
     });
 
+    function applyFiltersAndCloseMobileMenu(e) {
+      applyFilters(e);
+      if (window.innerWidth <= 768) {
+        document.getElementById('sidebar').classList.remove('active');
+        document.getElementById('sidebarOverlay').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
     // --- EVENTS & UI LOGIC ---
     function initEvents() {
       document.getElementById('searchInput').addEventListener('input', applyFilters);
-      document.getElementById('filterEditeur').addEventListener('change', applyFilters);
-      document.getElementById('filterScenariste').addEventListener('change', applyFilters);
-      document.getElementById('filterDessinateur').addEventListener('change', applyFilters);
-      document.getElementById('filterLu').addEventListener('change', applyFilters);
-      statusRadios.forEach(r => r.addEventListener('change', applyFilters));
+      document.getElementById('filterEditeur').addEventListener('change', applyFiltersAndCloseMobileMenu);
+      document.getElementById('filterScenariste').addEventListener('change', applyFiltersAndCloseMobileMenu);
+      document.getElementById('filterDessinateur').addEventListener('change', applyFiltersAndCloseMobileMenu);
+      document.getElementById('filterLu').addEventListener('change', applyFiltersAndCloseMobileMenu);
+      statusRadios.forEach(r => r.addEventListener('change', applyFiltersAndCloseMobileMenu));
 
       document.getElementById('btnResetFilters').addEventListener('click', () => {
         searchInput.value = '';
@@ -1003,9 +1015,11 @@
 
       // Mobile Menu
       const sidebar = document.getElementById('sidebar');
+      const sidebarOverlay = document.getElementById('sidebarOverlay');
       
       function closeMenu(fromHistory) {
         sidebar.classList.remove('active');
+        sidebarOverlay.classList.remove('active');
         document.body.style.overflow = '';
         if (fromHistory !== true && window.location.hash === '#menu') {
           history.back();
@@ -1014,11 +1028,14 @@
 
       document.getElementById('btnMenu').addEventListener('click', () => {
         sidebar.classList.add('active');
+        sidebarOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';
         if (window.location.hash !== '#menu') {
           history.pushState({menu: true}, '', window.location.pathname + '#menu');
         }
       });
+      
+      sidebarOverlay.addEventListener('click', () => closeMenu(false));
 
       document.getElementById('btnCloseMenu').addEventListener('click', () => closeMenu(false));
 
