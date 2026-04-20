@@ -436,5 +436,568 @@
             "Hergé"
         ],
         "annee": "1953"
+    },
+    {
+        "serie": "La Quête de l'oiseau du temps - Avant la Quête",
+        "tome": "1",
+        "titre": "L'Ami Javin",
+        "auteurs": "Le Tendre, Loisel, Lidwine",
+        "editeur": "Dargaud",
+        "cover": "",
+        "scenariste": "Le Tendre, Loisel",
+        "dessinateur": "Loisel, Lidwine",
+        "scenaristes": [
+            "Le Tendre",
+            "Loisel"
+        ],
+        "dessinateurs": [
+            "Loisel",
+            "Lidwine"
+        ],
+        "synopsis": "",
+        "annee": "1998",
+        "isbn": "9782205043945"
+    },
+    {
+        "serie": "La Quête de l'oiseau du temps",
+        "tome": "2",
+        "titre": "Le temple de l'oubli",
+        "auteurs": "Le Tendre, Loisel",
+        "editeur": "Dargaud",
+        "cover": "",
+        "scenariste": "Le Tendre, Loisel",
+        "dessinateur": "Loisel",
+        "scenaristes": [
+            "Le Tendre",
+            "Loisel"
+        ],
+        "dessinateurs": [
+            "Loisel"
+        ],
+        "synopsis": "",
+        "annee": "1998",
+        "isbn": "9782205047998"
+    },
+    {
+        "serie": "Garulfo",
+        "tome": "1",
+        "titre": "De mares en châteaux",
+        "auteurs": "Ayroles, Maïorana",
+        "editeur": "Delcourt",
+        "cover": "",
+        "scenariste": "Ayroles",
+        "dessinateur": "Maïorana",
+        "scenaristes": [
+            "Ayroles"
+        ],
+        "dessinateurs": [
+            "Maïorana"
+        ],
+        "synopsis": "",
+        "annee": "1999",
+        "isbn": "9782840550457"
+    },
+    {
+        "serie": "Garulfo",
+        "tome": "2",
+        "titre": "De mal en pis",
+        "auteurs": "Ayroles, Maïorana",
+        "editeur": "Delcourt",
+        "cover": "",
+        "scenariste": "Ayroles",
+        "dessinateur": "Maïorana",
+        "scenaristes": [
+            "Ayroles"
+        ],
+        "dessinateurs": [
+            "Maïorana"
+        ],
+        "synopsis": "",
+        "annee": "1996",
+        "isbn": "9782840550877"
+    },
+    {
+        "serie": "Garulfo",
+        "tome": "3",
+        "titre": "Le prince aux deux visages",
+        "auteurs": "Ayroles, Maïorana, Leprévost",
+        "editeur": "Delcourt",
+        "cover": "",
+        "scenariste": "Ayroles",
+        "dessinateur": "Maïorana, Leprévost",
+        "scenaristes": [
+            "Ayroles"
+        ],
+        "dessinateurs": [
+            "Maïorana",
+            "Leprévost"
+        ],
+        "synopsis": "",
+        "annee": "1997",
+        "isbn": "9782840551393"
+    },
+    {
+        "serie": "Garulfo",
+        "tome": "4",
+        "titre": "L'ogre aux yeux de cristal",
+        "auteurs": "Ayroles, Maïorana, Leprévost",
+        "editeur": "Delcourt",
+        "cover": "",
+        "scenariste": "Ayroles",
+        "dessinateur": "Maïorana, Leprévost",
+        "scenaristes": [
+            "Ayroles"
+        ],
+        "dessinateurs": [
+            "Maïorana",
+            "Leprévost"
+        ],
+        "synopsis": "",
+        "annee": "1998",
+        "isbn": "9782840552376"
+    },
+    {
+        "serie": "Garulfo",
+        "tome": "5",
+        "titre": "Preux et prouesses",
+        "auteurs": "Ayroles, Maïorana, Leprévost",
+        "editeur": "Delcourt",
+        "cover": "",
+        "scenariste": "Ayroles",
+        "dessinateur": "Maïorana, Leprévost",
+        "scenaristes": [
+            "Ayroles"
+        ],
+        "dessinateurs": [
+            "Maïorana",
+            "Leprévost"
+        ],
+        "synopsis": "",
+        "annee": "1999",
+        "isbn": "9782840553342"
+    },
+    {
+        "serie": "Garulfo",
+        "tome": "6",
+        "titre": "La belle et les bêtes",
+        "auteurs": "Ayroles, Maïorana, Leprévost",
+        "editeur": "Delcourt",
+        "cover": "",
+        "scenariste": "Ayroles",
+        "dessinateur": "Maïorana, Leprévost",
+        "scenaristes": [
+            "Ayroles"
+        ],
+        "dessinateurs": [
+            "Maïorana",
+            "Leprévost"
+        ],
+        "synopsis": "",
+        "annee": "2002",
+        "isbn": "9782840555797"
+    },
+    {
+        "serie": "Peter Pan",
+        "tome": "1",
+        "titre": "Londres",
+        "auteurs": "Loisel",
+        "editeur": "Vents d'Ouest",
+        "cover": "",
+        "scenariste": "Loisel",
+        "dessinateur": "Loisel",
+        "scenaristes": [
+            "Loisel"
+        ],
+        "dessinateurs": [
+            "Loisel"
+        ],
+        "synopsis": "",
+        "annee": "1996",
+        "isbn": "9782869675773"
+    },
+    {
+        "serie": "Peter Pan",
+        "tome": "2",
+        "titre": "Opikanoba",
+        "auteurs": "Loisel",
+        "editeur": "Vents d'Ouest",
+        "cover": "",
+        "scenariste": "Loisel",
+        "dessinateur": "Loisel",
+        "scenaristes": [
+            "Loisel"
+        ],
+        "dessinateurs": [
+            "Loisel"
+        ],
+        "synopsis": "",
+        "annee": "1992",
+        "isbn": "9782869671911"
+    },
+    {
+        "serie": "Peter Pan",
+        "tome": "3",
+        "titre": "Tempête",
+        "auteurs": "Loisel",
+        "editeur": "Vents d'Ouest",
+        "cover": "",
+        "scenariste": "Loisel",
+        "dessinateur": "Loisel",
+        "scenaristes": [
+            "Loisel"
+        ],
+        "dessinateurs": [
+            "Loisel"
+        ],
+        "synopsis": "",
+        "annee": "1994",
+        "isbn": "9782869672918"
+    },
+    {
+        "serie": "Peter Pan",
+        "tome": "4",
+        "titre": "Mains Rouges",
+        "auteurs": "Loisel",
+        "editeur": "Vents d'Ouest",
+        "cover": "",
+        "scenariste": "Loisel",
+        "dessinateur": "Loisel",
+        "scenaristes": [
+            "Loisel"
+        ],
+        "dessinateurs": [
+            "Loisel"
+        ],
+        "synopsis": "",
+        "annee": "1996",
+        "isbn": "9782869675209"
+    },
+    {
+        "serie": "Peter Pan",
+        "tome": "5",
+        "titre": "Crochet",
+        "auteurs": "Loisel",
+        "editeur": "Vents d'Ouest",
+        "cover": "",
+        "scenariste": "Loisel",
+        "dessinateur": "Loisel",
+        "scenaristes": [
+            "Loisel"
+        ],
+        "dessinateurs": [
+            "Loisel"
+        ],
+        "synopsis": "",
+        "annee": "2002",
+        "isbn": "9782869678491"
+    },
+    {
+        "serie": "Peter Pan",
+        "tome": "6",
+        "titre": "Destins",
+        "auteurs": "Loisel",
+        "editeur": "Vents d'Ouest",
+        "cover": "",
+        "scenariste": "Loisel",
+        "dessinateur": "Loisel",
+        "scenaristes": [
+            "Loisel"
+        ],
+        "dessinateurs": [
+            "Loisel"
+        ],
+        "synopsis": "",
+        "annee": "2004",
+        "isbn": "9782749307060"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "1",
+        "titre": "Marie",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "",
+        "scenariste": "Loisel, Tripp",
+        "dessinateur": "Loisel, Tripp",
+        "scenaristes": [
+            "Loisel",
+            "Tripp"
+        ],
+        "dessinateurs": [
+            "Loisel",
+            "Tripp"
+        ],
+        "synopsis": "",
+        "annee": "2006",
+        "isbn": "9782203370111"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "2",
+        "titre": "Serge",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "",
+        "scenariste": "Loisel, Tripp",
+        "dessinateur": "Loisel, Tripp",
+        "scenaristes": [
+            "Loisel",
+            "Tripp"
+        ],
+        "dessinateurs": [
+            "Loisel",
+            "Tripp"
+        ],
+        "synopsis": "",
+        "annee": "2006",
+        "isbn": "9782203370135"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "3",
+        "titre": "Les hommes",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "",
+        "scenariste": "Loisel, Tripp",
+        "dessinateur": "Loisel, Tripp",
+        "scenaristes": [
+            "Loisel",
+            "Tripp"
+        ],
+        "dessinateurs": [
+            "Loisel",
+            "Tripp"
+        ],
+        "synopsis": "",
+        "annee": "2007",
+        "isbn": "9782203348103"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "4",
+        "titre": "Confessions",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "",
+        "scenariste": "Loisel, Tripp",
+        "dessinateur": "Loisel, Tripp",
+        "scenaristes": [
+            "Loisel",
+            "Tripp"
+        ],
+        "dessinateurs": [
+            "Loisel",
+            "Tripp"
+        ],
+        "synopsis": "",
+        "annee": "2008",
+        "isbn": "9782203016910"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "5",
+        "titre": "Montréal",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "",
+        "scenariste": "Loisel, Tripp",
+        "dessinateur": "Loisel, Tripp",
+        "scenaristes": [
+            "Loisel",
+            "Tripp"
+        ],
+        "dessinateurs": [
+            "Loisel",
+            "Tripp"
+        ],
+        "synopsis": "",
+        "annee": "2009",
+        "isbn": "9782203024632"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "6",
+        "titre": "Ernest Latulippe",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "",
+        "scenariste": "Loisel, Tripp",
+        "dessinateur": "Loisel, Tripp",
+        "scenaristes": [
+            "Loisel",
+            "Tripp"
+        ],
+        "dessinateurs": [
+            "Loisel",
+            "Tripp"
+        ],
+        "synopsis": "",
+        "annee": "2010",
+        "isbn": "9782203026162"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "7",
+        "titre": "Charleston",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "",
+        "scenariste": "Loisel, Tripp",
+        "dessinateur": "Loisel, Tripp",
+        "scenaristes": [
+            "Loisel",
+            "Tripp"
+        ],
+        "dessinateurs": [
+            "Loisel",
+            "Tripp"
+        ],
+        "synopsis": "",
+        "annee": "2011",
+        "isbn": "9782203032194"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "8",
+        "titre": "Les femmes",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "",
+        "scenariste": "Loisel, Tripp",
+        "dessinateur": "Loisel, Tripp",
+        "scenaristes": [
+            "Loisel",
+            "Tripp"
+        ],
+        "dessinateurs": [
+            "Loisel",
+            "Tripp"
+        ],
+        "synopsis": "",
+        "annee": "2012",
+        "isbn": "9782203049222"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "9",
+        "titre": "Notre-Dame-des-Lacs",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "",
+        "scenariste": "Loisel, Tripp",
+        "dessinateur": "Loisel, Tripp",
+        "scenaristes": [
+            "Loisel",
+            "Tripp"
+        ],
+        "dessinateurs": [
+            "Loisel",
+            "Tripp"
+        ],
+        "synopsis": "",
+        "annee": "2014",
+        "isbn": "9782203062108"
+    },
+    {
+        "serie": "Magasin Général - L'Arrière Boutique",
+        "tome": "1",
+        "titre": "Magasin Général I",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "",
+        "scenariste": "Loisel, Tripp",
+        "dessinateur": "Loisel, Tripp",
+        "scenaristes": [
+            "Loisel",
+            "Tripp"
+        ],
+        "dessinateurs": [
+            "Loisel",
+            "Tripp"
+        ],
+        "synopsis": "",
+        "annee": "",
+        "isbn": ""
+    },
+    {
+        "serie": "Magasin Général - L'Arrière Boutique",
+        "tome": "2",
+        "titre": "Magasin Général II",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "",
+        "scenariste": "Loisel, Tripp",
+        "dessinateur": "Loisel, Tripp",
+        "scenaristes": [
+            "Loisel",
+            "Tripp"
+        ],
+        "dessinateurs": [
+            "Loisel",
+            "Tripp"
+        ],
+        "synopsis": "",
+        "annee": "",
+        "isbn": ""
+    },
+    {
+        "serie": "Magasin Général - L'Arrière Boutique",
+        "tome": "3",
+        "titre": "Magasin Général III",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "",
+        "scenariste": "Loisel, Tripp",
+        "dessinateur": "Loisel, Tripp",
+        "scenaristes": [
+            "Loisel",
+            "Tripp"
+        ],
+        "dessinateurs": [
+            "Loisel",
+            "Tripp"
+        ],
+        "synopsis": "",
+        "annee": "",
+        "isbn": ""
+    },
+    {
+        "serie": "Maggy Garrison",
+        "tome": "1",
+        "titre": "Fais un sourire, Maggy",
+        "auteurs": "Trondheim, Oiry",
+        "editeur": "Dupuis",
+        "cover": "",
+        "scenariste": "Trondheim",
+        "dessinateur": "Oiry",
+        "scenaristes": [
+            "Trondheim"
+        ],
+        "dessinateurs": [
+            "Oiry"
+        ],
+        "synopsis": "",
+        "annee": "2014",
+        "isbn": "9782800160788"
+    },
+    {
+        "serie": "Maggy Garrison",
+        "tome": "2",
+        "titre": "L'homme qui est entré dans mon lit",
+        "auteurs": "Trondheim, Oiry",
+        "editeur": "Dupuis",
+        "cover": "",
+        "scenariste": "Trondheim",
+        "dessinateur": "Oiry",
+        "scenaristes": [
+            "Trondheim"
+        ],
+        "dessinateurs": [
+            "Oiry"
+        ],
+        "synopsis": "",
+        "annee": "2015",
+        "isbn": "9782800163239"
     }
 ]
