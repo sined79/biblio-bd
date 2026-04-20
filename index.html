@@ -556,12 +556,12 @@
         if(b.statut === 'wishlist') badgeHtml = `<div class="status-badge wishlist" title="Wishlist"><i data-lucide="heart" style="width:14px;height:14px;"></i></div>`;
         else if(b.statut === 'prete') badgeHtml = `<div class="status-badge prete" title="Prêté à ${b.prete_a}"><i data-lucide="refresh-cw" style="width:14px;height:14px;"></i></div>`;
 
-        const coverSrc = b.cover ? b.cover : 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450"><rect width="100%" height="100%" fill="%23dcd9d5"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="20" fill="%237a7974">No Cover</text></svg>';
+        const coverSrc = b.cover ? b.cover : "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='450'><rect width='100%' height='100%' fill='%23dcd9d5'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='20' fill='%237a7974'>No Cover</text></svg>";
         
         card.innerHTML = `
           <div class="card-cover">
             ${badgeHtml}
-            <img src="${coverSrc}" alt="Cover" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'300\\' height=\\'450\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23dcd9d5\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' font-size=\\'20\\' fill=\\'%237a7974\\'>Error</text></svg>'">
+            <img src="${coverSrc}" alt="Cover" loading="lazy" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'300\\' height=\\'450\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23dcd9d5\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' font-size=\\'20\\' fill=\\'%237a7974\\'>Error</text></svg>';">
             <div class="overlay">
               <span class="overlay-btn">Voir détails</span>
             </div>
@@ -725,7 +725,7 @@
     // --- DRAWER ---
     function openDrawer(b) {
       const content = document.getElementById('drawerContent');
-      const coverSrc = b.cover || 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450"><rect width="100%" height="100%" fill="%23dcd9d5"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="20" fill="%237a7974">No Cover</text></svg>';
+      const coverSrc = b.cover || "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='450'><rect width='100%' height='100%' fill='%23dcd9d5'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='20' fill='%237a7974'>No Cover</text></svg>";
       
       let tagsHtml = b.genre.map(g => `<span class="tag">${g}</span>`).join('');
       if(b.statut === 'wishlist') tagsHtml += `<span class="tag" style="color:var(--gold); border-color:var(--gold)">Wishlist</span>`;
@@ -737,7 +737,7 @@
       }
 
       content.innerHTML = `
-        <img src="${coverSrc}" class="detail-cover" alt="Cover">
+        <img src="${coverSrc}" class="detail-cover" alt="Cover" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'300\\' height=\\'450\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23dcd9d5\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' font-size=\\'20\\' fill=\\'%237a7974\\'>No Cover</text></svg>';">
         <h2 class="detail-serie">${b.serie}</h2>
         ${b.tome ? `<div class="detail-tome">Tome ${b.tome}</div>` : ''}
         
