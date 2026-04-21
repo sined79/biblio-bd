@@ -697,9 +697,9 @@
         "titre": "Destins",
         "auteurs": "Loisel",
         "editeur": "Vents d'Ouest",
-        "cover": "",
-        "scenariste": "Loisel",
-        "dessinateur": "Loisel",
+        "cover": "images/peter_pan_6.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Loisel, Régis",
         "scenaristes": [
             "Loisel"
         ],
