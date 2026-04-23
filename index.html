@@ -572,6 +572,7 @@
           <div class="card-info">
             ${b.tome ? `<span class="tome-badge">${isNaN(b.tome) ? b.tome : 'Tome '+b.tome}</span>` : ''}
             <h3 class="serie-title">${b.serie}</h3>
+            ${b.titre ? `<div class="album-title" style="font-weight:600; font-size:1.05rem; margin-bottom:8px; color:var(--text); line-height:1.2;">${b.titre}</div>` : ''}
             <div class="author-line"><i data-lucide="pen-line"></i> <span>${b.scenaristes.join(', ') || '?'}</span></div>
             <div class="author-line"><i data-lucide="brush"></i> <span>${b.dessinateurs.join(', ') || '?'}</span></div>
             <div class="publisher-line">
@@ -742,7 +743,8 @@
       content.innerHTML = `
         <img src="${coverSrc}" class="detail-cover" alt="Cover" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'300\\' height=\\'450\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23dcd9d5\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' font-size=\\'20\\' fill=\\'%237a7974\\'>No Cover</text></svg>';">
         <h2 class="detail-serie">${b.serie}</h2>
-        ${b.tome ? `<div class="detail-tome">Tome ${b.tome}</div>` : ''}
+        ${b.tome ? `<div class="detail-tome" style="display:inline-block; margin-right:10px;">Tome ${b.tome}</div>` : ''}
+        ${b.titre ? `<div class="detail-titre" style="font-size:1.4rem; font-weight:700; color:var(--text); display:inline-block; font-style:italic;">${b.titre}</div>` : ''}
         
         ${tagsHtml ? `<div class="detail-tags">${tagsHtml}</div>` : ''}
         
