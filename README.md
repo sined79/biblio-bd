@@ -1,7 +1,7 @@
 # Bédéthèque (biblio-bd)
 
 ## Contexte
-Application web de type PWA (Progressive Web App) pour gérer la collection de bandes dessinées de Denis. Hébergée de manière statique sur GitHub Pages (dépôt `sined79/biblio-bd`).
+Application web de type PWA (Progressive Web App) pour gérer ma collection de bandes dessinées. Hébergée de manière statique sur GitHub Pages (dépôt `sined79/biblio-bd`).
 
 ## Stack Technique
 - **Frontend :** HTML, CSS, JavaScript (Vanilla). Aucun framework lourd.
