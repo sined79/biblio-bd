@@ -172,17 +172,22 @@
         "titre": "La Catastrophe",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "images/les_mondes_d_ald_baran___ald_baran_1.jpg",
-        "scenariste": "Leo (1)",
-        "dessinateur": "Leo (1)",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "cover": "images/les-mondes-d-ald-baran-ald-baran_t1.jpg",
+        "scenariste": "",
+        "dessinateur": "",
+        "scenaristes": [
+            "Franquin, André"
+        ],
+        "dessinateurs": [
+            "Franquin, André"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "1981",
+        "isbn": "2858150427",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Aldebaran-Tome-1-La-catastrophe-200.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_200.jpg"
     },
     {
         "serie": "Les Mondes d'Aldébaran - Aldébaran",
@@ -190,17 +195,22 @@
         "titre": "La Blonde",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "",
+        "cover": "images/les-mondes-d-ald-baran-ald-baran_t2.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "scenaristes": [
+            "Castel, Yves"
+        ],
+        "dessinateurs": [
+            "Kline"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "1986",
+        "isbn": "2950175805",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Aldebaran-Tome-2-La-blonde-149.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_149.jpg"
     },
     {
         "serie": "Les Mondes d'Aldébaran - Aldébaran",
@@ -226,17 +236,22 @@
         "titre": "Le Groupe",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "",
+        "cover": "images/les-mondes-d-ald-baran-ald-baran_t4.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "scenaristes": [
+            "De Groot, Bob"
+        ],
+        "dessinateurs": [
+            "Dany (1)"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "1990",
+        "isbn": "2872650008",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Aldebaran-Tome-4-Le-groupe-147.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/cavousinterressecouv01.jpg"
     },
     {
         "serie": "Les Mondes d'Aldébaran - Aldébaran",
@@ -244,17 +259,22 @@
         "titre": "La Créature",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "",
+        "cover": "images/les-mondes-d-ald-baran-ald-baran_t5.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
-        "synopsis": "",
-        "annee": "",
+        "scenaristes": [
+            "Vasseur, M."
+        ],
+        "dessinateurs": [
+            "Mittéï"
+        ],
+        "synopsis": "En Espagne, les 3A sont témoins d'un accident, mais trop de monde semble vouloir étouffer celui-ci. Les jeunes garçons décident alors de mener l'enquête...",
+        "annee": "1969",
         "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "bedetheque_url": "https://www.bedetheque.com/BD-Aldebaran-Tome-5-La-creature-151.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_151.jpg"
     },
     {
         "serie": "Les Mondes d'Aldébaran - Bételgeuse",
@@ -262,17 +282,22 @@
         "titre": "La Planète",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "",
+        "cover": "images/les-mondes-d-ald-baran-b-telgeuse_t1.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "scenaristes": [
+            "Cauvin, Raoul"
+        ],
+        "dessinateurs": [
+            "Walthéry, François"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "1988",
+        "isbn": "280011584X",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Betelgeuse-Tome-1-La-planete-297.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_297.jpg"
     },
     {
         "serie": "Les Mondes d'Aldébaran - Bételgeuse",
@@ -280,17 +305,22 @@
         "titre": "Les Survivants",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "",
+        "cover": "images/les-mondes-d-ald-baran-b-telgeuse_t2.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "scenaristes": [
+            "Goupil, Jacky"
+        ],
+        "dessinateurs": [
+            "Prugne, Patrick"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "1991",
+        "isbn": "2869671407",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Betelgeuse-Tome-2-Les-survivants-298.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_298.jpg"
     },
     {
         "serie": "Les Mondes d'Aldébaran - Bételgeuse",
@@ -298,17 +328,22 @@
         "titre": "L'Expédition",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "",
+        "cover": "images/les-mondes-d-ald-baran-b-telgeuse_t3.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "scenaristes": [
+            "Leo (1)"
+        ],
+        "dessinateurs": [
+            "Leo (1)"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "2002",
+        "isbn": "2205052314",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Betelgeuse-Tome-3-L-expedition-12692.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_12692.jpg"
     },
     {
         "serie": "Les Mondes d'Aldébaran - Bételgeuse",
@@ -316,17 +351,22 @@
         "titre": "Les Cavernes",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "",
+        "cover": "images/les-mondes-d-ald-baran-b-telgeuse_t4.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "scenaristes": [
+            "Leo (1)"
+        ],
+        "dessinateurs": [
+            "Leo (1)"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "2003",
+        "isbn": "2205054759",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Betelgeuse-Tome-4-Les-cavernes-30572.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_30572.jpg"
     },
     {
         "serie": "Les Mondes d'Aldébaran - Bételgeuse",
@@ -334,17 +374,22 @@
         "titre": "L'Autre",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "",
+        "cover": "images/les-mondes-d-ald-baran-b-telgeuse_t5.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "scenaristes": [
+            "Leo (1)"
+        ],
+        "dessinateurs": [
+            "Leo (1)"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "2005",
+        "isbn": "2205056360",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Betelgeuse-Tome-5-L-autre-49318.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_49318.jpg"
     },
     {
         "serie": "Les Mondes d'Aldébaran - Antarès",
@@ -352,17 +397,22 @@
         "titre": "Épisode 1",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "",
+        "cover": "images/les-mondes-d-ald-baran-antar-s_t1.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "scenaristes": [
+            "Leo (1)"
+        ],
+        "dessinateurs": [
+            "Leo (1)"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "2007",
+        "isbn": "9782205058895",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Antares-Leo-Tome-1-Episode-1-62073.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_62073.jpg"
     },
     {
         "serie": "Les Mondes d'Aldébaran - Antarès",
@@ -370,17 +420,22 @@
         "titre": "Épisode 2",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "",
+        "cover": "images/les-mondes-d-ald-baran-antar-s_t2.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "scenaristes": [
+            "Leo (1)"
+        ],
+        "dessinateurs": [
+            "Leo (1)"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "2009",
+        "isbn": "9782205061857",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Antares-Leo-Tome-2-Episode-2-84321.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_84321.jpg"
     },
     {
         "serie": "Les Mondes d'Aldébaran - Antarès",
@@ -388,17 +443,22 @@
         "titre": "Épisode 3",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "",
+        "cover": "images/les-mondes-d-ald-baran-antar-s_t3.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
-        "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "scenaristes": [
+            "Leo (1)"
+        ],
+        "dessinateurs": [
+            "Leo (1)"
+        ],
+        "synopsis": "Kim et ses compagnons d’infortune se sont posés sur Antarès, planète beaucoup plus hostile que ne leur laissaient croire les commanditaires du projet Antarès qui dirigent en fait une véritable secte. Séparés en deux groupes, les membres du projet sont plus vulnérables que jamais et le groupe de Kim, parti à la recherche de survivants, doit transporter une femme grièvement blessée. Leur seul espoir : rejoindre le camp de base mais pour cela ils doivent traverser une zone qui s’avère particulièrement dangereuse ! Cette série de science-fiction signée... Lire la suite",
+        "annee": "2010",
+        "isbn": "9782205063714",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Antares-Leo-Tome-3-Episode-3-103248.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_103248.jpg"
     },
     {
         "serie": "Kenya",
@@ -567,17 +627,22 @@
         "titre": "Prisonnier",
         "auteurs": "Kraehn, Vallée",
         "editeur": "Glénat",
-        "cover": "",
+        "cover": "images/gil-st-andr_t7.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "scenaristes": [
+            "Wasterlain, Marc"
+        ],
+        "dessinateurs": [
+            "Wasterlain, Marc"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "2004",
+        "isbn": "280013478X",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Gil-St-Andre-Tome-7-Prisonnier-34751.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_34751.jpg"
     },
     {
         "serie": "Gil St-André",
@@ -603,17 +668,22 @@
         "titre": "L'Homme qui aimait les poupées",
         "auteurs": "Kraehn",
         "editeur": "Glénat",
-        "cover": "",
+        "cover": "images/gil-st-andr_t1.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
-        "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "scenaristes": [
+            "Jodorowsky, Alejandro"
+        ],
+        "dessinateurs": [
+            "Arno (1)"
+        ],
+        "synopsis": "Sur la planète Mu-Dhara, un sorcier maléfique ôte le fluide vital de chaque habitant ; sa soif est telle qu'il ne restera bientôt plus d'espoir de voir une seule vie s'épanouir. C'est alors que naît Alef-Thau, un enfant-tronc recueilli par un animal sauvage. Malgré son handicap, c'est lui qui sauvera son monde en conduisant les siens vers la liberté. La quête d'Alef-Thau ne fait que commencer...",
+        "annee": "1983",
+        "isbn": "2731602171",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Gil-St-Andre-Tome-1-L-Homme-qui-aimait-les-poupees-2603.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_2603.jpg"
     },
     {
         "serie": "Gil St-André",
@@ -639,17 +709,22 @@
         "titre": "Fugitif",
         "auteurs": "Kraehn, Vallée",
         "editeur": "Glénat",
-        "cover": "",
+        "cover": "images/gil-st-andr_t3.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "scenaristes": [
+            "Christin, Pierre"
+        ],
+        "dessinateurs": [
+            "Mézières, Jean-Claude"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "2000",
+        "isbn": "2205048805",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Gil-St-Andre-Tome-3-Fugitif-2576.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_2576.jpg"
     },
     {
         "serie": "Gil St-André",
@@ -657,17 +732,22 @@
         "titre": "Le Chasseur",
         "auteurs": "Kraehn, Vallée",
         "editeur": "Glénat",
-        "cover": "",
+        "cover": "images/gil-st-andr_t4.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "scenaristes": [
+            "Jodorowsky, Alejandro"
+        ],
+        "dessinateurs": [
+            "Arno (1)"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "1984",
+        "isbn": "2731602708",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Gil-St-Andre-Tome-4-Le-Chasseur-2604.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_2604.jpg"
     },
     {
         "serie": "Gil St-André",
@@ -675,17 +755,22 @@
         "titre": "Enquêtes parallèles",
         "auteurs": "Kraehn, Vallée",
         "editeur": "Glénat",
-        "cover": "",
+        "cover": "images/gil-st-andr_t5.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "scenaristes": [
+            "Jodorowsky, Alejandro"
+        ],
+        "dessinateurs": [
+            "Arno (1)"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "1986",
+        "isbn": "2731603666",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Gil-St-Andre-Tome-5-Enquetes-paralleles-2605.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_2605.jpg"
     },
     {
         "serie": "Gil St-André",
@@ -693,17 +778,22 @@
         "titre": "Sœurs de larmes",
         "auteurs": "Kraehn, Vallée",
         "editeur": "Glénat",
-        "cover": "",
+        "cover": "images/gil-st-andr_t6.jpg",
         "scenariste": "",
         "dessinateur": "",
-        "scenaristes": [],
-        "dessinateurs": [],
+        "scenaristes": [
+            "Moliterni, Claude"
+        ],
+        "dessinateurs": [
+            "Fahrer, Walter"
+        ],
         "synopsis": "",
-        "annee": "",
-        "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "annee": "1983",
+        "isbn": "2205022385",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Gil-St-Andre-Tome-6-Soeurs-de-larmes-25597.html",
+        "needs_review": false,
+        "source": "manual_fix",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_25597.jpg"
     },
     {
         "serie": "La Fortune des Winczlav",
