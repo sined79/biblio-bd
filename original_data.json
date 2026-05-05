@@ -477,26 +477,22 @@
     {
         "serie": "La Quête de l'oiseau du temps",
         "tome": "2",
-        "titre": "Le Grimoire des Dieux",
+        "titre": "Le temple de l'oubli",
         "auteurs": "Le Tendre, Loisel",
         "editeur": "Dargaud",
-        "cover": "images/la-qu-te-de-l-oiseau-du-temps-t2.jpg",
+        "cover": "images/la_qu_te_de_l_oiseau_du_temps_2.jpg",
         "scenariste": "Le Tendre, Serge",
         "dessinateur": "Loisel, Régis",
         "scenaristes": [
-            "Le Tendre, Serge"
+            "Le Tendre",
+            "Loisel"
         ],
         "dessinateurs": [
-            "Loisel, Régis"
+            "Loisel"
         ],
-        "synopsis": "",
-        "annee": "1984",
-        "isbn": "2205025767",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Quete-de-l-oiseau-du-temps-Tome-2-Le-temple-de-l-oubli-15408.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_15408.jpg",
-        "collection": "Histoires fantastiques"
+        "synopsis": "Bragon et Pelisse atteignent un temple où les souvenirs s'effacent, affrontent créatures et sortilèges en poursuivant leur quête.",
+        "annee": "1998",
+        "isbn": "9782205047998"
     },
     {
         "serie": "Garulfo",
@@ -1026,23 +1022,15 @@
         "titre": "Na zdrovié, Shaniouchka !",
         "auteurs": "Aymond, Van Hamme",
         "editeur": "Dupuis",
-        "cover": "images/lady-s-t1.jpg",
+        "cover": "images/lady_s_1.jpg",
         "scenariste": "Van Hamme, Jean",
         "dessinateur": "Aymond, Philippe",
-        "scenaristes": [
-            "Van Hamme, Jean"
-        ],
-        "dessinateurs": [
-            "Aymond, Philippe"
-        ],
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2004",
-        "isbn": "2800136081",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Lady-S-Tome-1-Na-zdorovie-Shaniouchka-39745.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_39745.jpg",
-        "collection": "Repérages"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Lady S",
@@ -1050,23 +1038,15 @@
         "titre": "À ta santé, Suzie !",
         "auteurs": "Aymond, Van Hamme",
         "editeur": "Dupuis",
-        "cover": "images/lady-s-t2.jpg",
+        "cover": "images/lady_s_2.jpg",
         "scenariste": "Van Hamme, Jean",
         "dessinateur": "Aymond, Philippe",
-        "scenaristes": [
-            "Van Hamme, Jean"
-        ],
-        "dessinateurs": [
-            "Aymond, Philippe"
-        ],
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2005",
-        "isbn": "280013660X",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Lady-S-Tome-2-A-ta-sante-Suzie-49732.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_49732.jpg",
-        "collection": "Repérages"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Lady S",
@@ -1074,23 +1054,15 @@
         "titre": "59° latitude Nord",
         "auteurs": "Aymond, Van Hamme",
         "editeur": "Dupuis",
-        "cover": "images/lady-s-t3.jpg",
+        "cover": "images/lady_s_3.jpg",
         "scenariste": "Van Hamme, Jean",
         "dessinateur": "Aymond, Philippe",
-        "scenaristes": [
-            "Van Hamme, Jean"
-        ],
-        "dessinateurs": [
-            "Aymond, Philippe"
-        ],
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2006",
-        "isbn": "280013836X",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Lady-S-Tome-3-59-latitude-nord-58309.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_58309.jpg",
-        "collection": "Repérages"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Lady S",
@@ -1098,23 +1070,15 @@
         "titre": "Jeu de dupes",
         "auteurs": "Aymond, Van Hamme",
         "editeur": "Dupuis",
-        "cover": "images/lady-s-t4.jpg",
+        "cover": "images/lady_s_4.jpg",
         "scenariste": "Van Hamme, Jean",
         "dessinateur": "Aymond, Philippe",
-        "scenaristes": [
-            "Van Hamme, Jean"
-        ],
-        "dessinateurs": [
-            "Aymond, Philippe"
-        ],
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2007",
-        "isbn": "9782800139296",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Lady-S-Tome-4-Jeu-de-dupes-67403.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_67403.jpg",
-        "collection": "Repérages"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Lady S",
@@ -1122,23 +1086,15 @@
         "titre": "Une taupe à Washington",
         "auteurs": "Aymond, Van Hamme",
         "editeur": "Dupuis",
-        "cover": "images/lady-s-t5.jpg",
+        "cover": "images/lady_s_5.jpg",
         "scenariste": "Van Hamme, Jean",
         "dessinateur": "Aymond, Philippe",
-        "scenaristes": [
-            "Van Hamme, Jean"
-        ],
-        "dessinateurs": [
-            "Aymond, Philippe"
-        ],
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2008",
-        "isbn": "9782800140698",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Lady-S-Tome-5-Une-taupe-a-Washington-80383.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_80383.jpg",
-        "collection": "Repérages"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Lady S",
@@ -1146,23 +1102,15 @@
         "titre": "Salade portugaise",
         "auteurs": "Aymond, Van Hamme",
         "editeur": "Dupuis",
-        "cover": "images/lady-s-t6.jpg",
+        "cover": "images/lady_s_6.jpg",
         "scenariste": "Van Hamme, Jean",
         "dessinateur": "Aymond, Philippe",
-        "scenaristes": [
-            "Van Hamme, Jean"
-        ],
-        "dessinateurs": [
-            "Aymond, Philippe"
-        ],
-        "synopsis": "Shania travaille temporairement au Parlement européen en tant qu'interprète. Elle semble, depuis trois mois, avoir trouvé un rythme de vie certes fatigant mais stable. Mais cette quiétude n'est qu'apparente car, en souterrain, elle œuvre pour Orion et ses services secrets sous le nom de code Lady S. Et dans son collimateur, elle a Mohcine, ami de sa colocataire Kadija, qui n'est autre qu'un terroriste qui se prépare à perpétrer un attentat dont la cible est inconnue. Cette surveillance pourrait éventuellement se faire sans heurt si la CIA ne venait... Lire la suite",
-        "annee": "2009",
-        "isbn": "9782800144757",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Lady-S-Tome-6-Salade-portugaise-96159.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_96159.jpg",
-        "collection": "Repérages"
+        "scenaristes": [],
+        "dessinateurs": [],
+        "synopsis": "",
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Lady S",
@@ -1170,22 +1118,15 @@
         "titre": "Raison d'État",
         "auteurs": "Aymond, Van Hamme",
         "editeur": "Dupuis",
-        "cover": "images/lady-s-t8.jpg",
+        "cover": "images/lady_s_8.jpg",
         "scenariste": "Van Hamme, Jean",
         "dessinateur": "Aymond, Philippe",
-        "scenaristes": [
-            "Van Hamme, Jean"
-        ],
-        "dessinateurs": [
-            "Aymond, Philippe"
-        ],
-        "synopsis": "A l'issue de son équipée dramatique aux abords de Nice, Shania Rivkas a été emprisonnée. Alors qu'elle est dans l'attente de son procès prochain, elle se voit harcelée par le corps carcéral sous le couvert du Commissaire Lejeune et de son mystérieux supérieur, le Colonel. Devant la résistance de la jeune femme et l'imminence du procès, ses détracteurs organisent à son insu son évasion et également sa mort. Quelques jours plus tard, Shania se réveille en un lieu inconnu, affublée d'une nouvelle identité et d'une équipière. Elle retrouve également... Lire la suite",
-        "annee": "2012",
-        "isbn": "9782800154305",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Lady-S-Tome-8-Raison-d-etat-165790.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_165790.jpg"
+        "scenaristes": [],
+        "dessinateurs": [],
+        "synopsis": "",
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Les Mondes d'Aldébaran - Aldébaran",
@@ -1193,22 +1134,15 @@
         "titre": "La Catastrophe",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "images/les-mondes-d-ald-baran-ald-baran_t1.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Franquin, André"
-        ],
-        "dessinateurs": [
-            "Franquin, André"
-        ],
+        "cover": "images/les_mondes_d_ald_baran___ald_baran_1.jpg",
+        "scenariste": "Leo (1)",
+        "dessinateur": "Leo (1)",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "1981",
-        "isbn": "2858150427",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Aldebaran-Tome-1-La-catastrophe-200.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_200.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Les Mondes d'Aldébaran - Aldébaran",
@@ -1216,22 +1150,15 @@
         "titre": "La Blonde",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "images/les-mondes-d-ald-baran-ald-baran_t2.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Castel, Yves"
-        ],
-        "dessinateurs": [
-            "Kline"
-        ],
+        "cover": "images/les_mondes_d_ald_baran___ald_baran_2.jpg",
+        "scenariste": "Leo (1)",
+        "dessinateur": "Leo (1)",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "1986",
-        "isbn": "2950175805",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Aldebaran-Tome-2-La-blonde-149.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_149.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Les Mondes d'Aldébaran - Aldébaran",
@@ -1247,9 +1174,7 @@
         "synopsis": "",
         "annee": "",
         "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "needs_review": true
     },
     {
         "serie": "Les Mondes d'Aldébaran - Aldébaran",
@@ -1257,22 +1182,15 @@
         "titre": "Le Groupe",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "images/les-mondes-d-ald-baran-ald-baran_t4.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "De Groot, Bob"
-        ],
-        "dessinateurs": [
-            "Dany (1)"
-        ],
+        "cover": "images/les_mondes_d_ald_baran___ald_baran_4.jpg",
+        "scenariste": "Leo (1)",
+        "dessinateur": "Leo (1)",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "1990",
-        "isbn": "2872650008",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Aldebaran-Tome-4-Le-groupe-147.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/cavousinterressecouv01.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Les Mondes d'Aldébaran - Aldébaran",
@@ -1280,22 +1198,15 @@
         "titre": "La Créature",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "images/les-mondes-d-ald-baran-ald-baran_t5.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Vasseur, M."
-        ],
-        "dessinateurs": [
-            "Mittéï"
-        ],
-        "synopsis": "En Espagne, les 3A sont témoins d'un accident, mais trop de monde semble vouloir étouffer celui-ci. Les jeunes garçons décident alors de mener l'enquête...",
-        "annee": "1969",
+        "cover": "images/les_mondes_d_ald_baran___ald_baran_5.jpg",
+        "scenariste": "Leo (1)",
+        "dessinateur": "Leo (1)",
+        "scenaristes": [],
+        "dessinateurs": [],
+        "synopsis": "",
+        "annee": "",
         "isbn": "",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Aldebaran-Tome-5-La-creature-151.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_151.jpg"
+        "needs_review": true
     },
     {
         "serie": "Les Mondes d'Aldébaran - Bételgeuse",
@@ -1303,22 +1214,15 @@
         "titre": "La Planète",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "images/les-mondes-d-ald-baran-b-telgeuse_t1.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Cauvin, Raoul"
-        ],
-        "dessinateurs": [
-            "Walthéry, François"
-        ],
+        "cover": "images/les_mondes_d_ald_baran___b_telgeuse_1.jpg",
+        "scenariste": "Leo (1)",
+        "dessinateur": "Leo (1)",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "1988",
-        "isbn": "280011584X",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Betelgeuse-Tome-1-La-planete-297.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_297.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Les Mondes d'Aldébaran - Bételgeuse",
@@ -1326,22 +1230,15 @@
         "titre": "Les Survivants",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "images/les-mondes-d-ald-baran-b-telgeuse_t2.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Goupil, Jacky"
-        ],
-        "dessinateurs": [
-            "Prugne, Patrick"
-        ],
+        "cover": "images/les_mondes_d_ald_baran___b_telgeuse_2.jpg",
+        "scenariste": "Leo (1)",
+        "dessinateur": "Leo (1)",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "1991",
-        "isbn": "2869671407",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Betelgeuse-Tome-2-Les-survivants-298.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_298.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Les Mondes d'Aldébaran - Bételgeuse",
@@ -1349,22 +1246,15 @@
         "titre": "L'Expédition",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "images/les-mondes-d-ald-baran-b-telgeuse_t3.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Leo (1)"
-        ],
-        "dessinateurs": [
-            "Leo (1)"
-        ],
+        "cover": "images/les_mondes_d_ald_baran___b_telgeuse_3.jpg",
+        "scenariste": "Leo (1)",
+        "dessinateur": "Leo (1)",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2002",
-        "isbn": "2205052314",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Betelgeuse-Tome-3-L-expedition-12692.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_12692.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Les Mondes d'Aldébaran - Bételgeuse",
@@ -1372,22 +1262,15 @@
         "titre": "Les Cavernes",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "images/les-mondes-d-ald-baran-b-telgeuse_t4.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Leo (1)"
-        ],
-        "dessinateurs": [
-            "Leo (1)"
-        ],
+        "cover": "images/les_mondes_d_ald_baran___b_telgeuse_4.jpg",
+        "scenariste": "Leo (1)",
+        "dessinateur": "Leo (1)",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2003",
-        "isbn": "2205054759",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Betelgeuse-Tome-4-Les-cavernes-30572.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_30572.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Les Mondes d'Aldébaran - Bételgeuse",
@@ -1395,22 +1278,15 @@
         "titre": "L'Autre",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "images/les-mondes-d-ald-baran-b-telgeuse_t5.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Leo (1)"
-        ],
-        "dessinateurs": [
-            "Leo (1)"
-        ],
+        "cover": "images/les_mondes_d_ald_baran___b_telgeuse_5.jpg",
+        "scenariste": "Leo (1)",
+        "dessinateur": "Leo (1)",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2005",
-        "isbn": "2205056360",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Betelgeuse-Tome-5-L-autre-49318.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_49318.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Les Mondes d'Aldébaran - Antarès",
@@ -1418,22 +1294,15 @@
         "titre": "Épisode 1",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "images/les-mondes-d-ald-baran-antar-s_t1.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Leo (1)"
-        ],
-        "dessinateurs": [
-            "Leo (1)"
-        ],
+        "cover": "images/les_mondes_d_ald_baran___antar_s_1.jpg",
+        "scenariste": "Leo (1)",
+        "dessinateur": "Leo (1)",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2007",
-        "isbn": "9782205058895",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Antares-Leo-Tome-1-Episode-1-62073.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_62073.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Les Mondes d'Aldébaran - Antarès",
@@ -1441,22 +1310,15 @@
         "titre": "Épisode 2",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "images/les-mondes-d-ald-baran-antar-s_t2.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Leo (1)"
-        ],
-        "dessinateurs": [
-            "Leo (1)"
-        ],
+        "cover": "images/les_mondes_d_ald_baran___antar_s_2.jpg",
+        "scenariste": "Leo (1)",
+        "dessinateur": "Leo (1)",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2009",
-        "isbn": "9782205061857",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Antares-Leo-Tome-2-Episode-2-84321.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_84321.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Les Mondes d'Aldébaran - Antarès",
@@ -1464,22 +1326,15 @@
         "titre": "Épisode 3",
         "auteurs": "Leo",
         "editeur": "Dargaud",
-        "cover": "images/les-mondes-d-ald-baran-antar-s_t3.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Leo (1)"
-        ],
-        "dessinateurs": [
-            "Leo (1)"
-        ],
-        "synopsis": "Kim et ses compagnons d’infortune se sont posés sur Antarès, planète beaucoup plus hostile que ne leur laissaient croire les commanditaires du projet Antarès qui dirigent en fait une véritable secte. Séparés en deux groupes, les membres du projet sont plus vulnérables que jamais et le groupe de Kim, parti à la recherche de survivants, doit transporter une femme grièvement blessée. Leur seul espoir : rejoindre le camp de base mais pour cela ils doivent traverser une zone qui s’avère particulièrement dangereuse ! Cette série de science-fiction signée... Lire la suite",
-        "annee": "2010",
-        "isbn": "9782205063714",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Antares-Leo-Tome-3-Episode-3-103248.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_103248.jpg"
+        "cover": "images/les_mondes_d_ald_baran___antar_s_3.jpg",
+        "scenariste": "Leo (1)",
+        "dessinateur": "Leo (1)",
+        "scenaristes": [],
+        "dessinateurs": [],
+        "synopsis": "",
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Kenya",
@@ -1487,22 +1342,15 @@
         "titre": "Apparitions",
         "auteurs": "Leo, Rodolphe",
         "editeur": "Dargaud",
-        "cover": "images/kenya-t1.jpg",
+        "cover": "images/kenya_1.jpg",
         "scenariste": "Leo (1)",
         "dessinateur": "Leo (1)",
-        "scenaristes": [
-            "Leo (1)"
-        ],
-        "dessinateurs": [
-            "Leo (1)"
-        ],
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2001",
-        "isbn": "2205051970",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Kenya-Tome-1-Apparitions-6463.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_6463.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Kenya",
@@ -1510,22 +1358,15 @@
         "titre": "Rencontres",
         "auteurs": "Leo, Rodolphe",
         "editeur": "Dargaud",
-        "cover": "images/kenya-t2.jpg",
+        "cover": "images/kenya_2.jpg",
         "scenariste": "Leo (1)",
         "dessinateur": "Leo (1)",
-        "scenaristes": [
-            "Leo (1)"
-        ],
-        "dessinateurs": [
-            "Leo (1)"
-        ],
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2003",
-        "isbn": "2205053353",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Kenya-Tome-2-Rencontres-22737.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_22737.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Kenya",
@@ -1533,22 +1374,15 @@
         "titre": "Aberrations",
         "auteurs": "Leo, Rodolphe",
         "editeur": "Dargaud",
-        "cover": "images/kenya-t3.jpg",
+        "cover": "images/kenya_3.jpg",
         "scenariste": "Leo (1)",
         "dessinateur": "Leo (1)",
-        "scenaristes": [
-            "Leo (1)"
-        ],
-        "dessinateurs": [
-            "Leo (1)"
-        ],
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2004",
-        "isbn": "2205054996",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Kenya-Tome-3-Aberrations-36465.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_36465.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Kenya",
@@ -1556,22 +1390,15 @@
         "titre": "Interventions",
         "auteurs": "Leo, Rodolphe",
         "editeur": "Dargaud",
-        "cover": "images/kenya-t4.jpg",
+        "cover": "images/kenya_4.jpg",
         "scenariste": "Rodolphe",
         "dessinateur": "Leo (1)",
-        "scenaristes": [
-            "Rodolphe"
-        ],
-        "dessinateurs": [
-            "Leo (1)"
-        ],
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2006",
-        "isbn": "220505712X",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Kenya-Tome-4-Interventions-53166.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_53166.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Kenya",
@@ -1579,22 +1406,15 @@
         "titre": "Illusions",
         "auteurs": "Leo, Rodolphe",
         "editeur": "Dargaud",
-        "cover": "images/kenya-t5.jpg",
+        "cover": "images/kenya_5.jpg",
         "scenariste": "Rodolphe",
         "dessinateur": "Leo (1)",
-        "scenaristes": [
-            "Rodolphe"
-        ],
-        "dessinateurs": [
-            "Leo (1)"
-        ],
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2008",
-        "isbn": "9782205060546",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Kenya-Tome-5-Illusions-74803.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_74803.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Namibia",
@@ -1602,22 +1422,15 @@
         "titre": "Épisode 1",
         "auteurs": "Leo, Rodolphe, Marchal",
         "editeur": "Dargaud",
-        "cover": "images/namibia-t1.jpg",
+        "cover": "images/namibia_1.jpg",
         "scenariste": "Leo (1)",
         "dessinateur": "Marchal, Bertrand",
-        "scenaristes": [
-            "Leo (1)"
-        ],
-        "dessinateurs": [
-            "Marchal, Bertrand"
-        ],
-        "synopsis": "1948, Göring, Reichmarschall de triste mémoire de la seconde guerre mondiale, aurait été aperçu en Namibie bien qu’il soit officiellement… mort ! A peine revenue de sa mission au Kenya, Cathy Austin est dès lors renvoyée en Afrique par le MI5. Elle découvre sur place une menace extraterrestre qui fait froid dans le dos : une race d’aliens prélève en effet de l’ADN sur des cadavres humains pour reconstituer et occuper ces corps. Ces éclaireurs discrets (sauf lorsqu’ils redonnent vie au corps de Göring !) élèvent dans les champs namibiens des insectes... Lire la suite",
-        "annee": "2010",
-        "isbn": "9782205060850",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Namibia-Kenya-Saison-2-Tome-1-Episode-1-105592.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_105592.jpg"
+        "scenaristes": [],
+        "dessinateurs": [],
+        "synopsis": "",
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Namibia",
@@ -1625,22 +1438,15 @@
         "titre": "Épisode 2",
         "auteurs": "Leo, Rodolphe, Marchal",
         "editeur": "Dargaud",
-        "cover": "images/namibia-t2.jpg",
+        "cover": "images/namibia_2.jpg",
         "scenariste": "Rodolphe",
         "dessinateur": "Marchal, Bertrand",
-        "scenaristes": [
-            "Rodolphe"
-        ],
-        "dessinateurs": [
-            "Marchal, Bertrand"
-        ],
-        "synopsis": "Namibie. C'est là, dans la région du tropique du Capricorne, que la jeune Anglaise fait de terrifiantes découvertes. En effet, après l'attaque des insectes géants, Kathy Austin et le major Bowley vont découvrir un immense laboratoire souterrain dans lequel des expériences sur des corps humains d'anciens nazis soulèvent de nombreuses interrogations... Alors qu'ils touchent au but, ils sont brusquement attaqués. Qui se cache derrière ces inquiétantes manipulations génétiques ? Que se passe-t-il réellement dans cette région perdue de l'Afrique ?...",
-        "annee": "2010",
-        "isbn": "9782205065299",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Namibia-Kenya-Saison-2-Tome-2-Episode-2-117129.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_117129.jpg"
+        "scenaristes": [],
+        "dessinateurs": [],
+        "synopsis": "",
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Gil St-André",
@@ -1648,22 +1454,15 @@
         "titre": "Prisonnier",
         "auteurs": "Kraehn, Vallée",
         "editeur": "Glénat",
-        "cover": "images/gil-st-andr_t7.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Wasterlain, Marc"
-        ],
-        "dessinateurs": [
-            "Wasterlain, Marc"
-        ],
+        "cover": "images/gil_st_andr__7.jpg",
+        "scenariste": "Kraehn, Jean-Charles",
+        "dessinateur": "Vallée, Sylvain",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2004",
-        "isbn": "280013478X",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Gil-St-Andre-Tome-7-Prisonnier-34751.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_34751.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Gil St-André",
@@ -1671,17 +1470,15 @@
         "titre": "Le Sacrifice",
         "auteurs": "Kraehn, Vallée",
         "editeur": "Glénat",
-        "cover": "",
-        "scenariste": "",
-        "dessinateur": "",
+        "cover": "images/gil_st_andr__8.jpg",
+        "scenariste": "Kraehn, Jean-Charles",
+        "dessinateur": "Vallée, Sylvain",
         "scenaristes": [],
         "dessinateurs": [],
         "synopsis": "",
         "annee": "",
         "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "needs_review": true
     },
     {
         "serie": "Gil St-André",
@@ -1689,22 +1486,15 @@
         "titre": "L'Homme qui aimait les poupées",
         "auteurs": "Kraehn",
         "editeur": "Glénat",
-        "cover": "images/gil-st-andr_t1.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Jodorowsky, Alejandro"
-        ],
-        "dessinateurs": [
-            "Arno (1)"
-        ],
-        "synopsis": "Sur la planète Mu-Dhara, un sorcier maléfique ôte le fluide vital de chaque habitant ; sa soif est telle qu'il ne restera bientôt plus d'espoir de voir une seule vie s'épanouir. C'est alors que naît Alef-Thau, un enfant-tronc recueilli par un animal sauvage. Malgré son handicap, c'est lui qui sauvera son monde en conduisant les siens vers la liberté. La quête d'Alef-Thau ne fait que commencer...",
-        "annee": "1983",
-        "isbn": "2731602171",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Gil-St-Andre-Tome-1-L-Homme-qui-aimait-les-poupees-2603.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_2603.jpg"
+        "cover": "images/gil_st_andr__1.jpg",
+        "scenariste": "Kraehn, Jean-Charles",
+        "dessinateur": "Kraehn, Jean-Charles",
+        "scenaristes": [],
+        "dessinateurs": [],
+        "synopsis": "",
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Gil St-André",
@@ -1712,17 +1502,15 @@
         "titre": "La Face cachée",
         "auteurs": "Kraehn",
         "editeur": "Glénat",
-        "cover": "",
-        "scenariste": "",
-        "dessinateur": "",
+        "cover": "images/gil_st_andr__2.jpg",
+        "scenariste": "Kraehn, Jean-Charles",
+        "dessinateur": "Kraehn, Jean-Charles",
         "scenaristes": [],
         "dessinateurs": [],
         "synopsis": "",
         "annee": "",
         "isbn": "",
-        "bedetheque_url": null,
-        "needs_review": true,
-        "source": null
+        "needs_review": true
     },
     {
         "serie": "Gil St-André",
@@ -1730,22 +1518,15 @@
         "titre": "Fugitif",
         "auteurs": "Kraehn, Vallée",
         "editeur": "Glénat",
-        "cover": "images/gil-st-andr_t3.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Christin, Pierre"
-        ],
-        "dessinateurs": [
-            "Mézières, Jean-Claude"
-        ],
+        "cover": "images/gil_st_andr__3.jpg",
+        "scenariste": "Kraehn, Jean-Charles",
+        "dessinateur": "Vallée, Sylvain",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "2000",
-        "isbn": "2205048805",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Gil-St-Andre-Tome-3-Fugitif-2576.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_2576.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Gil St-André",
@@ -1753,22 +1534,15 @@
         "titre": "Le Chasseur",
         "auteurs": "Kraehn, Vallée",
         "editeur": "Glénat",
-        "cover": "images/gil-st-andr_t4.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Jodorowsky, Alejandro"
-        ],
-        "dessinateurs": [
-            "Arno (1)"
-        ],
+        "cover": "images/gil_st_andr__4.jpg",
+        "scenariste": "Kraehn, Jean-Charles",
+        "dessinateur": "Vallée, Sylvain",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "1984",
-        "isbn": "2731602708",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Gil-St-Andre-Tome-4-Le-Chasseur-2604.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_2604.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Gil St-André",
@@ -1776,22 +1550,15 @@
         "titre": "Enquêtes parallèles",
         "auteurs": "Kraehn, Vallée",
         "editeur": "Glénat",
-        "cover": "images/gil-st-andr_t5.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Jodorowsky, Alejandro"
-        ],
-        "dessinateurs": [
-            "Arno (1)"
-        ],
+        "cover": "images/gil_st_andr__5.jpg",
+        "scenariste": "Kraehn, Jean-Charles",
+        "dessinateur": "Vallée, Sylvain",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "1986",
-        "isbn": "2731603666",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Gil-St-Andre-Tome-5-Enquetes-paralleles-2605.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_2605.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "Gil St-André",
@@ -1799,22 +1566,15 @@
         "titre": "Sœurs de larmes",
         "auteurs": "Kraehn, Vallée",
         "editeur": "Glénat",
-        "cover": "images/gil-st-andr_t6.jpg",
-        "scenariste": "",
-        "dessinateur": "",
-        "scenaristes": [
-            "Moliterni, Claude"
-        ],
-        "dessinateurs": [
-            "Fahrer, Walter"
-        ],
+        "cover": "images/gil_st_andr__6.jpg",
+        "scenariste": "Kraehn, Jean-Charles",
+        "dessinateur": "Vallée, Sylvain",
+        "scenaristes": [],
+        "dessinateurs": [],
         "synopsis": "",
-        "annee": "1983",
-        "isbn": "2205022385",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Gil-St-Andre-Tome-6-Soeurs-de-larmes-25597.html",
-        "needs_review": false,
-        "source": "manual_fix",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_25597.jpg"
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "La Fortune des Winczlav",
@@ -1822,22 +1582,15 @@
         "titre": "Vanko 1848",
         "auteurs": "Van Hamme, Berthet",
         "editeur": "Dupuis",
-        "cover": "images/la-fortune-des-winczlav-t1.jpg",
+        "cover": "images/la_fortune_des_winczlav_1.jpg",
         "scenariste": "Van Hamme, Jean",
         "dessinateur": "Berthet, Philippe",
-        "scenaristes": [
-            "Van Hamme, Jean"
-        ],
-        "dessinateurs": [
-            "Berthet, Philippe"
-        ],
-        "synopsis": "1848, Monténégro. Vanko Winczlav, jeune médecin idéaliste, prend le parti de l'insurrection paysanne contre la tyrannie du prince-évêque. Vendu aux soldats par un paysan, il n'a d'autre choix que de partir. Dans sa fuite, il rencontre Veska, jeune Bulgare réduite en esclavage dans une auberge. Ensemble, ils embarquent pour le Nouveau Monde. Lors de la traversée, Vanko épouse Veska, qui n'a aucun papier d'identité. Arrivé sur le continent, il trouve un emploi d'infirmier, ne parvenant pas à faire valoir son diplôme de médecin. Quelque temps plus... Lire la suite",
-        "annee": "2021",
-        "isbn": "9791034751761",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Fortune-des-Winczlav-Tome-1-Vanko-1848-418068.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_418068.jpg"
+        "scenaristes": [],
+        "dessinateurs": [],
+        "synopsis": "",
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "La Fortune des Winczlav",
@@ -1845,22 +1598,15 @@
         "titre": "Tom & Lisa 1910",
         "auteurs": "Van Hamme, Berthet",
         "editeur": "Dupuis",
-        "cover": "images/la-fortune-des-winczlav-t2.jpg",
+        "cover": "images/la_fortune_des_winczlav_2.jpg",
         "scenariste": "Van Hamme, Jean",
         "dessinateur": "Berthet, Philippe",
-        "scenaristes": [
-            "Van Hamme, Jean"
-        ],
-        "dessinateurs": [
-            "Berthet, Philippe"
-        ],
-        "synopsis": "Oklahoma, 1910. La vie de Thomas Winczlav, fils de Milan, prend un tournant radical lorsqu'il se découvre héritier des richissimes whiskies O'Casey, qu'il va devoir partager avec sa sœur jumelle, Lisa... Alors que la Première Guerre mondiale éclate, Thomas - parfois crédule et souvent volage - va tenter de faire fructifier son affaire, adoptant le nom de « Winch ». Pendant ce temps, Lisa, femme libre passionnée d'aviation, va se tailler sa place dans un ciel de guerre dominé par un certain Baron rouge...",
-        "annee": "2022",
-        "isbn": "9791034761050",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Fortune-des-Winczlav-Tome-2-Tom-Lisa-1910-446280.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_446280.jpg"
+        "scenaristes": [],
+        "dessinateurs": [],
+        "synopsis": "",
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     },
     {
         "serie": "La Fortune des Winczlav",
@@ -1868,21 +1614,14 @@
         "titre": "Danitza 1965",
         "auteurs": "Van Hamme, Berthet",
         "editeur": "Dupuis",
-        "cover": "images/la-fortune-des-winczlav-t3.jpg",
+        "cover": "images/la_fortune_des_winczlav_3.jpg",
         "scenariste": "Van Hamme, Jean",
         "dessinateur": "Berthet, Philippe",
-        "scenaristes": [
-            "Van Hamme, Jean"
-        ],
-        "dessinateurs": [
-            "Berthet, Philippe"
-        ],
-        "synopsis": "Nerio Winch a enfin remis la main sur les champs pétrolifères autrefois concédés par Milan Winczlav aux Cherokees. La première marche vers une fulgurante ascension, qui lui permettra de faire taire les sarcasmes sur sa petite taille. Aidé par Sid, son frère de lait noir, Nerio ne reculera devant rien, pas même l'illégalité... Pendant ce temps, Jovan et Aliana Winczlav, jeunes parents installés au Montenegro, s'apprêtent à subir les foudres de la police du maréchal Tito... La conclusion emballante de la grande saga Winczlav, éclairant en creux le... Lire la suite",
-        "annee": "2023",
-        "isbn": "9791034761074",
-        "bedetheque_url": "https://www.bedetheque.com/BD-Fortune-des-Winczlav-Tome-3-Danitza-1965-479720.html",
-        "needs_review": false,
-        "source": "native",
-        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_479720.jpg"
+        "scenaristes": [],
+        "dessinateurs": [],
+        "synopsis": "",
+        "annee": "",
+        "isbn": "",
+        "needs_review": true
     }
 ]
