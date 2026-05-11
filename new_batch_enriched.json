@@ -1,0 +1,643 @@
+[
+    {
+        "serie": "La Quête de l'oiseau du temps - Avant la Quête",
+        "tome": "1",
+        "titre": "L'Ami Javin",
+        "auteurs": "Le Tendre, Loisel, Lidwine",
+        "editeur": "Dargaud",
+        "cover": "images/la-qu-te-de-l-oiseau-du-temps-avant-la-qu-te-t1.jpg",
+        "scenariste": "Le Tendre, Serge",
+        "dessinateur": "Lidwine",
+        "scenaristes": [
+            "Le Tendre, Serge"
+        ],
+        "dessinateurs": [
+            "Lidwine"
+        ],
+        "synopsis": "40 ans avant la quête... Bragon n'est qu'un jeune plouc, obscur paysan ne rêvant que de voyages et de baston. Mara, elle, belle à damner tous les héros, découvre comment il est aisé, pour une princesse faite au moule, de faire valser les cœurs.",
+        "annee": "1998",
+        "isbn": "2205043943",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Quete-de-l-oiseau-du-temps-Tome-5-L-ami-Javin-1361.html",
+        "needs_review": false,
+        "source": "native",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_1361.jpg"
+    },
+    {
+        "serie": "La Quête de l'oiseau du temps",
+        "tome": "2",
+        "titre": "Le temple de l'oubli",
+        "auteurs": "Le Tendre, Loisel",
+        "editeur": "Dargaud",
+        "cover": "",
+        "scenariste": "",
+        "dessinateur": "",
+        "scenaristes": [],
+        "dessinateurs": [],
+        "synopsis": "",
+        "annee": "",
+        "isbn": "",
+        "bedetheque_url": "https://m.bedetheque.com/BD-Quete-de-l-oiseau-du-temps-Tome-2-Le-temple-de-l-oubli-15408.html",
+        "needs_review": false,
+        "source": "brave"
+    },
+    {
+        "serie": "Garulfo",
+        "tome": "1",
+        "titre": "De mares en châteaux",
+        "auteurs": "Ayroles, Maïorana",
+        "editeur": "Delcourt",
+        "cover": "images/garulfo-t1.jpg",
+        "scenariste": "Ayroles, Alain",
+        "dessinateur": "Maïorana, Bruno",
+        "scenaristes": [
+            "Ayroles, Alain"
+        ],
+        "dessinateurs": [
+            "Maïorana, Bruno"
+        ],
+        "synopsis": "Quand on est au plus bas de l'échelle écologique, on est prêt à tout pour en grimper les barreaux. Prédateurs voraces, sorcière hideuse et princesse vindicative n'arrêteront pas Garulfo, l'ambitieux amphibien...",
+        "annee": "1995",
+        "isbn": "2840550458",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Garulfo-Tome-1-De-mares-en-chateaux-1111.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_1111.jpg",
+        "collection": "Terres de Légendes"
+    },
+    {
+        "serie": "Garulfo",
+        "tome": "2",
+        "titre": "De mal en pis",
+        "auteurs": "Ayroles, Maïorana",
+        "editeur": "Delcourt",
+        "cover": "images/garulfo-t2.jpg",
+        "scenariste": "Ayroles, Alain",
+        "dessinateur": "Maïorana, Bruno",
+        "scenaristes": [
+            "Ayroles, Alain"
+        ],
+        "dessinateurs": [
+            "Maïorana, Bruno"
+        ],
+        "synopsis": "Par la magie d'un doux baiser, Garulfo la grenouille est devenu un prince. Mais en s'arrachant à son insouciante vie animale, Garulfo s'est précipité dans les tourments de la race humaine ! La jalousie d'une princesse, la fourberie d'un roi, la cruauté d'un grand veneur se conjuguent pour faire regretter à Garulfo la douceur de sa mare natale...",
+        "annee": "1996",
+        "isbn": "2840550873",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Garulfo-Tome-2-De-mal-en-pis-1112.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_1112.jpg",
+        "collection": "Terres de Légendes"
+    },
+    {
+        "serie": "Garulfo",
+        "tome": "3",
+        "titre": "Le prince aux deux visages",
+        "auteurs": "Ayroles, Maïorana, Leprévost",
+        "editeur": "Delcourt",
+        "cover": "images/garulfo-t3.jpg",
+        "scenariste": "Ayroles, Alain",
+        "dessinateur": "Maïorana, Bruno",
+        "scenaristes": [
+            "Ayroles, Alain"
+        ],
+        "dessinateurs": [
+            "Maïorana, Bruno"
+        ],
+        "synopsis": "Un prince vaniteux se change en grenouille tandis qu'un paisible batracien devient homme... Et voici Garulfo relancé dans une quête éperdue dans le monde des hommes : sorcière et princesse, ogre et roi, tournois et sortilèges sont au programme...",
+        "annee": "1997",
+        "isbn": "284055139X",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Garulfo-Tome-3-Le-Prince-aux-deux-visages-1113.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_1113.jpg",
+        "collection": "Terres de Légendes"
+    },
+    {
+        "serie": "Garulfo",
+        "tome": "4",
+        "titre": "L'ogre aux yeux de cristal",
+        "auteurs": "Ayroles, Maïorana, Leprévost",
+        "editeur": "Delcourt",
+        "cover": "images/garulfo-t4.jpg",
+        "scenariste": "Ayroles, Alain",
+        "dessinateur": "Maïorana, Bruno",
+        "scenaristes": [
+            "Ayroles, Alain"
+        ],
+        "dessinateurs": [
+            "Maïorana, Bruno"
+        ],
+        "synopsis": "Tandis que le prince et la grenouille cheminent de conserve, la princesse Héphylie entre dans un sinistre château dont l'hôte fait trembler jusqu'aux plus intrépides des chevaliers...",
+        "annee": "1998",
+        "isbn": "284055237X",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Garulfo-Tome-4-L-Ogre-aux-yeux-de-cristal-1351.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_1351.jpg",
+        "collection": "Terres de Légendes"
+    },
+    {
+        "serie": "Garulfo",
+        "tome": "5",
+        "titre": "Preux et prouesses",
+        "auteurs": "Ayroles, Maïorana, Leprévost",
+        "editeur": "Delcourt",
+        "cover": "images/garulfo-t5.jpg",
+        "scenariste": "Ayroles, Alain",
+        "dessinateur": "Maïorana, Bruno",
+        "scenaristes": [
+            "Ayroles, Alain"
+        ],
+        "dessinateurs": [
+            "Maïorana, Bruno"
+        ],
+        "synopsis": "Toujours recherchés par la garde, Garulfo et le prince Romuald arrivent à donner rendez-vous à la princesse Héphylie. Or la tentative de séduction du prince Romuald se solde par un échec. Les deux compagnons d'infortune n'ont plus d'autre choix que de gagner le tournoi. Pendant ce temps, pour venger le chevalier Huon, les chevaliers partent tuer l'ogre.",
+        "annee": "2000",
+        "isbn": "2840553341",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Garulfo-Tome-5-Preux-et-prouesses-1879.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_1879.jpg",
+        "collection": "Terres de Légendes"
+    },
+    {
+        "serie": "Garulfo",
+        "tome": "6",
+        "titre": "La belle et les bêtes",
+        "auteurs": "Ayroles, Maïorana, Leprévost",
+        "editeur": "Delcourt",
+        "cover": "images/garulfo-t6.jpg",
+        "scenariste": "Ayroles, Alain",
+        "dessinateur": "Maïorana, Bruno",
+        "scenaristes": [
+            "Ayroles, Alain"
+        ],
+        "dessinateurs": [
+            "Maïorana, Bruno"
+        ],
+        "synopsis": "Garulfo et Romuald participent à un tournoi qui doit leur permettre enfin, en cas de victoire, d'obtenir un baiser de la princesse. Vainqueur, Garulfo refuse pourtant d'achever son adversaire. Entretemps, la princesse a fui la tribune du tournoi pour rejoindre son ami l'ogre, que les chevaliers et les villageois ont décidé de tuer. Mais l'ogre, qui se sent bafoué par la princesse et la méchanceté humaine, cède à un accès de folie et séquestre la jeune fille...",
+        "annee": "2002",
+        "isbn": "2840555794",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Garulfo-Tome-6-La-Belle-et-les-Betes-17163.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_17163.jpg",
+        "collection": "Terres de Légendes"
+    },
+    {
+        "serie": "Peter Pan",
+        "tome": "1",
+        "titre": "Londres",
+        "auteurs": "Loisel",
+        "editeur": "Vents d'Ouest",
+        "cover": "images/peter-pan-t1.jpg",
+        "scenariste": "Rousseau, Simon",
+        "dessinateur": "Babin, Nolan",
+        "scenaristes": [
+            "Rousseau, Simon"
+        ],
+        "dessinateurs": [
+            "Babin, Nolan"
+        ],
+        "synopsis": "La réécriture la plus sombre du conte classique Peter Pan jamais imaginée, entre vos mains. Oserez-vous plonger dans la version graphique de ce Conte interdit ? Une vague de drogués se jetant du haut d'immeubles, croyant pouvoir voler. La disparition d'une jeune femme, Wendy Gauthier, et de ses deux frères délinquants, évadés de leur pénitencier pour mineurs. Une île perdue dans la forêt boréale, habitée par une communauté déjantée et leur leader sans âge. Une baronne du crime nymphomane et amoureuse des bijoux en forme de clochettttes. Un enquêteur... Lire la suite",
+        "annee": "2025",
+        "isbn": "9782386900471",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Contes-interdits-Tome-1-Peter-Pan-530509.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_530509.jpg",
+        "collection": "Contes interdits"
+    },
+    {
+        "serie": "Peter Pan",
+        "tome": "2",
+        "titre": "Opikanoba",
+        "auteurs": "Loisel",
+        "editeur": "Vents d'Ouest",
+        "cover": "images/peter-pan-t2.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Loisel, Régis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Loisel, Régis"
+        ],
+        "synopsis": "Sur le bateau des pirates, Peter reprend connaissance. Il rencontre alors le capitaine et monsieur Mouche. Il n’en revient pas d’être sur un vrai navire de pirates et court à travers le bateau. Le capitaine le rattrape pour lui poser trois questions. Il veut savoir qui il est, d’où il vient et ce qu’il veut. Peter raconte alors son voyage de Londres à travers les airs, en compagnie de Clochette. Les pirates éclatent de rire. Pour prouver ses dires, il saute du bateau en agitant les bras. Il se retrouve dans la mer alors qu’il ne sait pas nager,... Lire la suite",
+        "annee": "1992",
+        "isbn": "2869671911",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Peter-Pan-Loisel-Tome-2-Opikanoba-3194.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_3194.jpg"
+    },
+    {
+        "serie": "Peter Pan",
+        "tome": "3",
+        "titre": "Tempête",
+        "auteurs": "Loisel",
+        "editeur": "Vents d'Ouest",
+        "cover": "images/peter-pan-t3.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Loisel, Régis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Loisel, Régis"
+        ],
+        "synopsis": "Sur le chemin qui les conduit vers les indiens, Pan apprend à Peter à jouer de la syrenx, son instrument de musique. Accompagnés de plusieurs féériques, ils ramènent Lys tigré dans son clan. Les indiens les reçoivent en amis et pour fêter le retour de la fille du chef saine et sauve, ils organisent un banquet autour du feu. Un cérémonial étrange se prépare alors. Peter ne comprend pas que Lys tigré désire l’épouser. Il refuse tout net la couronne de plumes et repousse la fille du chef. Pan est très ennuyé de ce qui vient de se passer : Peter vient... Lire la suite",
+        "annee": "1994",
+        "isbn": "2869672918",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Peter-Pan-Loisel-Tome-3-Tempete-3192.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_3192.jpg"
+    },
+    {
+        "serie": "Peter Pan",
+        "tome": "4",
+        "titre": "Mains Rouges",
+        "auteurs": "Loisel",
+        "editeur": "Vents d'Ouest",
+        "cover": "",
+        "scenariste": "",
+        "dessinateur": "",
+        "scenaristes": [],
+        "dessinateurs": [],
+        "synopsis": "",
+        "annee": "",
+        "isbn": "",
+        "bedetheque_url": "https://m.bedetheque.com/BD-Peter-Pan-Loisel-Tome-4-Mains-rouges-3193.html",
+        "needs_review": false,
+        "source": "brave"
+    },
+    {
+        "serie": "Peter Pan",
+        "tome": "5",
+        "titre": "Crochet",
+        "auteurs": "Loisel",
+        "editeur": "Vents d'Ouest",
+        "cover": "images/peter-pan-t5.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Loisel, Régis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Loisel, Régis"
+        ],
+        "synopsis": "Après la mort de son ami « patte de chèvre » alias Pan, Peter est devenu au yeux de tous « Peter Pan ». Il a réussi à rapatrier de Londres vers l’île sa bande de copains. Tous s’emploient à organiser leur nouvelle vie dans l’innocence et la légèreté des enfants. On attend la terrible vengeance du capitaine Crochet - qui porte bien son nom depuis que Peter lui a coupé la main – et on assiste à une captivante course poursuite entre « le gardien », le crocodile qui a un réveil dans l’estomac, et la grotesque bande des pirates, perdus dans les marais... Lire la suite",
+        "annee": "2002",
+        "isbn": "2869678495",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Peter-Pan-Tome-5-Crochet-7929.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_7929.jpg"
+    },
+    {
+        "serie": "Peter Pan",
+        "tome": "6",
+        "titre": "Destins",
+        "auteurs": "Loisel",
+        "editeur": "Vents d'Ouest",
+        "cover": "images/peter-pan-t6.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Loisel, Régis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Loisel, Régis"
+        ],
+        "synopsis": "Sur l’île enchantée, les enfants orphelins peuvent dorénavant jouer sans craindre les attaques pirates : le vaisseau du capitaine Crochet a quitté la crique pour reprendre le large. Pour s’amuser, ils tirent chaque jour au sort celui ou celle qui aura droit de posséder la fameuse photo de « maman » rapportée par Peter. Un d’entre eux s’en fout pourtant éperdument. C’est Picou, pour qui sa grande sœur Rose fait déjà office de maman. Evidemment, ce jour, le sort le désigne ! Alors qu’il s’est endormi, les enfants glissent la photo dans sa poche.... Lire la suite",
+        "annee": "2004",
+        "isbn": "2749301270",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Peter-Pan-Tome-6-Destins-40086.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_40086.jpg"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "1",
+        "titre": "Marie",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "images/magasin-g-n-ral-t1.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Tripp, Jean-Louis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Tripp, Jean-Louis"
+        ],
+        "synopsis": "L'histoire de Magasin général se déroule dans un village du Québec rural à partir du début des années 40. Elle gravite autour d'un personnage féminin, Ginette, veuve avant l'heure et héritière du principal commerce local (le « Magasin général » qui donne son titre au récit), que l'irruption d'un étranger dans la petite communauté va progressivement réconcilier avec le bonheur ; bonheur d'aimer, bonheur d'être aimé(e), mais pas exactement de la manière que l'on pourrait imaginer.. Deux autres volumes suivront ce premier tome inaugural",
+        "annee": "2006",
+        "isbn": "2203370114",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Magasin-general-Tome-1-Marie-54297.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_54297.jpg"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "2",
+        "titre": "Serge",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "images/magasin-g-n-ral-t2.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Tripp, Jean-Louis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Tripp, Jean-Louis"
+        ],
+        "synopsis": "Dans les années 1920, dans un village du Québec rural, l'histoire de Marie, jeune veuve héritière du principal commerce général, qui retrouve le bonheur auprès d'un étranger fraîchement débarqué dans la petite communauté.",
+        "annee": "2006",
+        "isbn": "2203370130",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Magasin-general-Tome-2-Serge-58729.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_58729.jpg"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "3",
+        "titre": "Les hommes",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "images/magasin-g-n-ral-t3.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Tripp, Jean-Louis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Tripp, Jean-Louis"
+        ],
+        "synopsis": "Les hommes de Notre-Dame-des-Lacs reviennent de leur campagne d'hiver. Comment vont-il réagir face à ce Serge venu de France qui s'est mis en tête d'ouvrir un restaurant à côté du magasin de Marie oe",
+        "annee": "2007",
+        "isbn": "9782203348103",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Magasin-general-Tome-3-Les-hommes-68193.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_68193.jpg"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "4",
+        "titre": "Confessions",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "images/magasin-g-n-ral-t4.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Tripp, Jean-Louis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Tripp, Jean-Louis"
+        ],
+        "synopsis": "Le printemps est revenu à Notre Dame des Lacs et tout le village se retrouve réuni à l’occasion d’un baptême. Après avoir failli être chassé de la petite communauté, Serge Brouillet, ce “Français de France”, est maintenant parfaitement accepté de tous. Au point de se voir désormais, avec Marie, la jeune veuve du Magasin Général, soumis avec insistance à la question : quand vont-ils donc se marier et régulariser leur situation?",
+        "annee": "2008",
+        "isbn": "9782203016910",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Magasin-general-Tome-4-Confessions-79885.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_79885.jpg"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "5",
+        "titre": "Montréal",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "images/magasin-g-n-ral-t5.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Tripp, Jean-Louis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Tripp, Jean-Louis"
+        ],
+        "synopsis": "Marie et le jeune Marceau, dans un bref moment d’attirance mutuelle, se sont abandonnés l’un à l’autre. Un épisode charnel qui, hélas pour eux, n’a pas tardé à se savoir. La promise de Marceau, Clara, a débarqué publiquement au magasin général en furie, accusant Marie de lui avoir volé son fiancé. Cris, larmes. Le curé s’en mêle, on jase à qui mieux mieux dans les familles, et bientôt c’est tout le village qui entre en ébullition ! Conséquence directe : le magasin général est en partie déserté et c’est tout Notre Dame des Lacs, ou presque, qui... Lire la suite",
+        "annee": "2009",
+        "isbn": "9782203024632",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Magasin-general-Tome-5-Montreal-97432.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_97432.jpg"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "6",
+        "titre": "Ernest Latulippe",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "images/magasin-g-n-ral-t6.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Tripp, Jean-Louis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Tripp, Jean-Louis"
+        ],
+        "synopsis": "En l’absence de Marie, dont personne ne sait si et quand elle reviendra de Montréal, Serge a pris la décision de s’occuper désormais de son commerce. C’est qu’il faut bien approvisionner Notre- Dame-des-Lacs, qui manque de tout depuis que son Magasin Général est tombé en déshérence. Malheureusement, ce n’est pas si simple. Les fournisseurs de Saint-Simon, qui n’accordaient leur confiance qu’à Marie, refusent de faire crédit à Serge. La tension monte au village, scindé en deux camps : ceux qui regrettent Marie (surtout les hommes) et ceux qui sont... Lire la suite",
+        "annee": "2010",
+        "isbn": "9782203026162",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Magasin-general-Tome-6-Ernest-Latulippe-117401.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_117401.jpg"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "7",
+        "titre": "Charleston",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "images/magasin-g-n-ral-t7.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Tripp, Jean-Louis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Tripp, Jean-Louis"
+        ],
+        "synopsis": "Loisel et Tripp ont concocté ensemble, avec une gourmandise très communicative, une chronique énergétique et très humaine, peuplée de personnages intenses et savoureux. Leur attachement partagé pour le Québec - ils y résident l'un et l'autre - a servi de moteur à cette histoire truculente, qui ne ressemble à rien de ce que l'un ou l'autre a publié auparavant. Fondée sur la complémentarité de leurs savoir-faire, leur collaboration porte autant sur le texte que sur le dessin et se nourrit du meilleur de leurs talents respectifs.",
+        "annee": "2011",
+        "isbn": "9782203032194",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Magasin-general-Tome-7-Charleston-138758.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_138758.jpg"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "8",
+        "titre": "Les femmes",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "images/magasin-g-n-ral-t8.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Tripp, Jean-Louis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Tripp, Jean-Louis"
+        ],
+        "synopsis": "L’hiver, à nouveau. Après que le charleston, ramené de Montréal par Marie, ait déferlé comme une furie sur Notre-Dame-des-Lacs, les hommes ont finalement repris le chemin de la forêt, pour y travailler tout au long de la saison froide. Le calme peut enfin revenir sur le village. Mais rien ne dit que ce soit pour très longtemps… Car Marie, après avoir partagé sa couche avec Ernest et son frère Mathurin, se découvre enceinte, sans trop savoir qui est le père – elle qui s’était toujours pensée stérile ! Pendant ce temps, Réjean, le jeune curé du village,... Lire la suite",
+        "annee": "2012",
+        "isbn": "9782203049222",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Magasin-general-Tome-8-Les-femmes-174117.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_174117.jpg"
+    },
+    {
+        "serie": "Magasin Général",
+        "tome": "9",
+        "titre": "Notre-Dame-des-Lacs",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "images/magasin-g-n-ral-t9.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Tripp, Jean-Louis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Tripp, Jean-Louis"
+        ],
+        "synopsis": "Le dernier épisode de Magasin général, point final d’une exceptionnelle série à succès. Plus de maire à Notre-Dame-des-Lacs, plus de curé ou presque, Marie enceinte d’un père que personne ne connaît et les femmes du village prises d’une frénésie d’achats comme on n’en avait encore jamais vue… Le monde s’est-il mis à marcher sur la tête, là-bas au fin fond du Québec rural ? Est-ce là l’œuvre du démon, le commencement de la fin ? Non, bien sûr, car ce qui imprègne avant tout chaque image, chaque scène, chaque dialogue et chaque personnage de ce spectaculaire... Lire la suite",
+        "annee": "2014",
+        "isbn": "9782203062108",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Magasin-general-Tome-9-Notre-Dame-des-lacs-224908.html",
+        "needs_review": false,
+        "source": "brave",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_224908.jpg"
+    },
+    {
+        "serie": "Magasin Général - L'Arrière Boutique",
+        "tome": "1",
+        "titre": "Magasin Général I",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "images/magasin-g-n-ral-l-arri-re-boutique-t1.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Tripp, Jean-Louis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Tripp, Jean-Louis"
+        ],
+        "synopsis": "",
+        "annee": "2006",
+        "isbn": "2203370149",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Magasin-general-HS1-L-arriere-boutique-du-magasin-general-54315.html",
+        "needs_review": false,
+        "source": "native",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_54315.jpg"
+    },
+    {
+        "serie": "Magasin Général - L'Arrière Boutique",
+        "tome": "2",
+        "titre": "Magasin Général II",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "images/magasin-g-n-ral-l-arri-re-boutique-t2.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Tripp, Jean-Louis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Tripp, Jean-Louis"
+        ],
+        "synopsis": "",
+        "annee": "2006",
+        "isbn": "2203348097",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Magasin-general-HS2-L-arriere-boutique-du-magasin-general-II-58986.html",
+        "needs_review": false,
+        "source": "native",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_58986.jpg"
+    },
+    {
+        "serie": "Magasin Général - L'Arrière Boutique",
+        "tome": "3",
+        "titre": "Magasin Général III",
+        "auteurs": "Loisel, Tripp",
+        "editeur": "Casterman",
+        "cover": "images/magasin-g-n-ral-l-arri-re-boutique-t3.jpg",
+        "scenariste": "Loisel, Régis",
+        "dessinateur": "Tripp, Jean-Louis",
+        "scenaristes": [
+            "Loisel, Régis"
+        ],
+        "dessinateurs": [
+            "Tripp, Jean-Louis"
+        ],
+        "synopsis": "",
+        "annee": "2007",
+        "isbn": "9782203348110",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Magasin-general-HS3-L-arriere-boutique-du-magasin-general-III-68258.html",
+        "needs_review": false,
+        "source": "native",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_68258.jpg"
+    },
+    {
+        "serie": "Maggy Garrison",
+        "tome": "1",
+        "titre": "Fais un sourire, Maggy",
+        "auteurs": "Trondheim, Oiry",
+        "editeur": "Dupuis",
+        "cover": "images/maggy-garrison-t1.jpg",
+        "scenariste": "Trondheim, Lewis",
+        "dessinateur": "Oiry, Stéphane",
+        "scenaristes": [
+            "Trondheim, Lewis"
+        ],
+        "dessinateurs": [
+            "Oiry, Stéphane"
+        ],
+        "synopsis": "Même dans l'agence miteuse d'un détective alcoolique, un boulot, ça reste un boulot. Et depuis le temps qu'elle en cherche un, Maggy Garrisson veut bien faire quelques concessions. D'autant qu'il y a toujours moyen de se faire quelques billets, quand on est prêt à aider son prochain et qu'on sait faire preuve d'un minimum de présence d'esprit. Ce qui semble d'ailleurs sacrément manquer à Anthony Wight, son patron, qui s'est fait passer à tabac cinq jours après qu'elle eut commencé à travailler pour lui et qui ne reprend connaissance que pour lui... Lire la suite",
+        "annee": "2014",
+        "isbn": "9782800160788",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Maggy-Garrisson-Tome-1-Fais-un-sourire-Maggy-211495.html",
+        "needs_review": false,
+        "source": "native",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_211495.jpg"
+    },
+    {
+        "serie": "Maggy Garrison",
+        "tome": "2",
+        "titre": "L'homme qui est entré dans mon lit",
+        "auteurs": "Trondheim, Oiry",
+        "editeur": "Dupuis",
+        "cover": "images/maggy-garrison-t2.jpg",
+        "scenariste": "Trondheim, Lewis",
+        "dessinateur": "Oiry, Stéphane",
+        "scenaristes": [
+            "Trondheim, Lewis"
+        ],
+        "dessinateurs": [
+            "Oiry, Stéphane"
+        ],
+        "synopsis": "Après l'épisode de la plage de Brighton, Maggy attend que ça se tasse. Elle a de quoi patienter : un nouveau mec, un joli magot de 15 000 livres qui attend son heure, et même une nouvelle enquête pour gagner un peu d'argent frais. Le principal, c'est de ne pas donner prise aux possibles soupçons de Sheena qui, tout flic ripou qu'elle est, n'en reste pas moins flic... avec une revanche à prendre. Une nouvelle étape dans le quotidien de Maggy Garrisson, dont la vie n'est pas exactement un roman mais bien plutôt un polar, avec ses dialogues bien serrés,... Lire la suite",
+        "annee": "2015",
+        "isbn": "9782800163239",
+        "bedetheque_url": "https://www.bedetheque.com/BD-Maggy-Garrisson-Tome-2-L-homme-qui-est-entre-dans-mon-lit-243346.html",
+        "needs_review": false,
+        "source": "native",
+        "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_243346.jpg"
+    }
+]
