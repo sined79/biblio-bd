@@ -647,27 +647,27 @@
     "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_479720.jpg"
   },
   {
-    "serie": "La Quête de l'oiseau du temps",
+    "serie": "La Quête de l'oiseau du temps - Avant la Quête",
     "tome": "2",
     "titre": "Le Grimoire des Dieux",
     "auteurs": "Le Tendre, Loisel",
     "editeur": "Dargaud",
-    "cover": "images/la-qu-te-de-l-oiseau-du-temps-t2.jpg",
+    "cover": "images/la-qu-te-de-l-oiseau-du-temps-avant-la-qu-te_t2.jpg",
     "scenariste": "Le Tendre, Serge",
-    "dessinateur": "Loisel, Régis",
+    "dessinateur": "Aouamri, Mohamed",
     "scenaristes": [
       "Le Tendre, Serge"
     ],
     "dessinateurs": [
-      "Loisel, Régis"
+      "Aouamri, Mohamed"
     ],
     "synopsis": "",
-    "annee": "1984",
-    "isbn": "2205025767",
-    "bedetheque_url": "https://www.bedetheque.com/BD-Quete-de-l-oiseau-du-temps-Tome-2-Le-temple-de-l-oubli-15408.html",
+    "annee": "2007",
+    "isbn": "9782205056334",
+    "bedetheque_url": "https://www.bedetheque.com/BD-Quete-de-l-oiseau-du-temps-Tome-6-Le-grimoire-des-dieux-69122.html",
     "needs_review": false,
     "source": "native",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_15408.jpg",
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_69122.jpg",
     "collection": "Histoires fantastiques"
   },
   {
