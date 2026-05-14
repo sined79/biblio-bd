@@ -422,7 +422,7 @@
     "titre": "Le Roi soldat",
     "auteurs": "Le Gris, Siner",
     "editeur": "Glénat",
-    "cover": "images/horacio-d-alba-t1.jpg",
+    "cover": "images/horacio-d-alba_t2.jpg",
     "scenariste": "Le Gris, Jérôme",
     "dessinateur": "Siner, Nicolas",
     "scenaristes": [
@@ -437,7 +437,7 @@
     "bedetheque_url": "https://www.bedetheque.com/BD-Horacio-d-Alba-Tome-2-Le-roi-soldat-187682.html",
     "needs_review": false,
     "source": "manual_fix",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_124171.jpg"
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_187682.jpg"
   },
   {
     "serie": "Kenya",
@@ -560,7 +560,7 @@
     "titre": "L'Alliance",
     "auteurs": "Gualdoni, ...",
     "editeur": "Les Humanoïdes Associés",
-    "cover": "images/l-anneau-des-7-mondes-t4.jpg",
+    "cover": "images/l-anneau-des-7-mondes_t2.jpg",
     "scenariste": "Clima, Gabriele",
     "dessinateur": "Piana, Matteo",
     "scenaristes": [
@@ -575,7 +575,7 @@
     "bedetheque_url": "https://www.bedetheque.com/BD-Anneau-des-7-mondes-Tome-2-Alliance-43355.html",
     "needs_review": false,
     "source": "manual_fix",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_160046.jpg"
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/anneaudes7mondes02_43355.jpg"
   },
   {
     "serie": "La Fortune des Winczlav",
@@ -1722,7 +1722,7 @@
     "titre": "Londres",
     "auteurs": "Loisel",
     "editeur": "Vents d'Ouest",
-    "cover": "images/peter-pan-t1.jpg",
+    "cover": "images/peter-pan_t1.jpg",
     "scenariste": "Marion, S.P.",
     "dessinateur": "Babin, Nolan",
     "scenaristes": [
@@ -1737,7 +1737,7 @@
     "bedetheque_url": "https://www.bedetheque.com/BD-Peter-Pan-Loisel-Tome-1-Londres-3190.html",
     "needs_review": false,
     "source": "manual_fix",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_530509.jpg"
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_3190.jpg"
   },
   {
     "serie": "Peter Pan",
