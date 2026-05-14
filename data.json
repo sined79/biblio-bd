@@ -1720,20 +1720,20 @@
     "serie": "Peter Pan",
     "tome": "1",
     "titre": "Londres",
-    "auteurs": "Loisel",
+    "auteurs": "Loisel, Régis",
     "editeur": "Vents d'Ouest",
     "cover": "images/peter-pan_t1.jpg",
-    "scenariste": "Marion, S.P.",
-    "dessinateur": "Babin, Nolan",
+    "scenariste": "Loisel, Régis",
+    "dessinateur": "Loisel, Régis",
     "scenaristes": [
-      "Marion, S.P."
+      "Loisel, Régis"
     ],
     "dessinateurs": [
-      "Babin, Nolan"
+      "Loisel, Régis"
     ],
-    "synopsis": "La réécriture la plus sombre du conte classique Peter Pan jamais imaginée, entre vos mains. Oserez-vous plonger dans la version graphique de ce Conte interdit ? Une vague de drogués se jetant du haut d'immeubles, croyant pouvoir voler. La disparition d'une jeune femme, Wendy Gauthier, et de ses deux frères délinquants, évadés de leur pénitencier pour mineurs. Une île perdue dans la forêt boréale, habitée par une communauté déjantée et leur leader sans âge. Une baronne du crime nymphomane et amoureuse des bijoux en forme de clochettttes. Un enquêteur... Lire la suite",
-    "annee": "2025",
-    "isbn": "9782386900471",
+    "synopsis": "",
+    "annee": "",
+    "isbn": "2869671156",
     "bedetheque_url": "https://www.bedetheque.com/BD-Peter-Pan-Loisel-Tome-1-Londres-3190.html",
     "needs_review": false,
     "source": "manual_fix",
