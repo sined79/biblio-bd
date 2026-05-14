@@ -229,6 +229,25 @@
     .tome-node.missing:hover { border-color: var(--accent-color); color: var(--accent-color); background: rgba(139,26,26,0.05); }
 
     /* STATS VIEW */
+
+/* STATS - mobile friendly charts */
+.stats-charts .chart-card { padding: 18px; }
+.stats-charts .chart-card h3 { font-size: 1rem; margin-bottom: 14px; }
+
+.stats-charts canvas {
+  width: 100% !important;
+  height: 280px !important; /* default */
+}
+
+@media (max-width: 768px) {
+  .stats-grid { grid-template-columns: 1fr; gap: 14px; }
+  .stat-card { padding: 16px; }
+  .stat-val { font-size: 2.2rem; }
+
+  .stats-charts { grid-template-columns: 1fr; }
+  .stats-charts canvas { height: 240px !important; }
+}
+
     .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-bottom: 30px; }
     .stat-card { background: var(--surface-color); padding: 25px; border-radius: 12px; border: 1px solid var(--divider); text-align: center; }
     .stat-val { font-size: 3rem; font-weight: 700; color: var(--accent-color); margin: 0 0 5px 0; font-family: 'Playfair Display', serif; }
@@ -384,16 +403,42 @@
             </div>
           </div>
           
-          <div class="charts-grid">
-            <div class="chart-card">
-              <h3>Répartition par Éditeur</h3>
-              <canvas id="chartPublishers"></canvas>
-            </div>
-            <div class="chart-card">
-              <h3>Lus vs Non Lus (Possédés)</h3>
-              <canvas id="chartRead"></canvas>
-            </div>
-          </div>
+          <div class="charts-grid stats-charts">
+  <div class="chart-card">
+    <h3>Top Auteurs (scénario + dessin)</h3>
+    <canvas id="chartTopAuthors"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>Top Scénaristes</h3>
+    <canvas id="chartTopScenaristes"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>Top Dessinateurs</h3>
+    <canvas id="chartTopDessinateurs"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>Répartition par Décennie (possédés)</h3>
+    <canvas id="chartDecades"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>Répartition par Statut</h3>
+    <canvas id="chartStatus"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>Lus vs Non Lus (possédés)</h3>
+    <canvas id="chartRead"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>Répartition par Éditeur</h3>
+    <canvas id="chartPublishers"></canvas>
+  </div>
+</div>
         </div>
 
       </main>
@@ -445,6 +490,11 @@
     // Chart instances
     let pubChart = null;
     let readChart = null;
+    let topAuthorsChart = null;
+    let topScenaristesChart = null;
+    let topDessinateursChart = null;
+    let decadesChart = null;
+    let statusChart = null;
 
     // Elements
     const gridLibrary = document.getElementById('gridLibrary');
@@ -695,52 +745,177 @@
 
     function renderStats() {
       const possedes = db.filter(b => b.statut === 'possede' || b.statut === 'prete');
-      
+
       document.getElementById('statTotal').textContent = possedes.length;
       document.getElementById('statSeries').textContent = Array.from(seriesMap.keys()).filter(k => seriesMap.get(k).some(b => b.statut !== 'wishlist')).length;
-      
+
       const auths = new Set();
       possedes.forEach(b => { b.scenaristes.forEach(a=>auths.add(a)); b.dessinateurs.forEach(a=>auths.add(a)); });
       document.getElementById('statAuthors').textContent = auths.size;
 
-      // Charts
-      const pubs = {};
-      let readCount = 0;
-      possedes.forEach(b => {
-        pubs[b.editeur] = (pubs[b.editeur] || 0) + 1;
-        if(b.lu) readCount++;
-      });
-
-      const pubLabels = Object.keys(pubs).sort((a,b) => pubs[b] - pubs[a]).slice(0, 8); // Top 8
-      const pubData = pubLabels.map(l => pubs[l]);
-
+      // Theme-aware chart defaults
       const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
       const textColor = isDark ? '#e8e6e3' : '#28251d';
       const gridColor = isDark ? '#3a3936' : '#dcd9d5';
 
       Chart.defaults.color = textColor;
+      Chart.defaults.font = { family: "'Satoshi', sans-serif", size: 12 };
 
-      if(pubChart) pubChart.destroy();
-      const ctxPub = document.getElementById('chartPublishers').getContext('2d');
-      pubChart = new Chart(ctxPub, {
-        type: 'bar',
-        data: {
-          labels: pubLabels,
-          datasets: [{
-            label: 'Albums',
-            data: pubData,
-            backgroundColor: '#8b1a1a',
-            borderRadius: 4
-          }]
-        },
-        options: {
-          indexAxis: 'y',
-          responsive: true,
-          plugins: { legend: {display:false} },
-          scales: {
-            x: { grid: {color: gridColor}, ticks: {stepSize: 1} },
-            y: { grid: {display: false} }
+      const topN = 12;
+
+      const toCountMap = () => Object.create(null);
+      const inc = (obj, key, n=1) => { if(!key) return; obj[key] = (obj[key] || 0) + n; };
+
+      const normalizeName = (s) => (s || '').trim();
+      const explodePeople = (arr) => (Array.isArray(arr) ? arr : []).map(normalizeName).filter(Boolean);
+
+      // --- Aggregations ---
+      const pubs = toCountMap();
+      const scenCounts = toCountMap();
+      const dessCounts = toCountMap();
+      const authorCounts = toCountMap(); // scenario + dessin combined
+      const decades = toCountMap();
+      const statuses = toCountMap();
+
+      let readCount = 0;
+
+      // Status distribution computed on ALL db (incl wishlist)
+      db.forEach(b => inc(statuses, b.statut || 'possede', 1));
+
+      possedes.forEach(b => {
+        inc(pubs, b.editeur || 'Non spécifié', 1);
+        if (b.lu) readCount++;
+
+        const sc = explodePeople(b.scenaristes);
+        const de = explodePeople(b.dessinateurs);
+
+        sc.forEach(name => { inc(scenCounts, name, 1); inc(authorCounts, name, 1); });
+        de.forEach(name => { inc(dessCounts, name, 1); inc(authorCounts, name, 1); });
+
+        // decade distribution (owned only)
+        const y = parseInt(String(b.annee || '').slice(0,4), 10);
+        if (!isNaN(y) && y > 1800 && y < 3000) {
+          const d = Math.floor(y / 10) * 10;
+          inc(decades, `${d}s`, 1);
+        } else {
+          inc(decades, 'Inconnue', 1);
+        }
+      });
+
+      const sortTop = (obj, n) => Object.entries(obj).sort((a,b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, n);
+
+      const makeHBar = (canvasId, titleLabel, entries, color) => {
+        const el = document.getElementById(canvasId);
+        if(!el) return null;
+        const labels = entries.map(([k]) => k);
+        const data = entries.map(([_,v]) => v);
+
+        return new Chart(el.getContext('2d'), {
+          type: 'bar',
+          data: { labels, datasets: [{ label: titleLabel, data, backgroundColor: color, borderRadius: 6, barThickness: 14, maxBarThickness: 18 }] },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false }, tooltip: { enabled: true } },
+            scales: {
+              x: { grid: { color: gridColor }, ticks: { stepSize: 1, precision: 0 } },
+              y: { grid: { display: false } }
+            }
           }
+        });
+      };
+
+      // --- Destroy previous charts ---
+      if (pubChart) pubChart.destroy();
+      if (readChart) readChart.destroy();
+      if (topAuthorsChart) topAuthorsChart.destroy();
+      if (topScenaristesChart) topScenaristesChart.destroy();
+      if (topDessinateursChart) topDessinateursChart.destroy();
+      if (decadesChart) decadesChart.destroy();
+      if (statusChart) statusChart.destroy();
+
+      // --- Publishers (top 8) ---
+      const pubTop = sortTop(pubs, 8);
+      const ctxPub = document.getElementById('chartPublishers')?.getContext('2d');
+      if (ctxPub) {
+        pubChart = new Chart(ctxPub, {
+          type: 'bar',
+          data: { labels: pubTop.map(([k]) => k), datasets: [{ label: 'Albums', data: pubTop.map(([_,v]) => v), backgroundColor: '#8b1a1a', borderRadius: 6 }] },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: { grid: { color: gridColor }, ticks: { stepSize: 1, precision: 0 } },
+              y: { grid: { display: false } }
+            }
+          }
+        });
+      }
+
+      // --- Read (owned only) ---
+      const ctxRead = document.getElementById('chartRead')?.getContext('2d');
+      if (ctxRead) {
+        readChart = new Chart(ctxRead, {
+          type: 'doughnut',
+          data: { labels: ['Lus', 'Non lus'], datasets: [{ data: [readCount, possedes.length - readCount], backgroundColor: ['#27ae60', '#e67e22'], borderWidth: 0 }] },
+          options: { responsive: true, maintainAspectRatio: false, cutout: '70%', plugins: { legend: { position: 'bottom' } } }
+        });
+      }
+
+      // --- Top Authors combined ---
+      topAuthorsChart = makeHBar('chartTopAuthors', 'Albums', sortTop(authorCounts, topN), '#8b1a1a');
+
+      // --- Top Scenaristes ---
+      topScenaristesChart = makeHBar('chartTopScenaristes', 'Albums (scénario)', sortTop(scenCounts, topN), '#d4af37');
+
+      // --- Top Dessinateurs ---
+      topDessinateursChart = makeHBar('chartTopDessinateurs', 'Albums (dessin)', sortTop(dessCounts, topN), '#e67e22');
+
+      // --- Decades ---
+      const ctxDec = document.getElementById('chartDecades')?.getContext('2d');
+      if (ctxDec) {
+        const decEntries = Object.entries(decades).sort((a,b) => {
+          if (a[0] === 'Inconnue') return 1;
+          if (b[0] === 'Inconnue') return -1;
+          const na = parseInt(a[0], 10);
+          const nb = parseInt(b[0], 10);
+          return (isNaN(na) ? 99999 : na) - (isNaN(nb) ? 99999 : nb);
+        });
+
+        decadesChart = new Chart(ctxDec, {
+          type: 'bar',
+          data: { labels: decEntries.map(([k]) => k), datasets: [{ label: 'Albums', data: decEntries.map(([_,v]) => v), backgroundColor: '#27ae60', borderRadius: 6 }] },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: { grid: { display: false } },
+              y: { grid: { color: gridColor }, ticks: { stepSize: 1, precision: 0 } }
+            }
+          }
+        });
+      }
+
+      // --- Status distribution (all db) ---
+      const ctxStatus = document.getElementById('chartStatus')?.getContext('2d');
+      if (ctxStatus) {
+        const order = ['possede', 'wishlist', 'prete'];
+        const labels = order.filter(k => statuses[k]).concat(Object.keys(statuses).filter(k => !order.includes(k)));
+        const data = labels.map(k => statuses[k] || 0);
+
+        const labelPretty = (k) => ({ possede: 'Possédés', wishlist: 'Wishlist', prete: 'Prêtés' }[k] || k);
+
+        statusChart = new Chart(ctxStatus, {
+          type: 'doughnut',
+          data: { labels: labels.map(labelPretty), datasets: [{ data, backgroundColor: ['#27ae60', '#d4af37', '#e67e22', '#8b1a1a'], borderWidth: 0 }] },
+          options: { responsive: true, maintainAspectRatio: false, cutout: '65%', plugins: { legend: { position: 'bottom' } } }
+        });
+      }
+    }
         }
       });
 
