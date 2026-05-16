@@ -916,28 +916,8 @@
         });
       }
     }
-        }
-      });
 
-      if(readChart) readChart.destroy();
-      const ctxRead = document.getElementById('chartRead').getContext('2d');
-      readChart = new Chart(ctxRead, {
-        type: 'doughnut',
-        data: {
-          labels: ['Lus', 'Non lus'],
-          datasets: [{
-            data: [readCount, possedes.length - readCount],
-            backgroundColor: ['#27ae60', '#e67e22'],
-            borderWidth: 0
-          }]
-        },
-        options: {
-          responsive: true,
-          cutout: '70%',
-          plugins: { legend: {position: 'bottom'} }
-        }
-      });
-    }
+    
 
     // --- DRAWER ---
     function openDrawer(b) {
