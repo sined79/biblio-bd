@@ -2155,5 +2155,396 @@
     "source": "native",
     "cover_url": "https://www.bedetheque.com/media/Couvertures/voyageur04_78736.jpg",
     "collection": "Grafica"
+  },
+  {
+    "serie": "XIII",
+    "tome": "1",
+    "titre": "Le Jour du Soleil Noir",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t1.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "2",
+    "titre": "2\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2a1987\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2a1988/02\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2a1988/11\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2a1989\n                                        .         \n                                         Là où va l'indien...                                  \n                                \n                             \n                                        2a1990\n                                        .         \n                                         Là où va l'indien...                                  \n                                \n                             \n                                        2a1991/01\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2a1991/10\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2a1992\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2a1994\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2a1995/02\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2a1995/12\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2a1996/10\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2a1997\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2a1999\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2b2000/01\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2b2002\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2b2003\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2b2004\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2b2005\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2b2007\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2b2008\n                                        .         \n                                        La où va l'indien...                                  \n                                \n                             \n                                        2b2010\n                                        .         \n                                        La où va l'indien...                                  \n                                \n                             \n                                        2b2011\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2b2012\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2b2016\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2c2017\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2c2024\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2ES\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2ES1\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2Pub1\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2Pub2\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2Pub3\n                                        .         \n                                        Là ou va l'indien...                                  \n                                \n                             \n                                        2Pub4\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2TL\n                                        .         \n                                        Là où va l'indien...                                  \n                                \n                             \n                                        2TT\n                                        .         \n                                        Là où va l'indien...",
+    "needs_review": false,
+    "source": "script",
+    "auteurs": "",
+    "editeur": "",
+    "scenariste": "Van Hamme, Jean",
+    "dessinateur": "Vance, William",
+    "scenaristes": [
+      "Van Hamme, Jean"
+    ],
+    "dessinateurs": [
+      "Vance, William"
+    ],
+    "synopsis": "",
+    "annee": "2024",
+    "isbn": "2871290038",
+    "bedetheque_url": "https://www.bedetheque.com/BD-XIII-Tome-2-La-ou-va-l-indien-480.html",
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_480.jpg",
+    "cover": "images/xiii-t2.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "3",
+    "titre": "Toutes les Larmes de l'Enfer",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t3.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "4",
+    "titre": "SPADS",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t4.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "5",
+    "titre": "Rouge Total",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t5.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "6",
+    "titre": "Le Dossier Jason Fly",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t6.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "7",
+    "titre": "La Nuit du 3 Août",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t7.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "8",
+    "titre": "Treize contre un",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t8.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "9",
+    "titre": "Pour Maria",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t9.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "10",
+    "titre": "El Cascador",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t10.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "11",
+    "titre": "Trois Montres d'Argent",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t11.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "12",
+    "titre": "Le Jugement",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t12.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "13",
+    "titre": "L'Enquête",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t13.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "14",
+    "titre": "Secret Défense",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t14.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "15",
+    "titre": "Lâchez les Chiens !",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t15.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "16",
+    "titre": "Opération Montecristo",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t16.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "17",
+    "titre": "L'Or de Maximilien",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t17.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "18",
+    "titre": "La Version Irlandaise",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t18.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "19",
+    "titre": "Le Dernier Round",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t19.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "20",
+    "titre": "Le Jour du Mayflower",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t20.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "21",
+    "titre": "L'Appât",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t21.jpg"
+  },
+  {
+    "serie": "XIII",
+    "tome": "22",
+    "titre": "Retour à Greenfalls",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-t22.jpg"
+  },
+  {
+    "serie": "XIII Mystery",
+    "tome": "1",
+    "titre": "La Mangouste",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-mystery-t1.jpg"
+  },
+  {
+    "serie": "XIII Mystery",
+    "tome": "2",
+    "titre": "Irina",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-mystery-t2.jpg"
+  },
+  {
+    "serie": "XIII Mystery",
+    "tome": "3",
+    "titre": "Little Jones",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-mystery-t3.jpg"
+  },
+  {
+    "serie": "XIII Mystery",
+    "tome": "4",
+    "titre": "Colonel Amos",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-mystery-t4.jpg"
+  },
+  {
+    "serie": "XIII Mystery",
+    "tome": "5",
+    "titre": "Steve Rowland",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/xiii-mystery-t5.jpg"
+  },
+  {
+    "serie": "Michel Vaillant",
+    "tome": "51",
+    "titre": "",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/michel-vaillant-t51.jpg"
+  },
+  {
+    "serie": "Michel Vaillant",
+    "tome": "52",
+    "titre": "",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/michel-vaillant-t52.jpg"
+  },
+  {
+    "serie": "Michel Vaillant",
+    "tome": "55",
+    "titre": "",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/michel-vaillant-t55.jpg"
+  },
+  {
+    "serie": "Michel Vaillant",
+    "tome": "68",
+    "titre": "",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/michel-vaillant-t68.jpg"
+  },
+  {
+    "serie": "Michel Vaillant",
+    "tome": "69",
+    "titre": "",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/michel-vaillant-t69.jpg"
+  },
+  {
+    "serie": "La Dernière Maison juste avant la Forêt",
+    "tome": "",
+    "titre": "La Dernière Maison juste avant la Forêt",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/la-derni-re-maison-juste-avant-la-for-t.jpg"
+  },
+  {
+    "serie": "Le Caïd de Francorchamps",
+    "tome": "",
+    "titre": "Le Caïd de Francorchamps",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/le-ca-d-de-francorchamps.jpg"
+  },
+  {
+    "serie": "Jérôme K.J. Bloche",
+    "tome": "18",
+    "titre": "",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/j-r-me-k-j-bloche-t18.jpg"
+  },
+  {
+    "serie": "Le Dernier Empereur",
+    "tome": "",
+    "titre": "Le Dernier Empereur",
+    "needs_review": true,
+    "source": "script",
+    "cover": "images/le-dernier-empereur.jpg"
+  },
+  {
+    "serie": "Michel Vaillant - Saison 2",
+    "tome": "68",
+    "titre": "China Moon",
+    "auteurs": "Jean Graton / Philippe Graton",
+    "editeur": "Dupuis",
+    "cover": "images/michel-vaillant-s2-t68.jpg",
+    "scenariste": "Graton, Philippe",
+    "dessinateur": "Graton, Philippe",
+    "scenaristes": [
+      "Graton, Philippe"
+    ],
+    "dessinateurs": [
+      "Graton, Philippe"
+    ],
+    "annee": "2013",
+    "isbn": "9782800152127",
+    "bedetheque_url": "https://www.bedetheque.com/BD-Michel-Vaillant-Tome-68-China-Moon-214073.html",
+    "needs_review": false,
+    "source": "brave",
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_134775.jpg"
+  },
+  {
+    "serie": "Michel Vaillant - Saison 2",
+    "tome": "69",
+    "titre": "Hors piste en enfer",
+    "auteurs": "Jean Graton / Philippe Graton",
+    "editeur": "Dupuis",
+    "cover": "images/michel-vaillant-s2-t69.jpg",
+    "scenariste": "Graton, Philippe",
+    "dessinateur": "Graton, Philippe",
+    "scenaristes": [
+      "Graton, Philippe"
+    ],
+    "dessinateurs": [
+      "Graton, Philippe"
+    ],
+    "annee": "2024",
+    "isbn": "9782800152133",
+    "bedetheque_url": "https://www.bedetheque.com/BD-Michel-Vaillant-Tome-69-Hors-piste-en-enfer-214074.html",
+    "needs_review": false,
+    "source": "brave",
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_56956.jpg"
+  },
+  {
+    "serie": "Standalone",
+    "tome": "1",
+    "titre": "La Dernière Maison juste avant la Forêt",
+    "auteurs": "Loisel / Tripp",
+    "editeur": "Dargaud",
+    "cover": "images/derniere-maison-foret-t1.jpg",
+    "scenariste": "Loisel, Régis",
+    "dessinateur": "Tripp, Jean-Louis",
+    "scenaristes": [
+      "Loisel, Régis"
+    ],
+    "dessinateurs": [
+      "Tripp, Jean-Louis"
+    ],
+    "annee": "1997",
+    "isbn": "9782205046038",
+    "bedetheque_url": "https://www.bedetheque.com/BD-La-Derniere-Maison-juste-avant-la-foret-43753.html",
+    "needs_review": false,
+    "source": "brave",
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_529042.jpg"
+  },
+  {
+    "serie": "Jérôme K. Jérôme Bloche",
+    "tome": "18",
+    "titre": "Les Fleurs du Malt",
+    "auteurs": "Dodier",
+    "editeur": "Dupuis",
+    "cover": "images/jerome-bloche-t18.jpg",
+    "scenariste": "Dodier, Alain",
+    "dessinateur": "Dodier, Alain",
+    "scenaristes": [
+      "Dodier, Alain"
+    ],
+    "dessinateurs": [
+      "Dodier, Alain"
+    ],
+    "annee": "2004",
+    "isbn": "9782800132525",
+    "bedetheque_url": "https://www.bedetheque.com/BD-Jerome-K-Jerome-Bloche-Tome-18-Les-fleurs-du-malt-39516.html",
+    "needs_review": false,
+    "source": "brave",
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_45817.jpg"
   }
 ]
