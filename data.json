@@ -2449,146 +2449,130 @@
   {
     "serie": "Michel Vaillant",
     "tome": "51",
-    "titre": "",
-    "needs_review": true,
+    "titre": "Le Caïd de Francorchamps",
+    "needs_review": false,
     "source": "script",
     "cover": "images/michel-vaillant-t51.jpg",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_502136.jpg",
-    "synopsis": "Il vise le titre de Champion du Monde dès la première année alors que pour le moment Vaillant et Boutsen dominent la saison. Son immodestie, sa prétention, font qu'il ne se fait guère d'amis parmi les autres pilotes."
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_6975.jpg",
+    "synopsis": "Il vise le titre de Champion du Monde dès la première année alors que pour le moment Vaillant et Boutsen dominent la saison. Son immodestie, sa prétention, font qu'il ne se fait guère d'amis parmi les autres pilotes.",
+    "auteurs": "Jean Graton",
+    "scenariste": "Graton, Jean",
+    "dessinateur": "Graton, Jean",
+    "scenaristes": [
+      "Graton, Jean"
+    ],
+    "dessinateurs": [
+      "Graton, Jean"
+    ],
+    "editeur": "Dupuis",
+    "annee": "1989",
+    "isbn": "",
+    "bedetheque_url": "https://www.bedetheque.com/BD-Michel-Vaillant-Tome-51-Le-caid-de-Francorchamps-6975.html"
   },
   {
     "serie": "Michel Vaillant",
     "tome": "52",
-    "titre": "",
-    "needs_review": true,
+    "titre": "F3000",
+    "needs_review": false,
     "source": "script",
     "cover": "images/michel-vaillant-t52.jpg",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_502136.jpg",
-    "synopsis": "C'est déjà un événement en soi mais quand débarquent les frères Vaillant, Jean Pierre et Michel, ça devient un incontournable. Et les rumeurs les plus folles peuvent alors circuler, évoquant l'arrêt de la carrière de Michel, venu se chercher un successeur."
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_6976.jpg",
+    "synopsis": "C'est déjà un événement en soi mais quand débarquent les frères Vaillant, Jean Pierre et Michel, ça devient un incontournable. Et les rumeurs les plus folles peuvent alors circuler, évoquant l'arrêt de la carrière de Michel, venu se chercher un successeur.",
+    "auteurs": "Jean Graton / Guillaume Lopez",
+    "scenariste": "Graton, Jean",
+    "dessinateur": "Graton, Jean",
+    "scenaristes": [
+      "Graton, Jean"
+    ],
+    "dessinateurs": [
+      "Graton, Jean",
+      "Lopez, Guillaume"
+    ],
+    "editeur": "Dupuis",
+    "annee": "1990",
+    "isbn": "",
+    "bedetheque_url": "https://www.bedetheque.com/BD-Michel-Vaillant-Tome-52-F3000-6976.html"
   },
   {
     "serie": "Michel Vaillant",
     "tome": "55",
-    "titre": "",
-    "needs_review": true,
+    "titre": "Une Histoire de Fous",
+    "needs_review": false,
     "source": "script",
     "cover": "images/michel-vaillant-t55.jpg",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_502136.jpg",
-    "synopsis": "Mais, celle-ci n'est pas complètement prête et des doutes subsistent. Entre temps, les hommes de l'usine faisant des miracles, la VS 92 est mise au point. L'équipage se composera de Michel, Pierre Dieudonné et Steve."
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_6979.jpg",
+    "synopsis": "Mais, celle-ci n'est pas complètement prête et des doutes subsistent. Entre temps, les hommes de l'usine faisant des miracles, la VS 92 est mise au point. L'équipage se composera de Michel, Pierre Dieudonné et Steve.",
+    "auteurs": "Jean Graton",
+    "scenariste": "Graton, Jean",
+    "dessinateur": "Graton, Jean",
+    "scenaristes": [
+      "Graton, Jean"
+    ],
+    "dessinateurs": [
+      "Graton, Jean"
+    ],
+    "editeur": "Dupuis",
+    "annee": "1993",
+    "isbn": "",
+    "bedetheque_url": "https://www.bedetheque.com/BD-Michel-Vaillant-Tome-55-Une-histoire-de-fous-6979.html"
   },
   {
     "serie": "Michel Vaillant",
     "tome": "68",
-    "titre": "",
-    "needs_review": true,
+    "titre": "China Moon",
+    "needs_review": false,
     "source": "script",
     "cover": "images/michel-vaillant-t68.jpg",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_502136.jpg",
-    "synopsis": "Michel Vaillant va participer au premier Grand Prix de Chine de l'histoire à Shanghai. Jean-Pierre Vaillant, lui, s'apprête à présenter la Vaillante qui peut sauver la Chine de la pollution, la XING-QIU, première voiture qui roule à ..."
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_48940.jpg",
+    "synopsis": "Michel Vaillant va participer au premier Grand Prix de Chine de l'histoire à Shanghai. Jean-Pierre Vaillant, lui, s'apprête à présenter la Vaillante qui peut sauver la Chine de la pollution, la XING-QIU, première voiture qui roule à ...",
+    "auteurs": "Jean Graton / Philippe Graton",
+    "scenariste": "Graton, Philippe",
+    "dessinateur": "Graton, Jean",
+    "scenaristes": [
+      "Graton, Philippe"
+    ],
+    "dessinateurs": [
+      "Graton, Jean"
+    ],
+    "editeur": "Dupuis",
+    "annee": "2011",
+    "isbn": "",
+    "bedetheque_url": "https://www.bedetheque.com/BD-Michel-Vaillant-Tome-68-China-Moon-48940.html"
   },
   {
     "serie": "Michel Vaillant",
     "tome": "69",
-    "titre": "",
-    "needs_review": true,
+    "titre": "Hors-piste en Enfer",
+    "needs_review": false,
     "source": "script",
     "cover": "images/michel-vaillant-t69.jpg",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_502136.jpg",
-    "synopsis": "Lors d'une étape turque du rallye d'Orient, Michel Vaillant et son coéquipier, Steve Warson, évitent de justesse un enfant qui semble s'être jeté devant leur voiture. Mais que faisait cet enfant tout seul au milieu de la route ?"
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_56956.jpg",
+    "synopsis": "Lors d'une étape turque du rallye d'Orient, Michel Vaillant et son coéquipier, Steve Warson, évitent de justesse un enfant qui semble s'être jeté devant leur voiture. Mais que faisait cet enfant tout seul au milieu de la route ?",
+    "auteurs": "Philippe Graton / Patrick Vanetti",
+    "scenariste": "Graton, Philippe",
+    "dessinateur": "Stuf",
+    "scenaristes": [
+      "Graton, Philippe",
+      "Vanetti, Patrick"
+    ],
+    "dessinateurs": [
+      "Stuf"
+    ],
+    "editeur": "Dupuis",
+    "annee": "2012",
+    "isbn": "",
+    "bedetheque_url": "https://www.bedetheque.com/BD-Michel-Vaillant-Tome-69-Hors-piste-en-enfer-56956.html"
   },
   {
     "serie": "La Dernière Maison juste avant la Forêt",
-    "tome": "",
-    "titre": "La Dernière Maison juste avant la Forêt",
-    "needs_review": true,
-    "source": "script",
-    "cover": "images/la-derni-re-maison-juste-avant-la-for-t.jpg",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_529042.jpg",
-    "synopsis": "Tout sur la série Dernière maison juste avant la forêt (La) : Pierrot victime d'un sort vaudou jeté par sa mère, Yvette, se pense irrésistible. Pourtant son physique est terriblement disgracieux."
-  },
-  {
-    "serie": "Le Caïd de Francorchamps",
-    "tome": "",
-    "titre": "Le Caïd de Francorchamps",
-    "needs_review": true,
-    "source": "script",
-    "cover": "images/le-ca-d-de-francorchamps.jpg",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_158043.jpg",
-    "synopsis": "Stanley Newton est riche, très riche. Il vise le titre de Champion du Monde dès la première année alors que pour le moment Vaillant et Boutsen dominent la saison. Son immodestie, sa prétention, font qu'il ne se fait guère d'amis parmi ..."
-  },
-  {
-    "serie": "Jérôme K.J. Bloche",
-    "tome": "18",
-    "titre": "",
-    "needs_review": true,
-    "source": "script",
-    "cover": "images/j-r-me-k-j-bloche-t18.jpg",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_2194.jpg",
-    "synopsis": "Le petit coin de paradis, sous les coups conjugués du destin et d'une belle-mère franchement malveillante, allait bientôt devenir le théâtre de bien tristes évènements. Ce dix-huitième tome de Jérôme K. Jérôme Bloche met de nouveau ..."
-  },
-  {
-    "serie": "Le Dernier Empereur",
-    "tome": "",
-    "titre": "Le Dernier Empereur",
-    "needs_review": true,
-    "source": "script",
-    "cover": "images/le-dernier-empereur.jpg",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_7714.jpg",
-    "synopsis": "Plaçant aux différents ministères de sa dictature ses proches les plus fidèles, Golgoth fait régner sur le monde une tyrannie implacable qui écrase les dernières poches de résistance."
-  },
-  {
-    "serie": "Michel Vaillant - Saison 2",
-    "tome": "68",
-    "titre": "China Moon",
-    "auteurs": "Jean Graton / Philippe Graton",
-    "editeur": "Dupuis",
-    "cover": "images/michel-vaillant-s2-t68.jpg",
-    "scenariste": "Graton, Philippe",
-    "dessinateur": "Graton, Philippe",
-    "scenaristes": [
-      "Graton, Philippe"
-    ],
-    "dessinateurs": [
-      "Graton, Philippe"
-    ],
-    "annee": "2013",
-    "isbn": "9782800152127",
-    "bedetheque_url": "https://www.bedetheque.com/BD-Michel-Vaillant-Tome-68-China-Moon-214073.html",
-    "needs_review": false,
-    "source": "brave",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_134775.jpg",
-    "synopsis": "Michel Vaillant va participer au premier Grand Prix de Chine de l'histoire à Shanghai. Jean-Pierre Vaillant, lui, s'apprête à présenter la Vaillante qui peut sauver la Chine de la pollution, la XING-QIU, première voiture qui roule à ..."
-  },
-  {
-    "serie": "Michel Vaillant - Saison 2",
-    "tome": "69",
-    "titre": "Hors piste en enfer",
-    "auteurs": "Jean Graton / Philippe Graton",
-    "editeur": "Dupuis",
-    "cover": "images/michel-vaillant-s2-t69.jpg",
-    "scenariste": "Graton, Philippe",
-    "dessinateur": "Graton, Philippe",
-    "scenaristes": [
-      "Graton, Philippe"
-    ],
-    "dessinateurs": [
-      "Graton, Philippe"
-    ],
-    "annee": "2024",
-    "isbn": "9782800152133",
-    "bedetheque_url": "https://www.bedetheque.com/BD-Michel-Vaillant-Tome-69-Hors-piste-en-enfer-214074.html",
-    "needs_review": false,
-    "source": "brave",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_56956.jpg",
-    "synopsis": "Lors d'une étape turque du rallye d'Orient, Michel Vaillant et son coéquipier, Steve Warson, évitent de justesse un enfant qui semble s'être jeté devant leur voiture. Mais que faisait cet enfant tout seul au milieu de la route ?"
-  },
-  {
-    "serie": "Standalone",
     "tome": "1",
     "titre": "La Dernière Maison juste avant la Forêt",
+    "needs_review": false,
+    "source": "script",
+    "cover": "images/derniere-maison-foret.jpg",
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_529042.jpg",
+    "synopsis": "Tout sur la série Dernière maison juste avant la forêt (La) : Pierrot victime d'un sort vaudou jeté par sa mère, Yvette, se pense irrésistible. Pourtant son physique est terriblement disgracieux.",
     "auteurs": "Loisel / Tripp",
-    "editeur": "Dargaud",
-    "cover": "images/derniere-maison-foret-t1.jpg",
     "scenariste": "Loisel, Régis",
     "dessinateur": "Tripp, Jean-Louis",
     "scenaristes": [
@@ -2597,13 +2581,34 @@
     "dessinateurs": [
       "Tripp, Jean-Louis"
     ],
-    "annee": "1997",
-    "isbn": "9782205046038",
-    "bedetheque_url": "https://www.bedetheque.com/BD-La-Derniere-Maison-juste-avant-la-foret-43753.html",
+    "editeur": "Dargaud",
+    "annee": "1990",
+    "isbn": "9782205040449",
+    "bedetheque_url": "https://www.bedetheque.com/BD-Derniere-maison-juste-avant-la-foret-529042.html"
+  },
+  {
+    "serie": "Michel Vaillant (Dossiers)",
+    "tome": "7",
+    "titre": "Ferrari Enzo, le Dernier Empereur",
     "needs_review": false,
-    "source": "brave",
-    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_529042.jpg",
-    "synopsis": "De son côté Yvette règne en maître sur la dernière maison juste avant la forêt. Elle y vit entourée de son mari, colonel changé en statue, de ses domestiques, créatures façonnées de ses mains, et de ses ''demoiselles'', terrifiantes ..."
+    "source": "script",
+    "cover": "images/michel-vaillant-dossiers-t7.jpg",
+    "cover_url": "https://www.bedetheque.com/media/Couvertures/Couv_44730.jpg",
+    "synopsis": "Plaçant aux différents ministères de sa dictature ses proches les plus fidèles, Golgoth fait régner sur le monde une tyrannie implacable qui écrase les dernières poches de résistance.",
+    "auteurs": "Xavier Chimits / Jacques Swaters / Jean Graton",
+    "scenariste": "Chimits, Xavier",
+    "dessinateur": "Graton, Jean",
+    "scenaristes": [
+      "Chimits, Xavier",
+      "Swaters, Jacques"
+    ],
+    "dessinateurs": [
+      "Graton, Jean"
+    ],
+    "editeur": "Graton éditeur",
+    "annee": "2005",
+    "isbn": "",
+    "bedetheque_url": "https://www.bedetheque.com/BD-Michel-Vaillant-Dossiers-Tome-7-Ferrari-Enzo-le-dernier-Empereur-44730.html"
   },
   {
     "serie": "Jérôme K. Jérôme Bloche",
