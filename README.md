@@ -36,6 +36,29 @@ Les scripts et le front-end utilisent la structure normalisée suivante :
 
 ## Automatisation & Backend (OpenClaw)
 Puisqu'il n'y a pas d'API BD ouverte, le projet est alimenté par l'agent OpenClaw.
-- **Script :** `scripts/enrich_stealth.py`.
-- **Fonctionnement :** Exécuté par le cron `bd_cover_scraper` toutes les 30 minutes. Il cherche une BD sans couverture dans le JSON, interroge furtivement les moteurs de recherche pour trouver la page *Bedetheque*, télécharge l'image, extrait les métadonnées (scénariste, dessinateur, ISBN, synopsis), met à jour le JSON et pousse le tout sur GitHub.
-- **Règle absolue :** Ne pas faire de requêtes massives pour éviter le bannissement de l'IP. Toujours procéder tome par tome, espacé dans le temps.
+- **Script :** `bedetheque_enricher.py` (racine du workspace, fourni par Denis).
+- **Fonctionnement :** Brave Search pour trouver les URLs Bédéthèque, puis scraping avec pauses aléatoires 15-35s, cache persistant, headers navigateur réalistes.
+
+## ⛔ RÈGLE ABSOLUE — À LIRE AVANT TOUTE ACTION SUR LA BASE
+
+**Ne JAMAIS faire de requêtes directes vers bedetheque.com depuis le serveur.**
+Le serveur cloud OpenClaw est détecté et banni immédiatement. Denis a dû renouveler l'IP à 3 reprises à cause de cette erreur.
+
+**Pipeline obligatoire — photo d'étagère → biblio-bd :**
+
+1. Extraire visuellement les albums depuis la photo (série, tome, titre)
+2. Vérifier quels albums sont déjà dans `data.json`
+3. Générer `albums_to_enrich.json` avec les nouveaux uniquement
+4. Lancer **exclusivement** `bedetheque_enricher.py` :
+   ```bash
+   cd /home/innovation_etnic_be/.openclaw/workspace/biblio-bd
+   BRAVE_API_KEY=BSAL408Rf_xt9rKvrvixglai9TOUGJW \
+   python3 /home/innovation_etnic_be/.openclaw/workspace/bedetheque_enricher.py \
+     --input albums_to_enrich.json \
+     --output albums_enriched.json
+   ```
+5. Merger `albums_enriched.json` dans `data.json` + copie images + push GitHub
+
+**Ne jamais improviser des requêtes directes maison, peu importe la raison.**
+**Ne jamais utiliser `urllib`, `requests`, `httpx` directement vers bedetheque.com.**
+Si le script échoue : déboguer le script, pas contourner.
