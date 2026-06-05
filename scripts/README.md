@@ -22,7 +22,7 @@ python3 scripts/extract_missing.py
 
 ```bash
 cd biblio-bd/
-BRAVE_API_KEY=BSAL408Rf_xt9rKvrvixglai9TOUGJW \
+BRAVE_API_KEY=<ta_clé_brave> \
 python3 scripts/bedetheque_enricher.py \
   --input albums_to_enrich.json \
   --output albums_enriched.json
